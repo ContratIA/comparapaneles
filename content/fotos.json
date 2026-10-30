@@ -1,0 +1,80 @@
+{
+  "nota": "Todas las fotos son de Wikimedia Commons con licencia libre. Autor y licencia leídos de la API de Commons el 2026-10-30. Descargar a /assets/img/articulos/, redimensionar a un máximo de 1600 px de ancho y comprimir. Indicar en el pie que la imagen se ha redimensionado. IMPORTANTE: abrir cada foto descargada y confirmar a ojo que coincide con el alt antes de publicar; si no coincide, corregir el alt, no la foto.",
+  "fotos": [
+    {
+      "archivo": "pv-cubierta.jpg",
+      "articulo": "cuanto-produce-1-kwp-espana",
+      "titulo_commons": "File:Rooftop solar photovoltaic installation.jpg",
+      "pagina_commons": "https://commons.wikimedia.org/wiki/File:Rooftop_solar_photovoltaic_installation.jpg",
+      "url_descarga": "https://upload.wikimedia.org/wikipedia/commons/4/45/Rooftop_solar_photovoltaic_installation.jpg",
+      "dimensiones_originales": "1600x1079",
+      "autor": "Marta Victoria",
+      "licencia": "CC BY-SA 4.0",
+      "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "descripcion_commons": "Solar photovoltaic installation",
+      "alt": "Instalación fotovoltaica sobre una cubierta",
+      "pie": "Instalación fotovoltaica en una cubierta. Foto: Marta Victoria, CC BY-SA 4.0, Wikimedia Commons.",
+      "aviso": "Commons no indica el lugar. No decir que está en España."
+    },
+    {
+      "archivo": "viviendas-solares.jpg",
+      "articulo": "deduccion-irpf-placas-solares-2026",
+      "titulo_commons": "File:Freiburg 071ss.jpg",
+      "pagina_commons": "https://commons.wikimedia.org/wiki/File:Freiburg_071ss.jpg",
+      "url_descarga": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Freiburg_071ss.jpg",
+      "dimensiones_originales": "3648x2063",
+      "autor": "Arnold Plesse",
+      "licencia": "CC BY 3.0",
+      "licencia_url": "https://creativecommons.org/licenses/by/3.0/",
+      "descripcion_commons": "Solarsiedlung in Freiburg i. Br. (2013-10-24)",
+      "alt": "Viviendas de la Solarsiedlung de Friburgo (Alemania) con paneles solares en las cubiertas",
+      "pie": "Solarsiedlung de Friburgo (Alemania), 2013. Foto: Arnold Plesse, CC BY 3.0, Wikimedia Commons.",
+      "aviso": "Es Alemania, no España. El pie lo dice. Confirmar a ojo que se ven paneles en las cubiertas."
+    },
+    {
+      "archivo": "ayuntamiento-a-coruna.jpg",
+      "articulo": "bonificacion-ibi-icio-placas-solares",
+      "titulo_commons": "File:Ayuntamiento, La Coruña, España, 2015-09-25, DD 141-143 HDR.jpg",
+      "pagina_commons": "https://commons.wikimedia.org/wiki/File:Ayuntamiento,_La_Coru%C3%B1a,_Espa%C3%B1a,_2015-09-25,_DD_141-143_HDR.jpg",
+      "url_descarga": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Ayuntamiento%2C_La_Coru%C3%B1a%2C_Espa%C3%B1a%2C_2015-09-25%2C_DD_141-143_HDR.jpg/1280px-Ayuntamiento%2C_La_Coru%C3%B1a%2C_Espa%C3%B1a%2C_2015-09-25%2C_DD_141-143_HDR.jpg",
+      "dimensiones_originales": "5696x4033 (la URL de descarga ya es la miniatura de 1280 px)",
+      "autor": "Diego Delso",
+      "licencia": "CC BY-SA 4.0",
+      "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "descripcion_commons": "Fachada del Ayuntamiento (Palacio Municipal) de A Coruña durante la hora azul",
+      "alt": "Fachada del Ayuntamiento de A Coruña, el Palacio Municipal, al anochecer",
+      "pie": "Ayuntamiento de A Coruña. Foto: Diego Delso, CC BY-SA 4.0, Wikimedia Commons.",
+      "aviso": "Solo ilustra un ayuntamiento. No sugerir que A Coruña aplique la bonificación."
+    },
+    {
+      "archivo": "madrid-edificio-municipal.jpg",
+      "articulo": "autoconsumo-colectivo-rdl-7-2026",
+      "titulo_commons": "File:Madrid genera energía limpia 03.jpg",
+      "pagina_commons": "https://commons.wikimedia.org/wiki/File:Madrid_genera_energ%C3%ADa_limpia_03.jpg",
+      "url_descarga": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Madrid_genera_energ%C3%ADa_limpia_03.jpg",
+      "dimensiones_originales": "1307x1000",
+      "autor": "Diario de Madrid",
+      "licencia": "CC BY 4.0",
+      "licencia_url": "https://creativecommons.org/licenses/by/4.0/",
+      "descripcion_commons": "Iniciativa «Madrid genera energía limpia»: placas solares en 51 inmuebles del Ayuntamiento de Madrid",
+      "alt": "Placas solares en un edificio del Ayuntamiento de Madrid, de la iniciativa «Madrid genera energía limpia»",
+      "pie": "Placas solares en un inmueble municipal de Madrid. Foto: Diario de Madrid, CC BY 4.0, Wikimedia Commons.",
+      "aviso": "Confirmar a ojo que se ven placas solares. Si se ve otra cosa, corregir alt y pie."
+    },
+    {
+      "archivo": "madrid-placas-municipales.jpg",
+      "articulo": "produccion-solar-mes-a-mes-madrid-barcelona",
+      "titulo_commons": "File:Madrid genera energía limpia 02.jpg",
+      "pagina_commons": "https://commons.wikimedia.org/wiki/File:Madrid_genera_energ%C3%ADa_limpia_02.jpg",
+      "url_descarga": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Madrid_genera_energ%C3%ADa_limpia_02.jpg",
+      "dimensiones_originales": "1388x1000",
+      "autor": "Diario de Madrid",
+      "licencia": "CC BY 4.0",
+      "licencia_url": "https://creativecommons.org/licenses/by/4.0/",
+      "descripcion_commons": "Iniciativa «Madrid genera energía limpia»: placas solares en 51 inmuebles del Ayuntamiento de Madrid",
+      "alt": "Placas solares en un edificio del Ayuntamiento de Madrid, de la iniciativa «Madrid genera energía limpia»",
+      "pie": "Placas solares en un inmueble municipal de Madrid. Foto: Diario de Madrid, CC BY 4.0, Wikimedia Commons.",
+      "aviso": "Es de la misma serie que la foto del artículo de autoconsumo colectivo. Si se ve muy parecida, usar solo una y buscar otra en Commons."
+    }
+  ]
+}
