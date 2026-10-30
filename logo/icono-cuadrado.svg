@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Comparapaneles">
+  <title>Comparapaneles</title>
+  <rect width="512" height="512" fill="#111827"/>
+  <circle cx="256" cy="206" r="98" fill="#f59e0b"/>
+  <polygon points="150,262 362,262 408,424 104,424" fill="#111827" stroke="#f59e0b" stroke-width="16" stroke-linejoin="round"/>
+  <g stroke="#f59e0b" stroke-width="9" stroke-linecap="round">
+    <line x1="127" y1="343" x2="385" y2="343"/>
+    <line x1="220.7" y1="262" x2="205.3" y2="424"/>
+    <line x1="291.3" y1="262" x2="306.7" y2="424"/>
+  </g>
+</svg>
