@@ -100,7 +100,7 @@ ${SRC_IRPF}`,
 });
 
 /* ---------- LEGAL Y EDITORIAL ---------- */
-const PEND = '<strong>[PENDIENTE: completar antes de publicar]</strong>';
+const TITULAR = 'Eloy Muros Roncero', NIF = '33512347J', DOMICILIO = 'Calle Cerro Blanco, 10, piso 02, puerta A, 28026 Madrid (España)';
 pages.push({
   url: '/sobre-nosotros/', kind: 'plain', title: 'Sobre ComparaPaneles: criterios editoriales | ComparaPaneles',
   desc: 'Qué es ComparaPaneles, cómo elaboramos el contenido, cómo se financia el sitio y cómo corregimos errores.', h1: 'Sobre ComparaPaneles',
@@ -143,7 +143,7 @@ pages.push({
   url: '/aviso-legal/', kind: 'plain', title: 'Aviso legal | ComparaPaneles', desc: 'Aviso legal de ComparaPaneles: titular, condiciones de uso y responsabilidad.', h1: 'Aviso legal',
   body: `<h2>Titular del sitio</h2>
 <p>En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico:</p>
-<ul><li><strong>Titular:</strong> ${PEND}</li><li><strong>NIF:</strong> ${PEND}</li><li><strong>Domicilio:</strong> ${PEND}</li><li><strong>Correo electrónico:</strong> info@comparapaneles.com</li><li><strong>Dominio:</strong> comparapaneles.com</li></ul>
+<ul><li><strong>Titular:</strong> ${TITULAR}</li><li><strong>NIF:</strong> ${NIF}</li><li><strong>Domicilio:</strong> ${DOMICILIO}</li><li><strong>Correo electrónico:</strong> info@comparapaneles.com</li><li><strong>Dominio:</strong> comparapaneles.com</li></ul>
 <h2>Objeto</h2>
 <p>Este sitio ofrece información general sobre autoconsumo solar en España. El acceso es gratuito.</p>
 <h2>Carácter informativo</h2>
@@ -163,7 +163,7 @@ pages.push({
   url: '/politica-de-privacidad/', kind: 'plain', title: 'Política de privacidad | ComparaPaneles', desc: 'Qué datos trata ComparaPaneles, con qué finalidad, durante cuánto tiempo y cómo ejercer tus derechos.', h1: 'Política de privacidad',
   body: `<p>Última actualización: ${DATE_ES}.</p>
 <h2>Responsable</h2>
-<p>${PEND} (consulta el <a href="/aviso-legal/">aviso legal</a> para los datos completos). Contacto: <a href="mailto:info@comparapaneles.com">info@comparapaneles.com</a>.</p>
+<p>${TITULAR}, con NIF ${NIF} y domicilio en ${DOMICILIO} (consulta el <a href="/aviso-legal/">aviso legal</a> para los datos completos). Contacto: <a href="mailto:info@comparapaneles.com">info@comparapaneles.com</a>.</p>
 <h2>Qué datos tratamos</h2>
 <ul>
 <li><strong>Navegación:</strong> el proveedor de alojamiento puede registrar datos técnicos de la conexión (como la dirección IP) por motivos de seguridad y funcionamiento.</li>
