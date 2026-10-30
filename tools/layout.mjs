@@ -64,7 +64,7 @@ export function page({ url, title, desc, h1, body = '', after = '', kind = 'plai
 <html lang="es">
 <head>
 <meta charset="utf-8">
-${kind === 'home' ? '<!-- GSC: pegar aquí la meta google-site-verification -->\n' : ''}<meta name="viewport" content="width=device-width,initial-scale=1">
+${kind === 'home' ? '<meta name="google-site-verification" content="zCbWy1iTLMJcu8lPUn6as-yO5nCLy4ZaQPWZZvR7TEU">\n' : ''}<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${canonical}">
