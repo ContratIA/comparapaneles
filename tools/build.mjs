@@ -3,7 +3,7 @@ import { mkdirSync, writeFileSync, readFileSync, existsSync, readdirSync, statSy
 import { createHash } from 'node:crypto';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { page, SITE, DATE, assets } from './layout.mjs';
+import { page, SITE, DATE, assets, ADSENSE } from './layout.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const out = (rel, data) => {
@@ -58,6 +58,7 @@ out('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 ${all.map((p) => `  <url><loc>${SITE}${p.url}</loc><lastmod>${p.updated || DATE}</lastmod></url>`).join('\n')}
 </urlset>
 `);
+if (ADSENSE) out('ads.txt', `google.com, ${ADSENSE.replace('ca-','')}, DIRECT, f08c47fec0942fa0\n`);
 out('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 out('vercel.json', JSON.stringify({
   trailingSlash: true,

@@ -2,6 +2,9 @@ export const SITE = 'https://www.comparapaneles.com';
 export const DATE = '2026-10-30';
 export const DATE_ES = '30 de octubre de 2026';
 export const NAME = 'ComparaPaneles';
+// AdSense: queda apagado hasta que exista ADSENSE_CLIENT (ca-pub-XXXXXXXXXXXXXXXX), el ID real que da Google al aprobar la cuenta.
+export const ADSENSE = /^ca-pub-\d{10,20}$/.test(process.env.ADSENSE_CLIENT || '') ? process.env.ADSENSE_CLIENT : '';
+const adSlot = (pos) => (ADSENSE ? `<aside class="ad-slot" data-pos="${pos}" aria-label="Publicidad"><span class="ad-label">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="${ADSENSE}" data-ad-format="auto" data-full-width-responsive="true"></ins></aside>` : '');
 export const assets = {}; // la rellena build.mjs con los nombres con hash
 
 const NAV = [
@@ -39,6 +42,9 @@ export function page({ url, title, desc, h1, body = '', after = '', kind = 'plai
       publisher: { '@type': 'Organization', name: NAME, url: SITE + '/' },
     });
   }
+  if (url === '/calculadora-ahorro-placas-solares/') {
+    ld.push({ '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Calculadora de ahorro con placas solares', url: canonical, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', browserRequirements: 'Requiere JavaScript', inLanguage: 'es-ES', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, publisher: { '@type': 'Organization', name: NAME, url: SITE + '/' } });
+  }
   const hasCrumbs = kind === 'article';
   if (hasCrumbs) {
     ld.push({
@@ -57,7 +63,7 @@ export function page({ url, title, desc, h1, body = '', after = '', kind = 'plai
     : '';
   const inner = kind === 'home'
     ? home
-    : `<main id="contenido"><header class="phead${wide ? ' wide' : ''}"><div class="wrap">${crumbHtml}<h1>${h1}</h1>${lede ? `<p class="lede">${lede}</p>` : ''}${kind === 'article' && !noMeta ? `<p class="meta">Publicado el ${dateEs(date)} · Revisado el ${dateEs(updated)}</p>` : ''}</div></header>${wide ? body : `<div class="pbody"><article class="prose">${body}</article>${after}</div>`}</main>`;
+    : `<main id="contenido"><header class="phead${wide ? ' wide' : ''}"><div class="wrap">${crumbHtml}<h1>${h1}</h1>${lede ? `<p class="lede">${lede}</p>` : ''}${kind === 'article' && !noMeta ? `<p class="meta">Publicado el ${dateEs(date)} · Revisado el ${dateEs(updated)}</p>` : ''}</div></header>${wide ? body : `<div class="pbody">${kind === 'article' || /subvenciones|deduccion|calculadora/.test(url) ? adSlot('top') : ''}<article class="prose">${body}</article>${after}</div>`}</main>`;
   const js = [`/assets/${assets.app}`, ...scripts.map((s) => `/assets/${assets[s]}`)];
 
   return `<!doctype html>
@@ -89,6 +95,7 @@ ${preloadImg}<link rel="stylesheet" href="/assets/${assets.css}">
 ${ld.map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join('\n')}
 <script>document.documentElement.className+=' js';window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
 <script defer src="/_vercel/insights/script.js"></script>
+${ADSENSE && !noindex ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE}" crossorigin="anonymous"></script>` : ''}
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -120,6 +127,7 @@ ${inner}
 <p class="fbot">© 2026 ${NAME}. La información es orientativa y no sustituye el asesoramiento fiscal, jurídico o técnico profesional. Última revisión de datos: ${DATE_ES}.</p>
 </div></footer>
 ${js.map((s) => `<script src="${s}" defer></script>`).join('\n')}
+${ADSENSE && !noindex ? '<script>document.querySelectorAll(".adsbygoogle").forEach(function(){(window.adsbygoogle=window.adsbygoogle||[]).push({})})</script>' : ''}
 </body>
 </html>`;
 }
