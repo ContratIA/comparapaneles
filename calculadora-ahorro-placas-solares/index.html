@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora de ahorro con placas solares (fórmulas visibles) | ComparaPaneles</title>
+<meta name="description" content="Calcula producción, ahorro anual y amortización de una instalación solar con tus datos. Todos los supuestos son editables y las fórmulas están explicadas.">
+<link rel="canonical" href="https://www.comparapaneles.com/calculadora-ahorro-placas-solares/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="theme-color" content="#f59e0b">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Calculadora de ahorro con placas solares (fórmulas visibles) | ComparaPaneles">
+<meta property="og:description" content="Calcula producción, ahorro anual y amortización de una instalación solar con tus datos. Todos los supuestos son editables y las fórmulas están explicadas.">
+<meta property="og:url" content="https://www.comparapaneles.com/calculadora-ahorro-placas-solares/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="ComparaPaneles">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/assets/style.css?v=20261030">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Calculadora de ahorro con placas solares","description":"Calcula producción, ahorro anual y amortización de una instalación solar con tus datos. Todos los supuestos son editables y las fórmulas están explicadas.","inLanguage":"es-ES","datePublished":"2026-10-30","dateModified":"2026-10-30","mainEntityOfPage":"https://www.comparapaneles.com/calculadora-ahorro-placas-solares/","author":{"@type":"Organization","name":"ComparaPaneles","url":"https://www.comparapaneles.com/"},"publisher":{"@type":"Organization","name":"ComparaPaneles","url":"https://www.comparapaneles.com/"}}</script>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top"><div class="bar">
+<a class="logo" href="/" aria-label="ComparaPaneles, inicio">Compara<b>Paneles</b></a>
+<nav class="main" aria-label="Principal"><a href="/calculadora-ahorro-placas-solares/" aria-current="page">Calculadora</a><a href="/subvenciones-placas-solares/">Subvenciones</a><a href="/deduccion-irpf-placas-solares/">IRPF</a><a href="/guias/">Guías</a><a href="/sobre-nosotros/">Sobre nosotros</a></nav>
+</div></header>
+<main id="contenido"><div class="col"><article><h1>Calculadora de ahorro con placas solares</h1><p class="meta">Actualizado el 30 de octubre de 2026 · Contenido informativo</p><p class="lead">Introduce tus datos. Los valores iniciales son <strong>ejemplos</strong>, no datos de mercado: cámbialos por los de tu factura y tu presupuesto.</p>
+<div class="calc">
+<div class="panel">
+<h2 style="font-size:1.15rem">Tus datos</h2>
+<div class="field"><label for="cons">Consumo eléctrico anual (kWh)</label><input id="cons" type="number" min="0" step="100" value="3500"><small>Lo encuentras en tu factura o en el área de cliente de tu distribuidora.</small></div>
+<div class="field"><label for="price">Precio medio del kWh que pagas (€/kWh)</label><input id="price" type="number" min="0" step="0.01" value="0.15"><small>Divide el término de energía de tu factura entre los kWh consumidos.</small></div>
+<div class="field"><label for="kwp">Potencia de la instalación (kWp)</label><input id="kwp" type="number" min="0" step="0.1" value="3"></div>
+<div class="field"><label for="yld">Producción anual por kWp instalado (kWh)</label><input id="yld" type="number" min="0" step="50" value="1500"><small>Depende de la zona, la orientación y la inclinación. Calcúlalo para tu ubicación con <a href="https://re.jrc.ec.europa.eu/pvg_tools/es/" rel="noopener">PVGIS</a> (herramienta oficial de la Comisión Europea).</small></div>
+<div class="field"><label for="share">Parte de la producción que consumes en casa: <strong id="shareV">40 %</strong></label><input id="share" type="range" min="10" max="90" step="5" value="40"><small>Es un supuesto: depende de tus horarios y de si hay batería. Un perfil con poca presencia en casa durante el día consume menos.</small></div>
+<div class="field"><label for="comp">Valor de los excedentes que viertes a la red (€/kWh)</label><input id="comp" type="number" min="0" step="0.01" value="0.06"><small>Pon 0 si tu instalación es sin excedentes o no tienes compensación. Consulta el precio con tu comercializadora.</small></div>
+<div class="field"><label for="cost">Coste total de la instalación (€, IVA incluido)</label><input id="cost" type="number" min="0" step="100" value="5000"><small>Usa el importe de tu presupuesto real.</small></div>
+<div class="field"><label for="sub">Subvenciones directas recibidas (€)</label><input id="sub" type="number" min="0" step="100" value="0"><small>Se restan del importe sobre el que se calcula la deducción.</small></div>
+<div class="field"><label><input id="irpf" type="checkbox"> Cumplo los requisitos de la deducción del 40 % en el IRPF</label><small>Solo si tendrás certificados de eficiencia energética antes y después y acreditas la mejora exigida. <a href="/deduccion-irpf-placas-solares/">Ver requisitos</a>.</small></div>
+</div>
+<div class="panel" aria-live="polite">
+<h2 style="font-size:1.15rem">Resultado estimado</h2>
+<div class="res"><span>Producción anual</span><strong id="oProd">–</strong></div>
+<div class="res"><span>Autoconsumo</span><strong id="oSelf">–</strong></div>
+<div class="res"><span>Excedente vertido</span><strong id="oSur">–</strong></div>
+<div class="res"><span>Ahorro del primer año</span><strong class="big" id="oSave">–</strong></div>
+<div class="res"><span>Importe tras subvenciones</span><strong id="oNet">–</strong></div>
+<div class="res"><span>Deducción IRPF (máx. 3.000 €/año)</span><strong id="oDed">–</strong></div>
+<div class="res"><span>Amortización aproximada</span><strong id="oPay">–</strong></div>
+<div class="res"><span>Balance neto a 25 años</span><strong id="oGain">–</strong></div>
+<p class="src" style="margin-top:12px">Resultado orientativo. No incluye mantenimiento, sustitución del inversor, financiación ni cambios futuros en el precio de la electricidad.</p>
+</div>
+</div>
+<h2>Cómo se calcula</h2>
+<ol>
+<li><strong>Producción anual</strong> = potencia (kWp) × producción por kWp.</li>
+<li><strong>Autoconsumo</strong> = producción × porcentaje que consumes en casa, sin superar tu consumo anual.</li>
+<li><strong>Excedente</strong> = producción − autoconsumo.</li>
+<li><strong>Ahorro del primer año</strong> = autoconsumo × precio del kWh + excedente × valor de los excedentes.</li>
+<li><strong>Deducción IRPF</strong> (si marcas la casilla) = 40 % × el menor entre (coste − subvenciones) y 7.500 €.</li>
+<li><strong>Amortización</strong>: años hasta que el ahorro acumulado cubre (coste − subvenciones − deducción). Se supone una pérdida de rendimiento de los paneles del 0,5 % anual; es un supuesto habitual, comprueba la garantía del fabricante.</li>
+</ol>
+<div class="box"><p>El precio de la electricidad, tus hábitos y el estado del tejado cambian el resultado. Úsala para comparar escenarios, no como promesa de ahorro. Antes de contratar, <a href="/guias/como-comparar-presupuestos-placas-solares/">compara varios presupuestos</a>.</p></div>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var n=function(i){var v=parseFloat($(i).value);return isFinite(v)&&v>0?v:0};
+var f=function(x){return Math.round(x).toLocaleString('es-ES')};
+var f1=function(x){return x.toLocaleString('es-ES',{maximumFractionDigits:1})};
+function run(){
+  var cons=n('cons'),price=n('price'),kwp=n('kwp'),yld=n('yld'),share=n('share')/100,comp=n('comp'),cost=n('cost'),sub=n('sub');
+  var irpf=$('irpf').checked,deg=0.005;
+  $('shareV').textContent=Math.round(share*100)+' %';
+  var prod=kwp*yld;
+  var selfc=Math.min(prod*share,cons);
+  var surplus=Math.max(prod-selfc,0);
+  var save1=selfc*price+surplus*comp;
+  var net=Math.max(cost-sub,0);
+  var ded=irpf?0.4*Math.min(net,7500):0;
+  var invest=Math.max(net-ded,0);
+  var acc=0,pay=null,t;
+  for(t=0;t<40;t++){acc+=save1*Math.pow(1-deg,t);if(pay===null&&acc>=invest&&save1>0){pay=t+1;}}
+  var acc25=0;for(t=0;t<25;t++){acc25+=save1*Math.pow(1-deg,t);}
+  $('oProd').textContent=f(prod)+' kWh';
+  $('oSelf').textContent=f(selfc)+' kWh'+(cons>0?' ('+Math.round(selfc/cons*100)+' % de tu consumo)':'');
+  $('oSur').textContent=f(surplus)+' kWh';
+  $('oSave').textContent=f(save1)+' €';
+  $('oNet').textContent=f(net)+' €';
+  $('oDed').textContent=irpf?f(ded)+' €':'No incluida';
+  $('oPay').textContent=pay===null?'Más de 40 años':'Unos '+pay+' años';
+  $('oGain').textContent=f(acc25-invest)+' €';
+  $('oGain').style.color=(acc25-invest)<0?'#b91c1c':'';
+}
+['cons','price','kwp','yld','share','comp','cost','sub','irpf'].forEach(function(i){$(i).addEventListener('input',run);$(i).addEventListener('change',run);});
+run();
+})();
+</script></article></div></main>
+<footer class="foot"><div class="wrap">
+<div class="fgrid">
+<div><h4>ComparaPaneles</h4><p>Sitio informativo independiente sobre autoconsumo solar en España. No vendemos ni instalamos placas solares y no recomendamos instaladores concretos.</p></div>
+<div><h4>Contenido</h4><ul>
+<li><a href="/calculadora-ahorro-placas-solares/">Calculadora de ahorro</a></li>
+<li><a href="/subvenciones-placas-solares/">Subvenciones y ayudas</a></li>
+<li><a href="/deduccion-irpf-placas-solares/">Deducción en el IRPF</a></li>
+<li><a href="/guias/">Todas las guías</a></li></ul></div>
+<div><h4>Legal</h4><ul>
+<li><a href="/aviso-legal/">Aviso legal</a></li>
+<li><a href="/politica-de-privacidad/">Política de privacidad</a></li>
+<li><a href="/politica-de-cookies/">Política de cookies</a></li>
+<li><a href="/contacto/">Contacto</a></li>
+<li><a href="/sobre-nosotros/">Sobre nosotros</a></li></ul></div>
+</div>
+<p class="fine">© 2026 ComparaPaneles. La información es orientativa y no sustituye el asesoramiento fiscal, jurídico o técnico profesional. Última revisión de datos: 30 de octubre de 2026.</p>
+</div></footer>
+</body>
+</html>
