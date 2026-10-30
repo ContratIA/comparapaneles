@@ -13,7 +13,7 @@ const NAV = [
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
-export function page({ url, title, desc, h1, body, kind = 'plain', crumbs = [], faq = [], noindex = false }) {
+export function page({ url, title, desc, h1, body, kind = 'plain', crumbs = [], faq = [], noindex = false, wide = false, lede = '' }) {
   const canonical = SITE + url;
   const ld = [];
   if (kind === 'home') {
@@ -42,9 +42,10 @@ export function page({ url, title, desc, h1, body, kind = 'plain', crumbs = [], 
   const crumbHtml = crumbs.length
     ? `<nav class="crumbs" aria-label="Migas de pan"><a href="/">Inicio</a> › ${crumbs.map(([n, u]) => `<a href="${u}">${esc(n)}</a> › `).join('')}<span>${esc(h1)}</span></nav>`
     : '';
+  const colCls = wide ? 'wrap' : 'col';
   const inner = kind === 'home'
     ? body
-    : `<main id="contenido"><div class="col">${crumbHtml}<article><h1>${h1}</h1>${kind === 'article' ? `<p class="meta">Actualizado el ${DATE_ES} · Contenido informativo</p>` : ''}${body}</article></div></main>`;
+    : `<main id="contenido"><header class="ahead"><div class="${colCls}">${crumbHtml}<h1>${h1}</h1>${lede ? `<p class="lede">${lede}</p>` : ''}${kind === 'article' ? `<p class="meta">Actualizado el ${DATE_ES} · Contenido informativo</p>` : ''}</div></header><div class="${colCls}"><article class="doc">${body}</article></div></main>`;
 
   return `<!doctype html>
 <html lang="es">
@@ -55,15 +56,21 @@ export function page({ url, title, desc, h1, body, kind = 'plain', crumbs = [], 
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${canonical}">
 <meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large'}">
-<meta name="theme-color" content="#f59e0b">
+<meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="${kind === 'article' ? 'article' : 'website'}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${canonical}">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="${NAME}">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/assets/style.css?v=20261030">
+<meta property="og:image" content="${SITE}/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${SITE}/assets/og.png">
+<link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/style.css?v=20261030b">
 ${ld.map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join('\n')}
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
 <script defer src="/_vercel/insights/script.js"></script>
@@ -71,7 +78,7 @@ ${ld.map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
 <header class="top"><div class="bar">
-<a class="logo" href="/" aria-label="${NAME}, inicio">Compara<b>Paneles</b></a>
+<a class="logo" href="/" aria-label="${NAME}, inicio"><i></i>${NAME}</a>
 <nav class="main" aria-label="Principal">${NAV.map(([u, n]) => `<a href="${u}"${u === url ? ' aria-current="page"' : ''}>${n}</a>`).join('')}</nav>
 </div></header>
 ${inner}
@@ -100,12 +107,13 @@ export const CALC_JS = `
 (function(){
 var $=function(i){return document.getElementById(i)};
 var n=function(i){var v=parseFloat($(i).value);return isFinite(v)&&v>0?v:0};
-var f=function(x){return Math.round(x).toLocaleString('es-ES')};
-var f1=function(x){return x.toLocaleString('es-ES',{maximumFractionDigits:1})};
+var f=function(x){return Math.round(x).toLocaleString('es-ES',{useGrouping:'always'})};
+var f1=function(x){return x.toLocaleString('es-ES',{maximumFractionDigits:1,useGrouping:'always'})};
 function run(){
   var cons=n('cons'),price=n('price'),kwp=n('kwp'),yld=n('yld'),share=n('share')/100,comp=n('comp'),cost=n('cost'),sub=n('sub');
   var irpf=$('irpf').checked,deg=0.005;
   $('shareV').textContent=Math.round(share*100)+' %';
+  $('share').style.setProperty('--p',((share*100-10)/80*100)+'%');
   var prod=kwp*yld;
   var selfc=Math.min(prod*share,cons);
   var surplus=Math.max(prod-selfc,0);

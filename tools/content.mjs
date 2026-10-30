@@ -1,4 +1,5 @@
 import { CALC_JS, DATE_ES } from './layout.mjs';
+import { HERO_HTML, HERO_JS } from './hero.mjs';
 
 const AEAT_RESUMEN = 'https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deducciones-obras-mejora-eficiencia-energetica-viviendas/cuadro-resumen-deducciones-obras-eficiencia-viviendas.html';
 const AEAT_RDL = 'https://www3.agenciatributaria.gob.es/static_files/Sede/Actualidad/Novedades/2025/BOLINFORM_RDL_16_2025.pdf';
@@ -23,42 +24,66 @@ const guideCard = (g) => `<a class="card" href="/guias/${g.slug}/"><span class="
 export const pages = [];
 
 /* ---------- HOME ---------- */
+const tile = (href, cls, h, p, go = 'Leer') => `<a class="tile ${cls}" href="${href}"><div><h3>${h}</h3><p>${p}</p></div><span class="go">${go}</span></a>`;
 pages.push({
   url: '/', kind: 'home',
-  title: 'Placas solares en España: guías, calculadora y ayudas fiscales | ComparaPaneles',
-  desc: 'Información independiente sobre autoconsumo solar en España: calculadora con fórmulas visibles, ayudas fiscales revisadas en la Agencia Tributaria y guías para comparar presupuestos.',
+  title: 'Placas solares en España: calculadora, ayudas y guías | ComparaPaneles',
+  desc: 'Calcula cuánto ahorrarías con placas solares, revisa las ayudas fiscales según la Agencia Tributaria y compara presupuestos con criterio. Independiente y con las cuentas a la vista.',
   h1: 'Placas solares',
   body: `<main id="contenido">
 <section class="hero"><div class="wrap">
-<h1>Placas solares en España: información clara antes de decidir</h1>
-<p>Una calculadora con las fórmulas a la vista, las ayudas fiscales revisadas en fuentes oficiales y guías prácticas para entender qué estás comprando. Sin promesas de ahorro milagrosas.</p>
-<div class="btns"><a class="btn" href="/calculadora-ahorro-placas-solares/">Calcular mi ahorro</a><a class="btn ghost" href="/subvenciones-placas-solares/">Ver ayudas y subvenciones</a></div>
+<h1>Tu tejado produce energía. Descubre cuánta.</h1>
+<p class="lede">Una calculadora con las cuentas a la vista, las ayudas revisadas en la Agencia Tributaria y guías para comparar presupuestos sin que te líen.</p>
+<div class="btns"><a class="btn sun" href="/calculadora-ahorro-placas-solares/">Calcular mi ahorro</a><a class="btn line" href="/subvenciones-placas-solares/">Ver ayudas</a></div>
+${HERO_HTML}
 </div></section>
 
-<section class="blk"><div class="wrap">
-<h2>Empieza por aquí</h2>
-<p class="lead">Lo que más se consulta antes de contratar una instalación de autoconsumo.</p>
-<div class="grid">
-<a class="card" href="/calculadora-ahorro-placas-solares/"><span class="tag">Herramienta</span><h3>Calculadora de ahorro</h3><p>Estima producción, ahorro y amortización con tus propios datos. Los supuestos son editables.</p></a>
-<a class="card" href="/deduccion-irpf-placas-solares/"><span class="tag">Fiscalidad</span><h3>Deducción en el IRPF</h3><p>Porcentajes, bases máximas, requisitos y plazos según la Agencia Tributaria.</p></a>
-<a class="card" href="/subvenciones-placas-solares/"><span class="tag">Ayudas</span><h3>Subvenciones y bonificaciones</h3><p>Qué tipos de ayuda existen y cómo comprobar si hay una convocatoria abierta en tu zona.</p></a>
-${guides.slice(0, 3).map(guideCard).join('')}
-</div></div></section>
-
-<section class="blk alt"><div class="wrap">
-<h2>Una cifra que conviene tener clara</h2>
-<div class="box ok"><p><strong>La deducción estatal del 40 % tiene una base máxima de 7.500 € al año, es decir, hasta 3.000 € de deducción anual.</strong> Exige certificados de eficiencia energética antes y después de las obras y acreditar una mejora mínima. Muchas webs hablan de «hasta 6.000 €» sin explicar estas condiciones. <a href="/deduccion-irpf-placas-solares/">Lee el detalle con las fuentes</a>.</p></div>
-</div></section>
-
-<section class="blk"><div class="wrap">
-<h2>Cómo trabajamos</h2>
-<div class="grid">
-<div class="card"><h3>Fuentes oficiales</h3><p>Las cifras fiscales se contrastan con la Agencia Tributaria y se enlazan al final de cada página.</p></div>
-<div class="card"><h3>Independientes</h3><p>No vendemos ni instalamos placas solares ni intermediamos presupuestos. Explicamos cómo decidir tú.</p></div>
-<div class="card"><h3>Con fecha de revisión</h3><p>Plazos y ayudas cambian. Cada página indica cuándo se revisó por última vez: ${DATE_ES}.</p></div>
+<section class="band dark center"><div class="wrap">
+<h2 class="xl">La deducción en la renta, sin letra pequeña.</h2>
+<p class="bignum" aria-label="3.000 euros al año">3.000<small> €/año</small></p>
+<p class="lede">Es el máximo de la deducción estatal del 40 % por obras de eficiencia energética, con una base de 7.500 €. No es automática: exige certificados antes y después de la obra y una mejora mínima acreditada.</p>
+<div class="facts">
+<div><b>40 %</b><span>porcentaje de la deducción por reducir el consumo de energía primaria no renovable</span></div>
+<div><b>7.500 €</b><span>base máxima anual sobre la que se aplica</span></div>
+<div><b>31 dic 2026</b><span>fin del plazo de obras según el boletín de la Agencia Tributaria sobre el RDL 16/2025</span></div>
 </div>
-<p style="margin-top:22px"><a href="/sobre-nosotros/">Conoce nuestros criterios editoriales</a> · <a href="/guias/">Ver todas las guías</a></p>
+<div class="btns"><a class="btn line" href="/deduccion-irpf-placas-solares/">Ver requisitos y fuentes</a></div>
 </div></section>
+
+<section class="band"><div class="wrap">
+<h2 class="xl">Todo lo que miras antes de firmar.</h2>
+<p class="lede">Herramientas y guías pensadas para decidir con calma, no para venderte nada.</p>
+<div class="bento">
+${tile('/calculadora-ahorro-placas-solares/', 'w4 feature', 'Cuánto ahorrarías de verdad', 'Producción, autoconsumo, excedentes y amortización a 25 años con tus datos. Cada supuesto se puede cambiar.', 'Abrir la calculadora')}
+${tile('/deduccion-irpf-placas-solares/', 'w2 warm', 'Deducción en el IRPF', 'Porcentajes, bases y plazos oficiales.', 'Ver detalle')}
+${tile('/subvenciones-placas-solares/', '', 'Subvenciones y bonificaciones', 'Qué tipos de ayuda existen y cómo comprobar si hay una abierta en tu zona.')}
+${tile('/guias/como-comparar-presupuestos-placas-solares/', '', 'Cómo comparar presupuestos', 'Qué debe aparecer por escrito y qué señales de alarma evitar.')}
+${tile('/guias/cuantos-paneles-solares-necesito/', '', 'Cuántos paneles necesitas', 'Del consumo de tu factura al número de paneles, con un ejemplo con cuentas.')}
+${tile('/guias/autoconsumo-con-excedentes-o-sin-excedentes/', '', 'Con excedentes o sin ellos', 'Cómo funciona la compensación simplificada y cuándo te conviene.')}
+${tile('/guias/tramites-instalar-placas-solares/', '', 'Trámites de instalación', 'Permisos, certificados y contratos, en el orden en que llegan.')}
+${tile('/guias/mantenimiento-y-vida-util-placas-solares/', '', 'Mantenimiento y vida útil', 'Qué revisar, cuánto duran los equipos y qué garantías exigir.')}
+</div>
+</div></section>
+
+<section class="band tint"><div class="wrap">
+<h2 class="xl">Tres pasos para decidir sin prisa.</h2>
+<ol class="steps">
+<li><h3>Calcula con tus datos</h3><p>Usa tu consumo real y el precio de tu factura. Si el resultado solo sale con supuestos optimistas, lo verás.</p></li>
+<li><h3>Comprueba las ayudas</h3><p>Deducción en la renta, bonificaciones municipales y convocatorias abiertas. Cada una se pide en un sitio distinto.</p></li>
+<li><h3>Compara tres presupuestos</h3><p>Misma potencia, mismos equipos, mismas garantías. Entonces sí, compara el precio.</p></li>
+</ol>
+</div></section>
+
+<section class="band"><div class="wrap">
+<h2 class="xl">Cómo trabajamos.</h2>
+<div class="pillars">
+<div><h3>Fuentes oficiales</h3><p>Las cifras fiscales se contrastan con la Agencia Tributaria y se enlazan al final de cada página.</p></div>
+<div><h3>Independientes</h3><p>No vendemos ni instalamos placas, no intermediamos presupuestos y no recomendamos instaladores.</p></div>
+<div><h3>Con fecha de revisión</h3><p>Plazos y ayudas cambian. Cada página indica cuándo se revisó por última vez: ${DATE_ES}.</p></div>
+</div>
+<p style="margin-top:36px"><a href="/sobre-nosotros/">Conoce nuestros criterios editoriales</a></p>
+</div></section>
+<script>${HERO_JS}</script>
 </main>`,
 });
 
@@ -68,11 +93,11 @@ pages.push({
   title: 'Calculadora de ahorro con placas solares (fórmulas visibles) | ComparaPaneles',
   desc: 'Calcula producción, ahorro anual y amortización de una instalación solar con tus datos. Todos los supuestos son editables y las fórmulas están explicadas.',
   h1: 'Calculadora de ahorro con placas solares',
-  crumbs: [],
+  crumbs: [], wide: true,
   body: `<p class="lead">Introduce tus datos. Los valores iniciales son <strong>ejemplos</strong>, no datos de mercado: cámbialos por los de tu factura y tu presupuesto.</p>
 <div class="calc">
 <div class="panel">
-<h2 style="font-size:1.15rem">Tus datos</h2>
+<h2>Tus datos</h2>
 <div class="field"><label for="cons">Consumo eléctrico anual (kWh)</label><input id="cons" type="number" min="0" step="100" value="3500"><small>Lo encuentras en tu factura o en el área de cliente de tu distribuidora.</small></div>
 <div class="field"><label for="price">Precio medio del kWh que pagas (€/kWh)</label><input id="price" type="number" min="0" step="0.01" value="0.15"><small>Divide el término de energía de tu factura entre los kWh consumidos.</small></div>
 <div class="field"><label for="kwp">Potencia de la instalación (kWp)</label><input id="kwp" type="number" min="0" step="0.1" value="3"></div>
@@ -81,14 +106,14 @@ pages.push({
 <div class="field"><label for="comp">Valor de los excedentes que viertes a la red (€/kWh)</label><input id="comp" type="number" min="0" step="0.01" value="0.06"><small>Pon 0 si tu instalación es sin excedentes o no tienes compensación. Consulta el precio con tu comercializadora.</small></div>
 <div class="field"><label for="cost">Coste total de la instalación (€, IVA incluido)</label><input id="cost" type="number" min="0" step="100" value="5000"><small>Usa el importe de tu presupuesto real.</small></div>
 <div class="field"><label for="sub">Subvenciones directas recibidas (€)</label><input id="sub" type="number" min="0" step="100" value="0"><small>Se restan del importe sobre el que se calcula la deducción.</small></div>
-<div class="field"><label><input id="irpf" type="checkbox"> Cumplo los requisitos de la deducción del 40 % en el IRPF</label><small>Solo si tendrás certificados de eficiencia energética antes y después y acreditas la mejora exigida. <a href="/deduccion-irpf-placas-solares/">Ver requisitos</a>.</small></div>
+<div class="field"><label class="chk"><input id="irpf" type="checkbox"> <span>Cumplo los requisitos de la deducción del 40 % en el IRPF</span></label><small>Solo si tendrás certificados de eficiencia energética antes y después y acreditas la mejora exigida. <a href="/deduccion-irpf-placas-solares/">Ver requisitos</a>.</small></div>
 </div>
-<div class="panel" aria-live="polite">
-<h2 style="font-size:1.15rem">Resultado estimado</h2>
+<div class="panel result" aria-live="polite">
+<h2>Resultado estimado</h2>
 <div class="res"><span>Producción anual</span><strong id="oProd">–</strong></div>
 <div class="res"><span>Autoconsumo</span><strong id="oSelf">–</strong></div>
 <div class="res"><span>Excedente vertido</span><strong id="oSur">–</strong></div>
-<div class="res"><span>Ahorro del primer año</span><strong class="big" id="oSave">–</strong></div>
+<div class="res hero-res"><span>Ahorro del primer año</span><strong class="big" id="oSave">–</strong></div>
 <div class="res"><span>Importe tras subvenciones</span><strong id="oNet">–</strong></div>
 <div class="res"><span>Deducción IRPF (máx. 3.000 €/año)</span><strong id="oDed">–</strong></div>
 <div class="res"><span>Amortización aproximada</span><strong id="oPay">–</strong></div>
