@@ -26,14 +26,15 @@
 
   function run() {
     var cons = n('cons'), price = n('price'), kwp = n('kwp'), yld = n('yld'), share = n('share') / 100,
-        comp = n('comp'), cost = n('cost'), sub = n('sub'), irpf = $('irpf').checked;
+        comp = n('comp'), cost = n('cost'), sub = n('sub'), pct = parseInt($('irpf').value, 10) / 100;
     $('shareV').textContent = Math.round(share * 100) + ' %';
     var prod = kwp * yld;
     var selfc = Math.min(prod * share, cons);
     var surplus = Math.max(prod - selfc, 0);
     var save1 = selfc * price + surplus * comp;
     var net = Math.max(cost - sub, 0);
-    var ded = irpf ? 0.4 * Math.min(net, 7500) : 0;
+    var base = pct === 0.4 ? 7500 : 5000;
+    var ded = pct * Math.min(net, base);
     var invest = Math.max(net - ded, 0);
 
     var acc = 0, pay = null, t, prev;
@@ -51,7 +52,7 @@
     $('oSur').textContent = f(surplus) + ' kWh';
     $('oSave').textContent = f(save1) + ' €';
     $('oNet').textContent = f(net) + ' €';
-    $('oDed').textContent = irpf ? f(ded) + ' €' : 'No incluida';
+    $('oDed').textContent = pct ? f(ded) + ' €' : 'No incluida';
     $('oPay').textContent = pay === null ? 'Más de 40 años' : pay === 0 ? 'Inmediata' : 'Unos ' + f1(pay) + ' años';
     $('oGain').textContent = f(gain) + ' €';
     $('oGain').className = gain < 0 ? 'neg' : 'sol';

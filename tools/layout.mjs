@@ -8,9 +8,11 @@ const NAV = [
   ['/calculadora-ahorro-placas-solares/', 'Calculadora'],
   ['/subvenciones-placas-solares/', 'Ayudas'],
   ['/deduccion-irpf-placas-solares/', 'IRPF'],
-  ['/guias/', 'Guías'],
-  ['/sobre-nosotros/', 'Sobre nosotros'],
+  ['/blog/', 'Blog'],
+  ['/noticias/', 'Noticias'],
 ];
+
+export const dateEs = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 
 export const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 const plain = (s) => s.replace(/<[^>]+>/g, '');
@@ -24,14 +26,15 @@ export function img(id, alt, { sizes = '100vw', cls = '', eager = false } = {}) 
   return `<img${cls ? ` class="${cls}"` : ''} src="/assets/img/${id}-${big}.webp" srcset="${srcset}" sizes="${sizes}" width="${big}" height="${Math.round(big * h / w)}" alt="${esc(alt)}"${eager ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'}>`;
 }
 
-export function page({ url, title, desc, h1, body = '', after = '', kind = 'plain', crumbs = [], faq = [], noindex = false, wide = false, lede = '', home = '', scripts = [], preloadImg = '' }) {
+export function page({ url, title, desc, h1, body = '', after = '', kind = 'plain', crumbs = [], faq = [], noindex = false, wide = false, lede = '', home = '', scripts = [], preloadImg = '', date = DATE, updated = DATE, words = 0, image = '', noMeta = false }) {
   const canonical = SITE + url;
   const ld = [];
   if (kind === 'home') ld.push({ '@context': 'https://schema.org', '@type': 'WebSite', name: NAME, url: SITE + '/', inLanguage: 'es-ES' });
-  if (kind === 'article') {
+  if (kind === 'article' && !noMeta) {
     ld.push({
       '@context': 'https://schema.org', '@type': 'Article', headline: plain(h1), description: desc, inLanguage: 'es-ES',
-      datePublished: DATE, dateModified: DATE, mainEntityOfPage: canonical,
+      ...(image ? { image: [SITE + image] } : {}), ...(words ? { wordCount: words } : {}),
+      datePublished: date, dateModified: updated, mainEntityOfPage: canonical,
       author: { '@type': 'Organization', name: NAME, url: SITE + '/' },
       publisher: { '@type': 'Organization', name: NAME, url: SITE + '/' },
     });
@@ -54,14 +57,14 @@ export function page({ url, title, desc, h1, body = '', after = '', kind = 'plai
     : '';
   const inner = kind === 'home'
     ? home
-    : `<main id="contenido"><header class="phead${wide ? ' wide' : ''}"><div class="wrap">${crumbHtml}<h1>${h1}</h1>${lede ? `<p class="lede">${lede}</p>` : ''}${kind === 'article' ? `<p class="meta">Revisado el ${DATE_ES} · Contenido informativo</p>` : ''}</div></header>${wide ? body : `<div class="pbody"><article class="prose">${body}</article>${after}</div>`}</main>`;
+    : `<main id="contenido"><header class="phead${wide ? ' wide' : ''}"><div class="wrap">${crumbHtml}<h1>${h1}</h1>${lede ? `<p class="lede">${lede}</p>` : ''}${kind === 'article' && !noMeta ? `<p class="meta">Publicado el ${dateEs(date)} · Revisado el ${dateEs(updated)}</p>` : ''}</div></header>${wide ? body : `<div class="pbody"><article class="prose">${body}</article>${after}</div>`}</main>`;
   const js = [`/assets/${assets.app}`, ...scripts.map((s) => `/assets/${assets[s]}`)];
 
   return `<!doctype html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+${kind === 'home' ? '<!-- GSC: pegar aquí la meta google-site-verification -->\n' : ''}<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${canonical}">
@@ -103,10 +106,12 @@ ${inner}
 <li><a href="/calculadora-ahorro-placas-solares/">Calculadora de ahorro</a></li>
 <li><a href="/subvenciones-placas-solares/">Subvenciones y ayudas</a></li>
 <li><a href="/deduccion-irpf-placas-solares/">Deducción en el IRPF</a></li>
-<li><a href="/guias/">Todas las guías</a></li></ul></div>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/noticias/">Noticias</a></li></ul></div>
 <div class="fc"><p class="fh">Sobre el sitio</p><ul>
 <li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
-<li><a href="/contacto/">Contacto</a></li></ul></div>
+<li><a href="/contacto/">Contacto</a></li>
+<li><a href="/creditos-fotos/">Créditos de fotos</a></li></ul></div>
 <div class="fc"><p class="fh">Legal</p><ul>
 <li><a href="/aviso-legal/">Aviso legal</a></li>
 <li><a href="/politica-de-privacidad/">Política de privacidad</a></li>

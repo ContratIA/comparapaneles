@@ -1,5 +1,6 @@
-import { img, DATE_ES } from './layout.mjs';
-import { guides, guideCard, PVGIS } from './pages.mjs';
+import { img, DATE_ES, dateEs, esc } from './layout.mjs';
+import { PVGIS } from './pages.mjs';
+import { articles, card, noticias } from './blog.mjs';
 
 const field = (id, label, extra, hint = '') =>
   `<div class="cf"><label for="${id}">${label}</label><input id="${id}" type="number" inputmode="decimal" min="0" ${extra}>${hint ? `<small>${hint}</small>` : ''}</div>`;
@@ -19,7 +20,7 @@ ${field('yld', 'Producción anual por kWp (kWh)', 'step="50" value="1500"', `Dep
 ${field('comp', 'Valor de los excedentes (€/kWh)', 'step="0.01" value="0.06"', 'Pon 0 si no vierte excedentes o no tienes compensación. Pregunta el precio a tu comercializadora.')}
 ${field('cost', 'Coste total de la instalación (€, IVA incluido)', 'step="100" value="5000"', 'Usa el importe de tu presupuesto real.')}
 ${field('sub', 'Subvenciones directas recibidas (€)', 'step="100" value="0"', 'Se restan de la base de la deducción.')}
-<div class="cf"><label class="chk" for="irpf"><input id="irpf" type="checkbox"><span>Cumplo los requisitos de la deducción del 40 % en el IRPF</span></label><small>Solo si tendrás certificados de eficiencia energética antes y después de la obra y acreditas la mejora exigida. <a href="/deduccion-irpf-placas-solares/">Ver requisitos</a>.</small></div>
+<div class="cf"><label for="irpf">Deducción del IRPF que te corresponde</label><select id="irpf"><option value="0">Ninguna</option><option value="10">10 % por instalar autoconsumo en 2026</option><option value="20">20 % por instalar autoconsumo en 2026 (vivienda en edificio residencial)</option><option value="40">40 % por eficiencia energética (con certificados)</option></select><small>El 10 % y el 20 % tienen base máxima de 5.000 € y solo valen si la instalación se hace y se paga en 2026. El 40 % tiene base máxima de 7.500 € y exige certificados de antes y después. <a href="/deduccion-irpf-placas-solares/">Ver requisitos</a>.</small></div>
 </div>
 <div class="cres" aria-live="polite">
 <h3>Resultado estimado</h3>
@@ -28,7 +29,7 @@ ${field('sub', 'Subvenciones directas recibidas (€)', 'step="100" value="0"', 
 <div class="rr"><span>Autoconsumo</span><strong id="oSelf">–</strong></div>
 <div class="rr"><span>Excedente vertido</span><strong id="oSur">–</strong></div>
 <div class="rr"><span>Importe tras subvenciones</span><strong id="oNet">–</strong></div>
-<div class="rr"><span>Deducción IRPF (máx. 3.000 €)</span><strong id="oDed">–</strong></div>
+<div class="rr"><span>Deducción IRPF</span><strong id="oDed">–</strong></div>
 <div class="rr"><span>Amortización aproximada</span><strong class="sol" id="oPay">–</strong></div>
 <div class="rr"><span>Balance neto a 25 años</span><strong class="sol" id="oGain">–</strong></div>
 <div class="gfw"><div class="gft">Balance acumulado a 25 años</div><div class="gf" id="oChart"></div></div>
@@ -46,17 +47,17 @@ export const calcExplain = `<div class="pbody"><div class="prose">
 <li><strong>Autoconsumo</strong> = producción × porcentaje que consumes en casa, sin superar tu consumo anual.</li>
 <li><strong>Excedente</strong> = producción − autoconsumo.</li>
 <li><strong>Ahorro del primer año</strong> = autoconsumo × precio del kWh + excedente × valor de los excedentes.</li>
-<li><strong>Deducción IRPF</strong> (solo si marcas la casilla) = 40 % × el menor entre (coste − subvenciones) y 7.500 €.</li>
+<li><strong>Deducción IRPF</strong> (solo si eliges una) = porcentaje × el menor entre (coste − subvenciones) y la base máxima: 5.000 € para el 10 % y el 20 %, 7.500 € para el 40 %.</li>
 <li><strong>Amortización</strong>: años hasta que el ahorro acumulado cubre (coste − subvenciones − deducción). Cada año se produce un 0,5 % menos que el anterior. Es un supuesto habitual: comprueba la garantía de rendimiento del fabricante.</li>
 <li><strong>Balance a 25 años</strong> = ahorro acumulado en 25 años − inversión neta.</li>
 </ol>
-<div class="box"><p>La calculadora resta la deducción del IRPF de golpe al principio. En la práctica llega con la declaración de la renta y solo cuenta la base de un ejercicio (máximo 7.500 €). El precio de la electricidad, tus hábitos y el estado del tejado cambian el resultado: úsala para comparar escenarios, no como promesa de ahorro. Antes de contratar, <a href="/guias/como-comparar-presupuestos-placas-solares/">compara varios presupuestos</a>.</p></div>
+<div class="box"><p>La calculadora resta la deducción del IRPF de golpe al principio. En la práctica llega con la declaración de la renta y solo cuenta la base de un ejercicio. El precio de la electricidad, tus hábitos y el estado del tejado cambian el resultado: úsala para comparar escenarios, no como promesa de ahorro. Antes de contratar, <a href="/blog/errores-al-comparar-presupuestos-placas-solares/">compara varios presupuestos</a>.</p></div>
 </div></div>`;
 
 const faq = [
-  ['¿Cuánto puedo deducir en el IRPF por instalar placas solares?', 'Si la instalación te permite aplicar la deducción del 40 % por reducir el consumo de energía primaria no renovable, la base máxima anual es de 7.500 €, por lo que la deducción máxima es de 3.000 €.'],
-  ['¿Las placas solares dan derecho automático a deducción?', 'No. Hay que acreditar con certificados de eficiencia energética de antes y después de la obra la mejora mínima que exige la normativa.'],
-  ['¿Hasta cuándo se pueden hacer las obras para aplicar la deducción?', 'Según la Agencia Tributaria, el Real Decreto-ley 16/2025 amplía hasta el 31 de diciembre de 2026 las obras de las deducciones del 20 % y del 40 %. Conviene confirmar el plazo vigente antes de contratar.'],
+  ['¿Cuánto puedo deducir en el IRPF por instalar placas solares en 2026?', 'La deducción nueva por instalar autoconsumo renovable es del 10 % de lo pagado, o del 20 % si eres propietario de una vivienda en un edificio de uso predominantemente residencial. La base máxima es de 5.000 euros, así que el tope es de 500 o 1.000 euros.'],
+  ['¿Hasta cuándo hay que terminar la instalación para esa deducción?', 'La instalación debe realizarse y terminarse en 2026, y las cantidades tienen que pagarse entre el 1 de enero y el 31 de diciembre de 2026. No se admiten pagos en efectivo.'],
+  ['¿Las placas solares dan derecho automático a la deducción por eficiencia energética?', 'No. Esa deducción exige acreditar con certificados de eficiencia energética de antes y después de la obra la mejora mínima que fija la normativa. Además, es incompatible con la nueva para la misma instalación.'],
   ['¿Cuántos presupuestos conviene pedir?', 'Tres suele ser un buen punto de partida. Permiten ver diferencias de potencia, materiales y condiciones, y descartar ofertas fuera de lo normal.'],
   ['¿Esta web vende placas o recomienda instaladores?', 'No. ComparaPaneles es un sitio informativo: no vendemos ni instalamos placas, no intermediamos presupuestos ni recomendamos empresas.'],
 ];
@@ -80,8 +81,8 @@ export const home = () => `<main id="contenido">
 <p class="form-n">Ejemplo con 1.500 kWh por kWp, 40 % de autoconsumo y excedentes a 0,06 €/kWh. Los datos no salen de tu navegador.</p>
 </div></div></div></section>
 
-<div class="strip">${img(9875449, 'Operario con guante amarillo sujetando un panel solar fotovoltaico', { sizes: '100vw' })}<div class="strip-ov"></div>
-<div class="strip-in"><div class="wrap"><div><div class="strip-k">Dato oficial</div><p class="strip-t">La deducción del 40 % del IRPF por eficiencia energética tiene un máximo de 3.000 € al año.</p></div><div class="strip-b"><b>40 %</b><span>base máxima 7.500 €</span></div></div></div></div>
+<div class="strip">${img(9875449, 'Operario con guante amarillo sujetando un panel solar fotovoltaico', { sizes: '100vw' })}<div class="strip-ov"></div><span class="cap-on">Imagen ilustrativa</span>
+<div class="strip-in"><div class="wrap"><div><div class="strip-k">Dato oficial</div><p class="strip-t">Instalar autoconsumo en 2026 permite deducir en el IRPF el 10 % o el 20 % de lo pagado.</p></div><div class="strip-b"><b>10 % o 20 %</b><span>base máxima 5.000 €</span></div></div></div></div>
 
 <div class="tbar"><div class="wrap"><ul>
 <li><span><strong>Gratis</strong> y sin registro</span></li>
@@ -91,21 +92,21 @@ export const home = () => `<main id="contenido">
 </ul></div></div>
 
 <div class="stats-b"><div class="wrap"><div class="sg">
-<div class="si rev"><div class="sn">40 %</div><p class="sl">deducción en el IRPF por reducir el consumo de energía primaria no renovable</p></div>
-<div class="si rev"><div class="sn">7.500 €</div><p class="sl">base máxima anual sobre la que se aplica</p></div>
-<div class="si rev"><div class="sn">3.000 €</div><p class="sl">deducción máxima, si cumples los requisitos</p></div>
-<div class="si rev"><div class="sn">31 dic 2026</div><p class="sl">fin del plazo de obras según la Agencia Tributaria</p></div>
+<div class="si rev"><div class="sn">10 o 20 %</div><p class="sl">deducción en el IRPF por instalar autoconsumo en 2026</p></div>
+<div class="si rev"><div class="sn">5.000 €</div><p class="sl">base máxima anual: tope de 500 o 1.000 € de deducción</p></div>
+<div class="si rev"><div class="sn">31 dic 2026</div><p class="sl">fecha límite: instalación terminada y pagada</p></div>
+<div class="si rev"><div class="sn">1.170 a 1.699</div><p class="sl">kWh al año que produce 1 kWp, de Bilbao a Málaga según PVGIS</p></div>
 </div></div></div>
 
 ${calcSection('<h2>Calcula tu <span>ahorro</span> con tus propios datos</h2>')}
 
 <section class="sub-s" id="ayudas"><div class="wrap">
 <div class="shg rev">
-<div class="shi">${img(2800832, 'Vista aérea de filas de paneles solares sobre césped', { sizes: '(max-width:960px) 100vw, 520px' })}</div>
+<div class="shi">${img(2800832, 'Vista aérea de filas de paneles solares sobre césped', { sizes: '(max-width:960px) 100vw, 520px' })}<span class="cap-on">Imagen ilustrativa</span></div>
 <div>
 <span class="stag am">Ayudas</span>
 <h2>Qué ayudas existen y cuáles puedes comprobar hoy</h2>
-<div class="stot"><div class="stot-e">3.000 €</div><div class="stot-t">deducción máxima al año<br>en el IRPF (40 % de 7.500 €)</div></div>
+<div class="stot"><div class="stot-e">500 o 1.000 €</div><div class="stot-t">deducción máxima en el IRPF<br>por instalar autoconsumo en 2026</div></div>
 <p>No hay una cifra global de ayudas que podamos prometerte. Existen tres capas distintas y cada una se pide en un sitio: la deducción en la renta, las bonificaciones de tu ayuntamiento y las convocatorias de tu comunidad autónoma.</p>
 <p><a href="/subvenciones-placas-solares/">Leer la guía de subvenciones</a></p>
 </div></div>
@@ -117,11 +118,11 @@ ${calcSection('<h2>Calcula tu <span>ahorro</span> con tus propios datos</h2>')}
 <button class="stab" role="tab" id="tab-auto" aria-controls="p-auto" aria-selected="false" tabindex="-1" type="button">Ayudas autonómicas</button>
 </div>
 <div class="sp" role="tabpanel" id="p-irpf" aria-labelledby="tab-irpf">
-<p>Se aplica en la declaración de la renta, no se cobra por adelantado y exige certificados de eficiencia energética de antes y después de la obra. Una instalación solar puede encajar en la del 40 %, pero no es automático.</p>
-<div class="tablewrap"><table><thead><tr><th>Deducción</th><th>Porcentaje</th><th>Base máxima</th><th>Mejora que hay que acreditar</th></tr></thead><tbody>
-<tr><td>Demanda de calefacción y refrigeración</td><td class="num">20 %</td><td class="num">5.000 € al año</td><td>Reducir al menos un 7 % la suma de los indicadores.</td></tr>
-<tr><td>Consumo de energía primaria no renovable</td><td class="num">40 %</td><td class="num">7.500 € al año</td><td>Reducir al menos un 30 % ese indicador o alcanzar calificación A o B.</td></tr>
-<tr><td>Rehabilitación energética de edificios</td><td class="num">60 %</td><td class="num">5.000 € al año (15.000 € acumulados)</td><td>La misma que la anterior, sobre el certificado del edificio.</td></tr>
+<p>Se aplica en la declaración de la renta y no se cobra por adelantado. Para una instalación hecha, terminada y pagada en 2026 hay una deducción específica. La de eficiencia energética es otra vía, con certificados, y las dos son incompatibles para la misma instalación.</p>
+<div class="tablewrap"><table><thead><tr><th>Deducción</th><th>Porcentaje</th><th>Base máxima</th><th>Qué exige</th></tr></thead><tbody>
+<tr><td>Instalar autoconsumo en un inmueble tuyo (2026)</td><td class="num">10 %</td><td class="num">5.000 €</td><td>Instalación y pago en 2026, pago bancario y Certificado de Instalaciones Eléctricas.</td></tr>
+<tr><td>Instalar autoconsumo en una vivienda de un edificio residencial (2026)</td><td class="num">20 %</td><td class="num">5.000 €</td><td>Lo mismo.</td></tr>
+<tr><td>Eficiencia energética: consumo de energía primaria no renovable</td><td class="num">40 %</td><td class="num">7.500 €</td><td>Certificados de antes y después que acrediten una mejora del 30 % o calificación A o B.</td></tr>
 </tbody></table></div>
 <p><a href="/deduccion-irpf-placas-solares/">Requisitos, plazos y fuentes</a></p>
 </div>
@@ -145,7 +146,7 @@ ${calcSection('<h2>Calcula tu <span>ahorro</span> con tus propios datos</h2>')}
 </div></section>
 
 <section class="how-s"><div class="wrap"><div class="how rev">
-<div class="how-img">${img(259588, 'Vivienda unifamiliar de ladrillo con jardín y camino de entrada', { sizes: '(max-width:960px) 100vw, 460px' })}</div>
+<div class="how-img">${img(259588, 'Vivienda unifamiliar de ladrillo con jardín y camino de entrada', { sizes: '(max-width:960px) 100vw, 460px' })}<span class="cap-on">Imagen ilustrativa</span></div>
 <div>
 <span class="stag am">Cómo usar esta web</span>
 <h2>Cuatro pasos para decidir sin prisa</h2>
@@ -153,12 +154,12 @@ ${calcSection('<h2>Calcula tu <span>ahorro</span> con tus propios datos</h2>')}
 <li><h3>Calcula con tus datos</h3><p>Usa tu consumo real y el precio de tu factura. Si el resultado solo sale con supuestos optimistas, lo verás.</p></li>
 <li><h3>Comprueba las ayudas</h3><p>Deducción en la renta, bonificaciones municipales y convocatorias abiertas. Cada una se pide en un sitio distinto.</p></li>
 <li><h3>Pide tres presupuestos comparables</h3><p>Misma potencia, mismos equipos, mismas garantías. Entonces sí, compara el precio.</p></li>
-<li><h3>Revisa trámites y garantías</h3><p>Permisos, certificados y quién responde si algo falla. <a href="/guias/tramites-instalar-placas-solares/">Ver los trámites</a>.</p></li>
+<li><h3>Revisa trámites y garantías</h3><p>Permisos, certificados y quién responde si algo falla. <a href="/blog/tramites-instalar-placas-solares/">Ver los trámites</a>.</p></li>
 </ol>
 </div></div></div></section>
 
 <section class="bud-s" id="presupuestos"><div class="wrap"><div class="bud rev">
-<div class="bud-img">${img(9875441, 'Operario con guantes cargando un panel solar sobre un tejado de teja', { sizes: '(max-width:960px) 100vw, 400px' })}</div>
+<div class="bud-img">${img(9875441, 'Operario con guantes cargando un panel solar sobre un tejado de teja', { sizes: '(max-width:960px) 100vw, 400px' })}<span class="cap-on">Imagen ilustrativa</span></div>
 <div>
 <span class="stag am">Antes de firmar</span>
 <h2>Qué debe figurar por escrito en un presupuesto</h2>
@@ -172,16 +173,24 @@ ${calcSection('<h2>Calcula tu <span>ahorro</span> con tus propios datos</h2>')}
 <tr><td>Visita técnica</td><td>Estudio del tejado antes de dar un precio cerrado.</td></tr>
 <tr><td>Pago e IVA</td><td>Pago por hitos e impuestos indicados de forma clara.</td></tr>
 </tbody></table></div>
-<p class="more"><a href="/guias/como-comparar-presupuestos-placas-solares/">Leer la guía completa para comparar presupuestos</a></p>
+<p class="more"><a href="/blog/errores-al-comparar-presupuestos-placas-solares/">Leer: errores al comparar presupuestos</a></p>
 </div></div></div></section>
 
-<section class="guides-s" id="guias"><div class="wrap">
-<div class="sh rev"><span class="stag am">Guías</span><h2>Explicaciones prácticas, con fecha de revisión</h2><p class="ssub">Cinco guías para dimensionar la instalación, entender los excedentes, hacer los trámites y cuidar el equipo.</p></div>
+<section class="guides-s" id="blog"><div class="wrap">
+<div class="sh rev"><span class="stag am">Blog</span><h2>Artículos con datos oficiales y fecha de revisión</h2><p class="ssub">Cálculos, normativa y comprobaciones para decidir con criterio. Las fuentes van enlazadas al final de cada artículo.</p></div>
 <div class="gg rev">
-<a class="gc big" href="/guias/${guides[1].slug}/"><div class="gc-img">${img(356036, 'Paneles solares bajo un cielo azul con nubes', { sizes: '(max-width:960px) 100vw, 480px' })}</div><div class="gc-b"><div class="gc-k">Guía</div><h3>${guides[1].title}</h3><p>${guides[1].desc}</p><span class="go">Leer guía →</span></div></a>
-${[0, 2, 3, 4].map((i) => guideCard(guides[i])).join('')}
+<a class="gc big" href="${articles[0].url}"><div class="gc-img">${img(356036, 'Paneles solares bajo un cielo azul con nubes', { sizes: '(max-width:960px) 100vw, 480px' })}</div><div class="gc-b"><div class="gc-k">${articles[0].cat}</div><h3>${esc(articles[0].meta.title)}</h3><p>${esc(articles[0].meta.description)}</p><span class="go">Leer artículo →</span></div></a>
+${[1, 2, 3, 4].map((i) => card(articles[i])).join('')}
 </div>
-<p class="more-l"><a href="/guias/">Ver todas las guías</a></p>
+<p class="cap">Imagen ilustrativa.</p>
+<p class="more-l"><a href="/blog/">Ver los ${articles.length} artículos</a></p>
+</div></section>
+
+<section class="news-s" id="noticias"><div class="wrap">
+<div class="sh rev"><span class="stag az">Noticias</span><h2>Novedades oficiales sobre autoconsumo</h2><p class="ssub">Solo con fuente oficial, fecha y enlace al documento original.</p></div>
+<ul class="news-l rev">
+${noticias.map((n) => `<li><time datetime="${n.date}">${dateEs(n.date)}</time><div><a href="/noticias/">${esc(n.title)}</a><span>Fuente: ${esc(n.fuente)}</span></div></li>`).join('')}
+</ul>
 </div></section>
 
 <section class="faq-s"><div class="wrap">

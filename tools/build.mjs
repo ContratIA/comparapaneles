@@ -24,6 +24,7 @@ for (const [key, file] of [['css', 'style.css'], ['app', 'app.js'], ['calc', 'ca
 
 const { pages, notFound } = await import('./pages.mjs');
 const { home, homeFaq, calcSection, calcExplain } = await import('./home.mjs');
+const { articles, articlePage, blogIndex, noticiasPage, creditosPage } = await import('./blog.mjs');
 
 // 1) Portada y calculadora
 const heroPreload = '<link rel="preload" as="image" href="/assets/img/9875449-1280.webp" imagesrcset="/assets/img/9875449-640.webp 640w, /assets/img/9875449-1280.webp 1280w, /assets/img/9875449-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">\n';
@@ -37,11 +38,15 @@ const all = [
     url: '/calculadora-ahorro-placas-solares/', kind: 'article', wide: true, scripts: ['calc'],
     title: 'Calculadora de ahorro con placas solares: fórmulas visibles | ComparaPaneles',
     desc: 'Calcula producción, ahorro anual y amortización de una instalación solar con tus datos. Todos los supuestos son editables y las fórmulas están explicadas.',
-    h1: 'Calculadora de ahorro con placas solares',
+    h1: 'Calculadora de ahorro con placas solares', noMeta: true,
     lede: 'Introduce tus datos. Los valores iniciales son ejemplos: cámbialos por los de tu factura y tu presupuesto.',
     body: calcSection() + calcExplain,
   },
   ...pages,
+  blogIndex(),
+  ...articles.map(articlePage),
+  noticiasPage(),
+  creditosPage(),
 ];
 for (const p of all) out(p.url === '/' ? 'index.html' : p.url.replace(/^\//, '') + 'index.html', page(p));
 out('404.html', page({ ...notFound, kind: 'plain', noindex: true }));
@@ -50,7 +55,7 @@ out('404.html', page({ ...notFound, kind: 'plain', noindex: true }));
 const urls = all.map((p) => p.url);
 out('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url><loc>${SITE}${u}</loc><lastmod>${DATE}</lastmod></url>`).join('\n')}
+${all.map((p) => `  <url><loc>${SITE}${p.url}</loc><lastmod>${p.updated || DATE}</lastmod></url>`).join('\n')}
 </urlset>
 `);
 out('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
@@ -103,6 +108,7 @@ for (const f of htmls) {
     if (!existsSync(join(ROOT, u.replace(/^\//, '')))) fail(`IMAGEN falta en ${rel}: ${u}`);
   }
 }
+for (const a of articles) { console.log(String(a.words).padStart(5), a.slug); if (a.words < 900 || a.words > 1500) fail(`PALABRAS fuera de 900-1500: ${a.slug} (${a.words})`); if (a.meta.description.length > 175) fail(`DESCRIPTION larga: ${a.slug} (${a.meta.description.length})`); }
 const pend = htmls.filter((f) => readFileSync(f, 'utf8').includes('PENDIENTE')).map((f) => f.replace(ROOT, ''));
 console.log(`Páginas: ${all.length + 1} | HTML revisados: ${htmls.length} | problemas: ${bad}`);
 console.log('Datos legales PENDIENTES en:', pend.join(', ') || 'ninguna');
