@@ -21,6 +21,7 @@ const ORDER = [
   ['autoconsumo-colectivo-rdl-7-2026', 'Normativa'],
   ['produccion-solar-mes-a-mes-madrid-barcelona', 'Datos solares'],
   ['bateria-virtual-que-es-y-cuando-compensa', 'Decidir'],
+  ['produccion-solar-por-provincia-capitales', 'Datos solares'],
 ];
 
 // Preguntas frecuentes: sección «## Preguntas frecuentes» con «### pregunta» y la respuesta debajo.
@@ -66,6 +67,21 @@ export function articlePage(a) {
   };
 }
 
+// Índice agrupado por categoría (sin JavaScript): chips que saltan a cada sección
+const CAT_INTRO = {
+  'Decidir': 'Si te compensa, cuánto instalar y cómo comparar ofertas.',
+  'Datos solares': 'Cuánto produce 1 kWp según PVGIS, por ciudad, mes y capital de provincia.',
+  'Normativa': 'Qué dice la ley sobre excedentes, trámites y autoconsumo colectivo.',
+  'Ayudas e impuestos': 'Deducción del IRPF y bonificaciones de IBI e ICIO.',
+};
+const catId = (c) => 'cat-' + c.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-');
+function blogBody() {
+  const cats = [...new Set(articles.map((a) => a.cat))];
+  const chips = cats.map((c) => `<a class="chip" href="#${catId(c)}">${esc(c)} <span>${articles.filter((a) => a.cat === c).length}</span></a>`).join('');
+  const secs = cats.map((c) => `<section class="cat-sec" id="${catId(c)}"><div class="cat-h"><h2>${esc(c)}</h2><p>${esc(CAT_INTRO[c] || '')}</p></div><div class="guide-grid">${articles.filter((a) => a.cat === c).map(card).join('')}</div></section>`).join('');
+  return `<div class="pbody"><nav class="chips" aria-label="Categorías del blog">${chips}</nav>${secs}<p class="more-l"><a href="/noticias/">Ver las noticias</a></p></div>`;
+}
+
 export const blogIndex = () => ({
   url: '/blog/', kind: 'article', wide: true,
   title: 'Blog sobre placas solares y autoconsumo en España | ComparaPaneles',
@@ -73,7 +89,7 @@ export const blogIndex = () => ({
   h1: 'Blog: placas solares y autoconsumo',
   lede: 'Artículos con fuentes oficiales enlazadas al final de cada uno. Lo que no se puede comprobar, no se escribe.',
   noMeta: true,
-  body: `<div class="pbody"><div class="guide-grid">${articles.map(card).join('')}</div><p class="more-l"><a href="/noticias/">Ver las noticias</a></p></div>`,
+  body: blogBody(),
 });
 
 // Noticias: solo fuentes oficiales, con fecha, enlace al original y resumen con palabras propias

@@ -14,6 +14,7 @@ export const articlePhotos = {
   'si-compensa-instalar-placas-2026': { id: 9875685, author: 'Kindel Media', page: P + 'aerial-view-of-two-houses-with-roof-tiles-9875685/', alt: 'Vista aérea de tejados de viviendas, con paneles solares en uno de ellos' },
   'baterias-solares-cuando-compensan': { id: 39057090, author: 'Elite Power Group', page: P + 'electrician-installing-residential-battery-storage-39057090/', alt: 'Técnico de espaldas junto a una batería doméstica blanca montada en una pared de ladrillo' },
   'bateria-virtual-que-es-y-cuando-compensa': { id: 259588, w: 1000, author: 'Pixabay', page: P + 'beige-bungalow-house-259588/', alt: 'Vivienda unifamiliar de ladrillo con jardín y camino de entrada', cap: 'Una vivienda cualquiera: la batería virtual no se instala, vive en la factura.' },
+  'produccion-solar-por-provincia-capitales': { id: 2800832, w: 1000, author: 'K', page: P + 'top-view-photo-of-solar-panels-2800832/', alt: 'Vista aérea de filas de paneles solares sobre césped', cap: 'Imagen ilustrativa de una instalación fotovoltaica: no corresponde a ninguna capital de la tabla.' },
   'errores-al-comparar-presupuestos-placas-solares': { id: 8730976, author: 'Mikhail Nilov', page: P + 'a-close-up-shot-of-a-person-pointing-on-a-document-using-a-pen-8730976/', alt: 'Mano señalando con un bolígrafo un párrafo de un documento impreso' },
 };
 
