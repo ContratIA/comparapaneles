@@ -2,7 +2,7 @@
 title: Autoconsumo colectivo en 2026: qué cambió con el Real Decreto-ley 7/2026 y la distancia de 5 km
 description: El RDL 7/2026 amplía a 5 km la distancia del autoconsumo colectivo con plantas de hasta 5 MW. Qué dice el texto y qué implica para una comunidad.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: autoconsumo-colectivo-rdl-7-2026
 related: autoconsumo-con-excedentes-compensacion-simplificada,deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares
 ---
@@ -67,6 +67,28 @@ Según el texto del real decreto-ley, también:
 ## Lo que no ha cambiado
 
 En el texto consolidado del Real Decreto 244/2019 que he consultado el 30 de octubre de 2026, la compensación simplificada de excedentes sigue limitada a instalaciones con una potencia total de hasta 100 kW (artículo 4.2.a). Y el Consejo de Ministros autorizó el 13 de octubre tramitar con urgencia un nuevo proyecto de real decreto sobre autoconsumo y almacenamiento: es un proyecto, todavía no una norma, así que no se puede dar por hecho lo que contendrá. Lo contamos en la sección de [noticias](/noticias/).
+
+## Preguntas frecuentes
+
+### ¿A qué distancia puede estar la instalación de los vecinos?
+
+Depende del caso. Entre los supuestos de instalación próxima están la red interior, el mismo centro de transformación, menos de 500 metros o la misma referencia catastral. El Real Decreto-ley 7/2026 añade las fotovoltaicas o eólicas de hasta 5 MW conectadas a través de la red a menos de 5.000 metros.
+
+### ¿Qué modalidad hay que elegir si la energía pasa por la red?
+
+Si el autoconsumo se hace con instalaciones próximas a través de la red, tiene que ser la modalidad con excedentes (artículo 4.5.c del Real Decreto 244/2019).
+
+### ¿Se paga por usar la red de distribución?
+
+Sí, cuando hay transferencia de energía por la red entre instalaciones próximas. La cuantía la fija la CNMC, así que nadie puede darla por cerrada sin comprobarla.
+
+### ¿Cómo se reparte la energía entre los vecinos?
+
+Con coeficientes que acuerdan los participantes y que cada uno comunica a su distribuidora. Todos los asociados a la misma instalación deben estar en la misma modalidad.
+
+### ¿Los vecinos tienen mejor deducción en el IRPF?
+
+Los propietarios de una vivienda en un edificio de uso predominantemente residencial donde se instale autoconsumo en 2026 pueden deducir el 20 % en vez del 10 %, con la misma base máxima de 5.000 euros al año.
 
 ## Fuentes
 

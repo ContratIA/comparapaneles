@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { parseFront, mdToHtml, wordCount } from './md.mjs';
+import { parseFront, mdToHtml, wordCount, inline } from './md.mjs';
 import { articlePhotos, homePhotos } from './photos.mjs';
 import { dateEs, esc } from './layout.mjs';
 
@@ -20,12 +20,25 @@ const ORDER = [
   ['bonificacion-ibi-icio-placas-solares', 'Ayudas e impuestos'],
   ['autoconsumo-colectivo-rdl-7-2026', 'Normativa'],
   ['produccion-solar-mes-a-mes-madrid-barcelona', 'Datos solares'],
+  ['bateria-virtual-que-es-y-cuando-compensa', 'Decidir'],
 ];
+
+// Preguntas frecuentes: sección «## Preguntas frecuentes» con «### pregunta» y la respuesta debajo.
+// Se muestran en la página y se publican también como datos estructurados FAQPage.
+function extractFaq(body) {
+  const m = body.match(/^## Preguntas frecuentes\s*\n([\s\S]*?)(?=^## |$(?![\s\S]))/m);
+  if (!m) return [];
+  return m[1].split(/^### /m).slice(1).map((blk) => {
+    const [q, ...rest] = blk.split('\n');
+    const a = rest.join(' ').replace(/\s+/g, ' ').trim();
+    return [q.trim(), inline(a)];
+  }).filter(([q, a]) => q && a);
+}
 
 export const articles = ORDER.map(([slug, cat]) => {
   const { meta, body } = parseFront(readFileSync(join(DIR, slug + '.md'), 'utf8'));
   const { html, toc } = mdToHtml(body);
-  return { slug, cat, meta, html, toc, words: wordCount(html), photo: articlePhotos[slug], url: `/blog/${slug}/` };
+  return { slug, cat, meta, html, toc, faq: extractFaq(body), words: wordCount(html), photo: articlePhotos[slug], url: `/blog/${slug}/` };
 });
 const bySlug = Object.fromEntries(articles.map((a) => [a.slug, a]));
 
@@ -34,7 +47,8 @@ export const card = (a) => `<a class="gc" href="${a.url}"><div class="gc-b"><div
 function figure(a) {
   const p = a.photo;
   const cap = p.cap || 'Imagen ilustrativa.';
-  return `<figure class="photo"><img src="/assets/img/blog/${a.slug}-1200.webp" srcset="/assets/img/blog/${a.slug}-640.webp 640w, /assets/img/blog/${a.slug}-1200.webp 1200w" sizes="(max-width:800px) 100vw, 760px" width="1200" height="800" alt="${esc(p.alt)}" fetchpriority="high"><figcaption>${esc(cap)} Foto: <a href="${p.page}" rel="noopener">${esc(p.author)}</a>, vía Pexels. Recortada y redimensionada. <a href="/creditos-fotos/">Créditos</a>.</figcaption></figure>`;
+  const w = p.w || 1200, h = Math.round(w * 2 / 3);
+  return `<figure class="photo"><img src="/assets/img/blog/${a.slug}-${w}.webp" srcset="/assets/img/blog/${a.slug}-640.webp 640w, /assets/img/blog/${a.slug}-${w}.webp ${w}w" sizes="(max-width:800px) 100vw, 760px" width="${w}" height="${h}" alt="${esc(p.alt)}" fetchpriority="high"><figcaption>${esc(cap)} Foto: <a href="${p.page}" rel="noopener">${esc(p.author)}</a>, vía Pexels. Recortada y redimensionada. <a href="/creditos-fotos/">Créditos</a>.</figcaption></figure>`;
 }
 
 export function articlePage(a) {
@@ -47,7 +61,7 @@ export function articlePage(a) {
     url: a.url, kind: 'article', crumbs: [['Blog', '/blog/']],
     title: `${a.meta.title} | ComparaPaneles`, desc: a.meta.description, h1: esc(a.meta.title),
     date: a.meta.date, updated: a.meta.updated, words: a.words,
-    image: `/assets/img/blog/${a.slug}-1200.webp`,
+    image: `/assets/img/blog/${a.slug}-${a.photo.w || 1200}.webp`, faq: a.faq,
     body: figure(a) + toc + a.html + rel,
   };
 }

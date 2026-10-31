@@ -2,7 +2,7 @@
 title: Bonificación del IBI y del ICIO por instalar placas solares: lo que fija la ley y lo que decide tu ayuntamiento
 description: La ley permite bonificar hasta el 50 % del IBI y el 95 % del ICIO por instalar placas solares, pero cada ayuntamiento decide. Cómo comprobarlo.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: bonificacion-ibi-icio-placas-solares
 related: deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares,si-compensa-instalar-placas-2026
 ---
@@ -63,15 +63,23 @@ Las bonificaciones municipales se acumulan, en principio, con la [deducción del
 
 También afecta a los [trámites](/blog/tramites-instalar-placas-solares/): el ICIO se paga al pedir la licencia, así que la bonificación hay que tenerla clara antes de empezar la obra y no después.
 
-## Dudas habituales
+## Preguntas frecuentes
 
-**¿Vale solo para placas fotovoltaicas?** No. El texto legal habla de sistemas para el aprovechamiento térmico o eléctrico de la energía del sol o de la energía ambiente, así que incluye también la energía solar térmica, por ejemplo para agua caliente.
+### ¿Vale solo para placas fotovoltaicas?
 
-**¿Y si vivo en un edificio?** La ley no distingue entre viviendas unifamiliares y comunidades. Cómo se aplica a cada propietario, y si se exige que la instalación sea de uso privativo o común, lo dice la ordenanza de tu municipio.
+No. El texto legal habla de sistemas para el aprovechamiento térmico o eléctrico de la energía del sol o de la energía ambiente, así que incluye también la energía solar térmica, por ejemplo para agua caliente.
 
-**¿Se aplica sola o hay que pedirla?** La ley no regula el procedimiento: lo fija la ordenanza, que puede exigir solicitud expresa o aplicarse de oficio. No des por hecho que llegará sola al recibo.
+### ¿Y si vivo en un edificio?
 
-**¿Cuánto tiempo dura?** Lo decide la ordenanza. La ley solo fija el porcentaje máximo del 50 % en el IBI y del 95 % en el ICIO, y deja a cada ayuntamiento los demás aspectos sustantivos y formales.
+La ley no distingue entre viviendas unifamiliares y comunidades. Cómo se aplica a cada propietario, y si se exige que la instalación sea de uso privativo o común, lo dice la ordenanza de tu municipio.
+
+### ¿Se aplica sola o hay que pedirla?
+
+La ley no regula el procedimiento: lo fija la ordenanza, que puede exigir solicitud expresa o aplicarse de oficio. No des por hecho que llegará sola al recibo.
+
+### ¿Cuánto tiempo dura?
+
+Lo decide la ordenanza. La ley solo fija el porcentaje máximo del 50 % en el IBI y del 95 % en el ICIO, y deja a cada ayuntamiento los demás aspectos sustantivos y formales.
 
 ## Fuentes
 

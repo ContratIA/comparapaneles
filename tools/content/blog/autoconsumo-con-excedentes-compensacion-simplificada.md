@@ -2,7 +2,7 @@
 title: Autoconsumo con excedentes o sin excedentes: cómo funciona la compensación simplificada
 description: Diferencias entre autoconsumo con y sin excedentes, quién puede acogerse a la compensación simplificada (hasta 100 kW) y cómo se valoran los excedentes.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: autoconsumo-con-excedentes-compensacion-simplificada
 related: si-compensa-instalar-placas-2026,baterias-solares-cuando-compensan,tramites-instalar-placas-solares
 ---
@@ -66,6 +66,24 @@ Para instalaciones de hasta 100 kW conectadas en baja tensión, el artículo 16 
 - Si piensas en un edificio, el autoconsumo colectivo con excedentes tiene sus propias reglas: [autoconsumo colectivo en 2026](/blog/autoconsumo-colectivo-rdl-7-2026/).
 
 En la [calculadora](/calculadora-ahorro-placas-solares/) puedes fijar a cero el valor de los excedentes para simular una instalación sin ellos, o poner el que te ofrezca tu comercializadora, y ver cómo cambia la amortización.
+
+## Preguntas frecuentes
+
+### ¿Me pagan por los excedentes que me sobran?
+
+Con la compensación simplificada, el descuento nunca supera el valor de la energía que consumes de la red en el periodo de facturación, que no puede ser superior a un mes. Si en un mes vertes más de lo que consumes, esa diferencia no se convierte en dinero. Algunas comercializadoras guardan ese saldo para meses siguientes: lo explicamos en [batería virtual](/blog/bateria-virtual-que-es-y-cuando-compensa/).
+
+### ¿Hasta qué potencia puedo acogerme a la compensación simplificada?
+
+Hasta 100 kW de potencia total de las instalaciones de producción asociadas, y sin régimen retributivo adicional o específico.
+
+### ¿Pago peajes por la energía que produzco y consumo?
+
+La energía autoconsumada de origen renovable está exenta de peajes (artículo 17.1) y de cargos (artículo 18.1). Los excedentes acogidos a compensación simplificada tampoco pagan peajes de acceso (artículo 14.4).
+
+### ¿Cuánto tarda en activarse?
+
+Para instalaciones de hasta 100 kW en baja tensión, el artículo 16 bis fija un máximo de dos meses desde que la distribuidora recibe la documentación hasta que te comunica que puedes verter.
 
 ## Fuentes
 

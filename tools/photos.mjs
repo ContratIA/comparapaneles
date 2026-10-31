@@ -13,6 +13,7 @@ export const articlePhotos = {
   'leer-factura-luz-dimensionar-instalacion': { id: 29576210, author: 'Евгений Качин', page: P + 'electric-meters-on-brick-wall-in-kaliningrad-29576210/', alt: 'Cinco contadores eléctricos y una caja de protección en una pared de ladrillo pintado' },
   'si-compensa-instalar-placas-2026': { id: 9875685, author: 'Kindel Media', page: P + 'aerial-view-of-two-houses-with-roof-tiles-9875685/', alt: 'Vista aérea de tejados de viviendas, con paneles solares en uno de ellos' },
   'baterias-solares-cuando-compensan': { id: 39057090, author: 'Elite Power Group', page: P + 'electrician-installing-residential-battery-storage-39057090/', alt: 'Técnico de espaldas junto a una batería doméstica blanca montada en una pared de ladrillo' },
+  'bateria-virtual-que-es-y-cuando-compensa': { id: 259588, w: 1000, author: 'Pixabay', page: P + 'beige-bungalow-house-259588/', alt: 'Vivienda unifamiliar de ladrillo con jardín y camino de entrada', cap: 'Una vivienda cualquiera: la batería virtual no se instala, vive en la factura.' },
   'errores-al-comparar-presupuestos-placas-solares': { id: 8730976, author: 'Mikhail Nilov', page: P + 'a-close-up-shot-of-a-person-pointing-on-a-document-using-a-pen-8730976/', alt: 'Mano señalando con un bolígrafo un párrafo de un documento impreso' },
 };
 

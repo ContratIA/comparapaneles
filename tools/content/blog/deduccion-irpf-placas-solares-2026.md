@@ -2,7 +2,7 @@
 title: Deducción en el IRPF por instalar placas solares en 2026: 10 % o 20 %, requisitos y plazos
 description: El RDL 7/2026 permite deducir el 10 % o el 20 % de lo pagado por instalar autoconsumo en 2026, con base máxima de 5.000 €. Requisitos y plazos.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: deduccion-irpf-placas-solares-2026
 related: si-compensa-instalar-placas-2026,errores-al-comparar-presupuestos-placas-solares,tramites-instalar-placas-solares
 ---
@@ -66,15 +66,23 @@ Esta vía exige acreditar con certificados de antes y después una mejora mínim
 
 Con el tope de 500 o 1.000 euros, la deducción es un empujón, no lo que decide si la instalación compensa. En una instalación de 5.000 euros, el 10 % son 500 euros, es decir, un 10 % del precio. Puedes meterlo en la [calculadora](/calculadora-ahorro-placas-solares/) marcando la deducción que te corresponda y ver cuántos años acorta la amortización. En [si compensa instalar placas en 2026](/blog/si-compensa-instalar-placas-2026/) el cálculo está hecho paso a paso.
 
-## Dudas habituales
+## Preguntas frecuentes
 
-**¿Vale para una instalación hecha en 2025?** No. El texto exige que la instalación se realice y termine entre el 1 de enero y el 31 de diciembre de 2026, y que las cantidades se paguen en ese periodo.
+### ¿Vale para una instalación hecha en 2025?
 
-**¿Tiene que ser mi vivienda habitual?** Para el 10 % el texto habla de «un inmueble de su propiedad» y no exige expresamente que sea vivienda habitual. Para el 20 % pide ser propietario de una vivienda en un edificio de uso predominantemente residencial. Si tu caso no es el típico, confírmalo con la Agencia Tributaria antes de contratar.
+No. El texto exige que la instalación se realice y termine entre el 1 de enero y el 31 de diciembre de 2026, y que las cantidades se paguen en ese periodo.
 
-**¿Qué pasa si pago una parte en 2026 y otra en 2027?** Solo cuentan las cantidades satisfechas entre el 1 de enero y el 31 de diciembre de 2026. Lo que pagues después queda fuera de la base, y la instalación debe además estar terminada en 2026.
+### ¿Tiene que ser mi vivienda habitual?
 
-**¿Se aplica en la declaración de este año?** Se aplica en el periodo impositivo en el que finaliza la instalación. Si la terminas en 2026, corresponde a la renta del ejercicio 2026, que se presenta en 2027.
+Para el 10 % el texto habla de «un inmueble de su propiedad» y no exige expresamente que sea vivienda habitual. Para el 20 % pide ser propietario de una vivienda en un edificio de uso predominantemente residencial. Si tu caso no es el típico, confírmalo con la Agencia Tributaria antes de contratar.
+
+### ¿Qué pasa si pago una parte en 2026 y otra en 2027?
+
+Solo cuentan las cantidades satisfechas entre el 1 de enero y el 31 de diciembre de 2026. Lo que pagues después queda fuera de la base, y la instalación debe además estar terminada en 2026.
+
+### ¿Se aplica en la declaración de este año?
+
+Se aplica en el periodo impositivo en el que finaliza la instalación. Si la terminas en 2026, corresponde a la renta del ejercicio 2026, que se presenta en 2027.
 
 ## Fuentes
 

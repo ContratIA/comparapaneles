@@ -2,7 +2,7 @@
 title: Producción solar mes a mes en Madrid y Barcelona: cuándo rinden más tus placas
 description: Producción mensual de 1 kWp en Madrid y Barcelona según PVGIS: julio es el mejor mes, noviembre el peor. Qué implica para tu consumo.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: produccion-solar-mes-a-mes-madrid-barcelona
 related: cuanto-produce-1-kwp-espana,leer-factura-luz-dimensionar-instalacion,baterias-solares-cuando-compensan
 ---
@@ -81,6 +81,24 @@ Un hogar que gasta mucho más en invierno por la calefacción eléctrica tiene l
 Al revés, un hogar con aire acondicionado y consumo diurno alto en verano aprovecha mejor las horas de más producción. Y si tu consumo es estable, lo que cuenta es a qué hora lo gastas, no el mes.
 
 Por eso, antes de elegir potencia, mira el consumo mensual de los últimos doce meses y dibújalo junto a estas columnas. Es una comprobación de cinco minutos que evita sorpresas.
+
+## Preguntas frecuentes
+
+### ¿Qué mes se produce más y cuál menos?
+
+Julio es el mejor mes en Madrid y Barcelona, con 169,02 y 163,71 kWh por kWp. Noviembre es el peor, con 101,10 y 96,60. En Madrid, julio produce 1,67 veces lo que noviembre.
+
+### ¿Cuánta producción se concentra en verano?
+
+Junio, julio y agosto suman el 30,2 % de la producción anual en Madrid y el 30,4 % en Barcelona. De abril a septiembre se produce algo más del 57 %.
+
+### ¿Una batería arregla la diferencia entre estaciones?
+
+No. Traslada parte de la producción de las horas de sol a la noche, pero no guarda julio para diciembre. Hay más detalle en [baterías: cuándo compensan](/blog/baterias-solares-cuando-compensan/).
+
+### ¿Cuánto produce un día medio en Madrid?
+
+Unos 5,45 kWh por cada kWp en julio y 3,28 en diciembre. Con 3 kWp son 16,4 y 9,8 kWh diarios.
 
 ## Fuentes
 

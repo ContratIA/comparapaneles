@@ -2,7 +2,7 @@
 title: Baterías para placas solares: cuándo compensan y cuándo no
 description: Cuánto puede aportar como máximo una batería solar, por qué depende del valor de tus excedentes y qué dicen la normativa y la deducción de 2026.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: baterias-solares-cuando-compensan
 related: autoconsumo-con-excedentes-compensacion-simplificada,si-compensa-instalar-placas-2026,produccion-solar-mes-a-mes-madrid-barcelona
 ---
@@ -69,6 +69,28 @@ Si el equipo cuesta, por ejemplo, 1.500 euros (cifra inventada), dividir por el 
 3. Pide al instalador dos presupuestos: con batería y sin ella, con el mismo número de paneles.
 4. Calcula con la fórmula: valor extra anual = kWh que se desplazan × (precio de la red − valor del excedente).
 5. Resta del coste extra de la batería la deducción que te corresponda, si la instalas en 2026.
+
+## Preguntas frecuentes
+
+### ¿Compensa instalar una batería?
+
+Depende de la diferencia entre lo que pagas por el kWh de la red y lo que te valen tus excedentes. Con los números inventados de esta página, el tope teórico de una batería de 5 kWh útiles es de 164 euros al año si los excedentes valen 0,06 €/kWh y de 274 si valen cero. Son techos, no previsiones.
+
+### ¿Una batería guarda energía del verano para el invierno?
+
+No. Almacena de un día para otro. En Madrid, julio produce 1,67 veces lo que noviembre y ninguna batería doméstica compensa esa diferencia.
+
+### ¿La deducción del IRPF de 2026 cubre la batería?
+
+Sí. El texto incluye expresamente los sistemas de almacenamiento en la base, con el mismo límite de 5.000 euros al año para toda la instalación: placas y batería suman en ese tope.
+
+### ¿Puedo instalar la batería más adelante?
+
+Muchos sistemas lo permiten, pero confírmalo con el instalador. Y si lo haces en 2026, recuerda que la deducción solo cuenta lo pagado este año.
+
+### ¿Es lo mismo una batería virtual?
+
+No. La batería virtual es un saldo en euros que ofrecen algunas comercializadoras, no una batería instalada en tu casa. Lo explicamos en [batería virtual: qué es y cuándo compensa](/blog/bateria-virtual-que-es-y-cuando-compensa/).
 
 ## Fuentes
 

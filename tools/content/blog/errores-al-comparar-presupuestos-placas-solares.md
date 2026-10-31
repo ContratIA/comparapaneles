@@ -2,7 +2,7 @@
 title: Errores al comparar presupuestos de placas solares y cómo evitarlos
 description: Los errores más habituales al comparar presupuestos de placas solares, qué pedir por escrito y qué comprobar con datos oficiales antes de firmar.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: errores-al-comparar-presupuestos-placas-solares
 related: tramites-instalar-placas-solares,si-compensa-instalar-placas-2026,deduccion-irpf-placas-solares-2026
 ---
@@ -71,6 +71,24 @@ Un ahorro anual prometido sin conocer tu consumo no vale nada. Con tu consumo, t
 | Fecha de fin de obra | | | |
 | Forma de pago | | | |
 | Precio total con impuestos | | | |
+
+## Preguntas frecuentes
+
+### ¿Cuántos presupuestos conviene pedir?
+
+Al menos tres, y con el mismo alcance: la misma potencia en kWp y las mismas prestaciones. Si no, no son comparables. La tabla de esta página te ayuda a ponerlos en la misma base.
+
+### ¿Puedo pagar en efectivo para que me hagan descuento?
+
+No te conviene. La deducción del IRPF de 2026 exige pagar con tarjeta, transferencia, cheque nominativo o ingreso en cuenta, y excluye el efectivo. Además, sin factura no hay garantía ni forma de acreditar nada.
+
+### ¿Cómo sé si la producción que me prometen es realista?
+
+Compárala con PVGIS, la herramienta de la Comisión Europea. Con orientación sur y 35°, 1 kWp produce 1.619,37 kWh al año en Madrid y 1.170,05 en Bilbao. Una oferta para Madrid que prometa 2.000 kWh por kWp está más de un 23 % por encima de ese cálculo.
+
+### ¿Qué debe decir la oferta sobre los equipos?
+
+Marca y modelo concretos de paneles e inversor, la potencia total en kWp y los plazos de las tres garantías: producto, rendimiento e instalación. «Paneles de primera calidad» no es un compromiso.
 
 ## Fuentes
 

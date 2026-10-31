@@ -2,7 +2,7 @@
 title: Cómo leer la factura de la luz para dimensionar una instalación de placas solares
 description: Qué datos de tu factura de la luz necesitas para dimensionar una instalación solar y cómo convertirlos en kWp y paneles, con un ejemplo de cálculo.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: leer-factura-luz-dimensionar-instalacion
 related: cuanto-produce-1-kwp-espana,si-compensa-instalar-placas-2026,produccion-solar-mes-a-mes-madrid-barcelona
 ---
@@ -72,6 +72,24 @@ Para pasar de potencia a euros hace falta saber el precio al que pagas el kWh. L
 5. Si piensas incorporar un coche eléctrico, una bomba de calor u otros consumos.
 
 Con eso, un instalador serio puede darte una propuesta razonada. Si te da una potencia sin pedirte nada, pregúntale de dónde la ha sacado.
+
+## Preguntas frecuentes
+
+### ¿Qué datos necesito para pedir un presupuesto?
+
+El consumo anual en kWh (la suma de las doce últimas facturas), la potencia contratada, tu precio medio del kWh, la orientación e inclinación del tejado con sus sombras, y si vas a añadir un coche eléctrico, una bomba de calor u otros consumos.
+
+### ¿Cómo calculo cuántos kWp necesito?
+
+Divide el consumo que quieres cubrir entre la producción anual de 1 kWp en tu zona. Con un consumo inventado de 3.500 kWh en Madrid: 3.500 ÷ 1.619,37 ≈ 2,2 kWp, unos 5 paneles de 430 W.
+
+### ¿Mi factura bajará a cero?
+
+No. Las placas no reducen el término de potencia, los impuestos ni lo que sigas consumiendo de la red por la noche o cuando no hay sol.
+
+### ¿Dónde veo mi consumo hora a hora?
+
+En el área de cliente de tu distribuidora, que tiene tu consumo con resolución horaria. Muchas permiten descargarlo. Es el dato más útil para saber cuánta producción vas a consumir directamente.
 
 ## Fuentes
 

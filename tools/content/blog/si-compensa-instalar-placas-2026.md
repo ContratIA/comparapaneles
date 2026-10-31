@@ -2,7 +2,7 @@
 title: ¿Compensa instalar placas solares en 2026? Un cálculo paso a paso con tus propios datos
 description: Cómo saber si las placas solares te compensan: fórmula de ahorro, qué variables mueven la amortización y cuánto aporta la deducción del IRPF de 2026.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: si-compensa-instalar-placas-2026
 related: leer-factura-luz-dimensionar-instalacion,deduccion-irpf-placas-solares-2026,baterias-solares-cuando-compensan
 ---
@@ -91,6 +91,24 @@ Y si se trata de decidir qué hacer con la noche, mira [baterías: cuándo compe
 3. Pide al menos tres presupuestos con el mismo alcance. Antes de firmar, repasa los [errores más comunes al compararlos](/blog/errores-al-comparar-presupuestos-placas-solares/).
 4. Mete cada presupuesto en la calculadora y compara la amortización.
 5. Si quieres la deducción de 2026, comprueba que la obra puede terminar y pagarse antes del 31 de diciembre.
+
+## Preguntas frecuentes
+
+### ¿Cuántos años tarda en amortizarse una instalación?
+
+Depende de tu consumo, del precio de tu luz y del coste de la oferta. En el ejemplo de esta página, con datos inventados (3 kWp en Madrid y 5.000 euros), sale en 11,0 años; con la deducción del 10 % baja a 9,9 y con la del 20 %, a 8,7. Sustituye esos datos por los tuyos en la [calculadora](/calculadora-ahorro-placas-solares/).
+
+### ¿Qué pesa más en el resultado?
+
+En el ejemplo, el precio de la luz y el coste de la instalación son los que más cambian el resultado, y el autoconsumo también: pasar del 30 % al 60 % acorta la amortización de 12,2 a 9,2 años.
+
+### ¿La deducción del IRPF hace rentable una instalación que no lo es?
+
+No. Acorta uno o dos años la amortización, pero no convierte en rentable lo que no lo es.
+
+### ¿Qué no incluye este cálculo?
+
+No incluye el mantenimiento ni la avería del inversor, los intereses si financias, los cambios futuros del precio de la electricidad ni el límite mensual de la compensación de excedentes. Tampoco las sombras, la suciedad o una orientación peor que el sur.
 
 ## Fuentes
 

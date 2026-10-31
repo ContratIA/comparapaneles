@@ -2,7 +2,7 @@
 title: Trámites para instalar placas solares en una vivienda: permisos, certificados y contrato con la distribuidora
 description: Trámites para legalizar una instalación de autoconsumo en una vivienda: permisos, certificado, contrato con la distribuidora y plazos del RD 244/2019.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: tramites-instalar-placas-solares
 related: errores-al-comparar-presupuestos-placas-solares,deduccion-irpf-placas-solares-2026,bonificacion-ibi-icio-placas-solares
 ---
@@ -71,6 +71,24 @@ La activación del autoconsumo con excedentes es otro asunto: puede pasar despu�
 5. ¿Me entregas copia de todo?
 
 Si quieres revisar un presupuesto con esta lista en la mano, sigue con [errores al comparar presupuestos](/blog/errores-al-comparar-presupuestos-placas-solares/).
+
+## Preguntas frecuentes
+
+### ¿Cuánto tarda la distribuidora en activar el autoconsumo con excedentes?
+
+Para instalaciones de hasta 100 kW conectadas en baja tensión, el tiempo no puede superar dos meses desde que la distribuidora recibe la documentación hasta que te comunica que puedes verter (artículo 16 bis del Real Decreto 244/2019). Si se supera por causas ajenas a ti y a la administración, la comercializadora debe aplicar un descuento por retardo en tu factura.
+
+### ¿Qué es el CIE y por qué importa?
+
+Es el Certificado de Instalaciones Eléctricas. Sin él la instalación no está legalizada, y es un requisito expreso para aplicar la [deducción del IRPF de 2026](/blog/deduccion-irpf-placas-solares-2026/).
+
+### ¿Quién hace los trámites?
+
+Normalmente el instalador, pero no lo des por hecho. Pregúntale por escrito quién tramita cada paso: licencia, CIE, registro, comunicación a la distribuidora y contrato de compensación.
+
+### ¿Necesito permiso de la comunidad de propietarios?
+
+Si instalas en zonas comunes, hay que seguir el procedimiento de la normativa de propiedad horizontal y llevarlo a la junta. Pide asesoramiento al administrador de fincas.
 
 ## Fuentes
 

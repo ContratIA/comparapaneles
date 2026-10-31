@@ -2,7 +2,7 @@
 title: Cuántos kWh produce 1 kWp de placas solares en España: datos de PVGIS para 12 ciudades
 description: Producción anual de 1 kWp en 12 ciudades españolas según PVGIS: de 1.699 kWh en Málaga a 1.170 en Bilbao, y cómo cambia con la orientación.
 date: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 photo: cuanto-produce-1-kwp-espana
 related: produccion-solar-mes-a-mes-madrid-barcelona,leer-factura-luz-dimensionar-instalacion,si-compensa-instalar-placas-2026
 ---
@@ -103,6 +103,24 @@ Tampoco incluye la degradación de los paneles. La producción baja un poco cada
 - **Confundir kWp con kW del inversor.** La potencia pico de los paneles y la potencia nominal del inversor son cosas distintas, y las ofertas a veces mezclan ambas. Pregunta por los kWp de paneles.
 - **Usar los datos de otra ciudad.** Una instalación en Valladolid produce unos 60 kWh por kWp menos que una en Madrid; en Bilbao, 450 menos. Usa el dato de tu zona.
 - **Aplicar el óptimo a un tejado que no lo es.** El 1.619 de Madrid vale para orientación sur y 35°. Si tu tejado mira al este, ajusta con la tabla de orientaciones de arriba.
+
+## Preguntas frecuentes
+
+### ¿Cuántos kWh produce 1 kWp en Madrid?
+
+1.619,37 kWh al año según PVGIS, con orientación sur, 35° de inclinación y un 14 % de pérdidas. En Málaga son 1.698,82 y en Bilbao, 1.170,05.
+
+### ¿Cuánto pierdo si el tejado no mira al sur?
+
+En Madrid, el este pierde un 20,8 % y el oeste un 23,1 % frente al sur a 35°. El norte pierde un 51,0 %, y en la práctica no sale a cuenta.
+
+### ¿Hace falta afinar la inclinación?
+
+No. El óptimo que calcula PVGIS para Madrid (37°) mejora solo un 0,1 % al sur a 35°. Con 20° la producción baja un 3,4 %.
+
+### ¿Es una producción garantizada?
+
+No. Es una estimación a partir de datos de 2005 a 2023. Un año concreto puede salir distinto de la media: la desviación típica va del 2,4 % de la media en Sevilla al 3,3 % en Bilbao.
 
 ## Fuentes
 
