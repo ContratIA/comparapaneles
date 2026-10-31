@@ -32,14 +32,17 @@ export function img(id, alt, { sizes = '100vw', cls = '', eager = false } = {}) 
 export function page({ url, title, desc, h1, body = '', after = '', kind = 'plain', crumbs = [], faq = [], noindex = false, wide = false, lede = '', home = '', scripts = [], preloadImg = '', date = DATE, updated = DATE, words = 0, image = '', noMeta = false }) {
   const canonical = SITE + url;
   const ld = [];
-  if (kind === 'home') ld.push({ '@context': 'https://schema.org', '@type': 'WebSite', name: NAME, url: SITE + '/', inLanguage: 'es-ES' });
+  if (kind === 'home') {
+    ld.push({ '@context': 'https://schema.org', '@type': 'WebSite', name: NAME, url: SITE + '/', inLanguage: 'es-ES' });
+    ld.push({ '@context': 'https://schema.org', '@type': 'Organization', name: NAME, url: SITE + '/', logo: { '@type': 'ImageObject', url: SITE + '/logo-512.png', width: 512, height: 512 } });
+  }
   if (kind === 'article' && !noMeta) {
     ld.push({
       '@context': 'https://schema.org', '@type': 'Article', headline: plain(h1), description: desc, inLanguage: 'es-ES',
       ...(image ? { image: [SITE + image] } : {}), ...(words ? { wordCount: words } : {}),
       datePublished: date, dateModified: updated, mainEntityOfPage: canonical,
       author: { '@type': 'Organization', name: NAME, url: SITE + '/' },
-      publisher: { '@type': 'Organization', name: NAME, url: SITE + '/' },
+      publisher: { '@type': 'Organization', name: NAME, url: SITE + '/', logo: { '@type': 'ImageObject', url: SITE + '/logo-512.png', width: 512, height: 512 } },
     });
   }
   if (url === '/calculadora-ahorro-placas-solares/') {
@@ -76,7 +79,11 @@ ${kind === 'home' ? '<meta name="google-site-verification" content="zCbWy1iTLMJc
 <link rel="canonical" href="${canonical}">
 <meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large'}">
 <meta name="theme-color" content="#0f172a">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="icon" href="/icon-96.png" type="image/png" sizes="96x96">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="${kind === 'article' ? 'article' : 'website'}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
@@ -100,7 +107,7 @@ ${ADSENSE && !noindex ? `<script async src="https://pagead2.googlesyndication.co
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
 <header class="top"><div class="bar">
-<a class="logo" href="/" aria-label="${NAME}, inicio"><span class="logo-icon" aria-hidden="true">☀️</span><span class="logo-text">Compara<span>Paneles</span></span></a>
+<a class="logo" href="/" aria-label="${NAME}, inicio"><img class="logo-icon" src="/icon-96.png" width="38" height="38" alt=""><span class="logo-text">Compara<span>Paneles</span></span></a>
 <nav aria-label="Principal"><ul class="nav-links">${NAV.map(([u, n]) => `<li><a href="${u}"${u === url ? ' aria-current="page"' : ''}>${n}</a></li>`).join('')}<li><a class="nav-cta" href="/calculadora-ahorro-placas-solares/#calculadora">Calcular ahorro</a></li></ul></nav>
 <button class="ham" id="ham" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mob-menu"><span></span><span></span><span></span></button>
 </div></header>
@@ -108,7 +115,7 @@ ${ADSENSE && !noindex ? `<script async src="https://pagead2.googlesyndication.co
 ${inner}
 <footer><div class="wrap">
 <div class="ftg">
-<div><a class="logo" href="/" aria-label="${NAME}, inicio"><span class="logo-icon" aria-hidden="true">☀️</span><span class="logo-text">Compara<span>Paneles</span></span></a><p>Sitio informativo e independiente sobre autoconsumo solar en España. No vendemos ni instalamos placas solares y no recomendamos instaladores concretos.</p></div>
+<div><a class="logo" href="/" aria-label="${NAME}, inicio"><img class="logo-icon" src="/icon-96.png" width="38" height="38" alt=""><span class="logo-text">Compara<span>Paneles</span></span></a><p>Sitio informativo e independiente sobre autoconsumo solar en España. No vendemos ni instalamos placas solares y no recomendamos instaladores concretos.</p></div>
 <div class="fc"><p class="fh">Contenido</p><ul>
 <li><a href="/calculadora-ahorro-placas-solares/">Calculadora de ahorro</a></li>
 <li><a href="/subvenciones-placas-solares/">Subvenciones y ayudas</a></li>

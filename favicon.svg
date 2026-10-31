@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#0c4a6e"/>
-  <rect x="5" y="9" width="22" height="14" rx="2" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
-  <line x1="5" y1="13.5" x2="27" y2="13.5" stroke="#f59e0b" stroke-width="1"/>
-  <line x1="5" y1="18.5" x2="27" y2="18.5" stroke="#f59e0b" stroke-width="1"/>
-  <line x1="12" y1="9" x2="12" y2="23" stroke="#f59e0b" stroke-width="1"/>
-  <line x1="20" y1="9" x2="20" y2="23" stroke="#f59e0b" stroke-width="1"/>
-  <line x1="16" y1="23" x2="16" y2="27" stroke="#f59e0b" stroke-width="1.5"/>
-  <line x1="11" y1="27" x2="21" y2="27" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Comparapaneles">
+  <title>Comparapaneles</title>
+  <rect width="512" height="512" rx="112" fill="#111827"/>
+  <circle cx="256" cy="206" r="98" fill="#f59e0b"/>
+  <polygon points="150,262 362,262 408,424 104,424" fill="#111827" stroke="#f59e0b" stroke-width="16" stroke-linejoin="round"/>
+  <g stroke="#f59e0b" stroke-width="9" stroke-linecap="round">
+    <line x1="127" y1="343" x2="385" y2="343"/>
+    <line x1="220.7" y1="262" x2="205.3" y2="424"/>
+    <line x1="291.3" y1="262" x2="306.7" y2="424"/>
+  </g>
 </svg>

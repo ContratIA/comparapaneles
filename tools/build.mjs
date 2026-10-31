@@ -22,6 +22,9 @@ for (const [key, file] of [['css', 'style.css'], ['app', 'app.js'], ['calc', 'ca
   out(`assets/${assets[key]}`, src);
 }
 
+// Iconos y logo (raíz del sitio, para que Google los encuentre)
+for (const f of readdirSync(join(ROOT, 'tools/src/icons'))) out(f, readFileSync(join(ROOT, 'tools/src/icons', f)));
+
 const { pages, notFound } = await import('./pages.mjs');
 const { home, homeFaq, calcSection, calcExplain } = await import('./home.mjs');
 const { articles, articlePage, blogIndex, noticiasPage, creditosPage } = await import('./blog.mjs');
@@ -68,7 +71,7 @@ out('vercel.json', JSON.stringify({
       { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
     ] },
     { source: '/assets/(.*)', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] },
-    { source: '/favicon.svg', headers: [{ key: 'Cache-Control', value: 'public, max-age=86400' }] },
+    { source: '/(favicon.svg|favicon.ico|icon-48.png|icon-96.png|icon-192.png|icon-512.png|logo-512.png|apple-touch-icon.png)', headers: [{ key: 'Cache-Control', value: 'public, max-age=86400' }] },
   ],
 }, null, 2) + '\n');
 out('.vercelignore', 'tools\n');
