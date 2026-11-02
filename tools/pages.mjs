@@ -124,7 +124,7 @@ pages.push({
 });
 pages.push({
   url: '/contacto/', kind: 'plain', title: 'Contacto | ComparaPaneles', desc: 'Cómo contactar con ComparaPaneles para consultas, correcciones o ejercicio de derechos de protección de datos.', h1: 'Contacto',
-  body: `<p>Puedes escribirnos a <a href="mailto:info@comparapaneles.com">info@comparapaneles.com</a> o usar el formulario para:</p>
+  body: `<p>Puedes escribirnos a <a href="mailto:eloymuros@gmail.com">eloymuros@gmail.com</a> o usar el formulario para:</p>
 <ul><li>Señalar un error o un dato desactualizado (indica la página y, si puedes, la fuente).</li><li>Ejercer tus derechos de protección de datos (ver <a href="/politica-de-privacidad/">política de privacidad</a>).</li><li>Consultas sobre el sitio.</li></ul>
 <p>No podemos asesorarte sobre un presupuesto concreto ni recomendarte instaladores. Respondemos por orden de llegada.</p>
 <form class="formbox" action="https://formspree.io/f/xaqlqvvw" method="POST" data-contact>
@@ -143,7 +143,7 @@ pages.push({
   url: '/aviso-legal/', kind: 'plain', title: 'Aviso legal | ComparaPaneles', desc: 'Aviso legal de ComparaPaneles: titular, condiciones de uso y responsabilidad.', h1: 'Aviso legal',
   body: `<h2>Titular del sitio</h2>
 <p>En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico:</p>
-<ul><li><strong>Titular:</strong> ${TITULAR}</li><li><strong>NIF:</strong> ${NIF}</li><li><strong>Domicilio:</strong> ${DOMICILIO}</li><li><strong>Correo electrónico:</strong> info@comparapaneles.com</li><li><strong>Dominio:</strong> comparapaneles.com</li></ul>
+<ul><li><strong>Titular:</strong> ${TITULAR}</li><li><strong>NIF:</strong> ${NIF}</li><li><strong>Domicilio:</strong> ${DOMICILIO}</li><li><strong>Correo electrónico:</strong> eloymuros@gmail.com</li><li><strong>Dominio:</strong> comparapaneles.com</li></ul>
 <h2>Objeto</h2>
 <p>Este sitio ofrece información general sobre autoconsumo solar en España. El acceso es gratuito.</p>
 <h2>Carácter informativo</h2>
@@ -163,7 +163,7 @@ pages.push({
   url: '/politica-de-privacidad/', kind: 'plain', title: 'Política de privacidad | ComparaPaneles', desc: 'Qué datos trata ComparaPaneles, con qué finalidad, durante cuánto tiempo y cómo ejercer tus derechos.', h1: 'Política de privacidad',
   body: `<p>Última actualización: ${DATE_ES}.</p>
 <h2>Responsable</h2>
-<p>${TITULAR}, con NIF ${NIF} y domicilio en ${DOMICILIO} (consulta el <a href="/aviso-legal/">aviso legal</a> para los datos completos). Contacto: <a href="mailto:info@comparapaneles.com">info@comparapaneles.com</a>.</p>
+<p>${TITULAR}, con NIF ${NIF} y domicilio en ${DOMICILIO} (consulta el <a href="/aviso-legal/">aviso legal</a> para los datos completos). Contacto: <a href="mailto:eloymuros@gmail.com">eloymuros@gmail.com</a>.</p>
 <h2>Qué datos tratamos</h2>
 <ul>
 <li><strong>Navegación:</strong> el proveedor de alojamiento puede registrar datos técnicos de la conexión (como la dirección IP) por motivos de seguridad y funcionamiento.</li>
@@ -178,7 +178,7 @@ pages.push({
 <h2>Conservación y destinatarios</h2>
 <p>Conservamos los correos el tiempo necesario para atender tu consulta y las obligaciones legales aplicables. No vendemos tus datos. Pueden acceder a ellos los proveedores que nos prestan servicios (alojamiento, analítica y correo) en calidad de encargados del tratamiento.</p>
 <h2>Tus derechos</h2>
-<p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a info@comparapaneles.com. Si consideras que no hemos tratado tus datos correctamente, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" rel="noopener">aepd.es</a>).</p>`,
+<p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a eloymuros@gmail.com. Si consideras que no hemos tratado tus datos correctamente, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" rel="noopener">aepd.es</a>).</p>`,
 });
 pages.push({
   url: '/politica-de-cookies/', kind: 'plain', title: 'Política de cookies | ComparaPaneles', desc: 'Qué cookies y tecnologías similares usa ComparaPaneles y cómo gestionarlas.', h1: 'Política de cookies',

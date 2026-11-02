@@ -92,7 +92,7 @@
         })
         .catch(function () {
           msg.className = 'msg err';
-          msg.textContent = 'No se ha podido enviar. Escríbenos directamente a info@comparapaneles.com.';
+          msg.textContent = 'No se ha podido enviar. Escríbenos directamente a eloymuros@gmail.com.';
         })
         .then(function () { btn.disabled = false; msg.hidden = false; });
     });
