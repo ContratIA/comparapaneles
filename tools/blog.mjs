@@ -22,6 +22,8 @@ const ORDER = [
   ['produccion-solar-mes-a-mes-madrid-barcelona', 'Datos solares'],
   ['bateria-virtual-que-es-y-cuando-compensa', 'Decidir'],
   ['produccion-solar-por-provincia-capitales', 'Datos solares'],
+  ['ayudas-placas-solares-pais-vasco-eguzki-hotz-2026', 'Ayudas e impuestos'],
+  ['ayudas-placas-solares-andalucia-2026-convocatoria-inea', 'Ayudas e impuestos'],
 ];
 
 // Preguntas frecuentes: sección «## Preguntas frecuentes» con «### pregunta» y la respuesta debajo.

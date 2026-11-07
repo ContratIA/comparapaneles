@@ -67,8 +67,8 @@ ${SRC_IRPF}`,
 /* ---------- SUBVENCIONES ---------- */
 pages.push({
   url: '/subvenciones-placas-solares/', kind: 'article',
-  title: 'Subvenciones para placas solares: tipos de ayuda y cómo comprobarlas | ComparaPaneles',
-  desc: 'Deducción en el IRPF, bonificaciones municipales y ayudas autonómicas para placas solares: qué existe, de qué depende y cómo comprobar si hay una convocatoria abierta.',
+  title: 'Subvenciones para placas solares 2026: qué ayudas hay y cuáles están abiertas | ComparaPaneles',
+  desc: 'Ayudas para placas solares en 2026: deducción del IRPF, bonificaciones de IBI e ICIO y convocatorias autonómicas, con las que están abiertas hoy y sus fuentes.',
   h1: 'Subvenciones y ayudas para placas solares: qué existe y cómo comprobarlo',
   body: `<p class="lead">No hay una única ayuda nacional que podamos prometerte. Lo que existe son tres capas que conviene distinguir, porque cada una se pide en un sitio distinto y con condiciones propias.</p>
 <div class="box"><p>Por eso <strong>no publicamos cifras del tipo «hasta X €»</strong> sin una convocatoria concreta detrás. Si una web te las promete sin enlazar la convocatoria oficial, desconfía.</p></div>
@@ -78,6 +78,13 @@ pages.push({
 <p>La ley permite que los ayuntamientos bonifiquen hasta el 50 % del IBI y hasta el 95 % del ICIO a quien instala placas solares, pero no les obliga. El porcentaje, la duración y los requisitos los fija cada ordenanza fiscal, así que cambian de un municipio a otro y algunos no ofrecen ninguna. Lo explicamos en <a href="/blog/bonificacion-ibi-icio-placas-solares/">Bonificación del IBI y del ICIO por instalar placas solares</a>.</p>
 <h2>3. Ayudas directas de comunidades autónomas y ayuntamientos</h2>
 <p>Se abren mediante convocatorias con plazos, presupuesto limitado y requisitos concretos. Pueden cerrarse en cuanto se agota el dinero. Algunas exigen solicitar la ayuda antes de empezar la instalación, así que no contrates sin leer las bases.</p>
+<h2>Convocatorias recientes que hemos comprobado</h2>
+<p>Estas dos están publicadas en boletines oficiales y las hemos leído en el texto original. Los plazos y el crédito cambian, así que mira siempre el estado actual antes de contratar.</p>
+<ul>
+<li><strong>País Vasco:</strong> el programa Eguzki Hotz del Ente Vasco de la Energía, con plazo abierto desde el 5 de noviembre de 2026 y 600 €/kWp para instalaciones individuales de hasta 10 kWp. <a href="/blog/ayudas-placas-solares-pais-vasco-eguzki-hotz-2026/">Ver requisitos y cuentas</a>.</li>
+<li><strong>Andalucía:</strong> convocatoria de la Agencia Andaluza de la Energía abierta el 22 de octubre de 2026, con suspensión parcial el 29 de octubre por falta de crédito. <a href="/blog/ayudas-placas-solares-andalucia-2026-convocatoria-inea/">Qué dice el BOJA</a>.</li>
+</ul>
+<p>Ojo con las ayudas antiguas que siguen circulando por la web. La Comunidad de Madrid, por ejemplo, abrió en noviembre de 2021 una línea para instalar paneles solares con plazo hasta el 31 de diciembre de 2023. Si una página la presenta como vigente, está desactualizada.</p>
 <h2>Cómo comprobar si hay una ayuda abierta hoy</h2>
 <ol>
 <li>Busca en el portal oficial de tu comunidad autónoma «ayudas autoconsumo» o «ayudas energías renovables» y revisa la fecha de la convocatoria.</li>
