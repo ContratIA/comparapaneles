@@ -4,7 +4,7 @@ description: Cómo saber si las placas solares te compensan: fórmula de ahorro,
 date: 2026-10-30
 updated: 2026-10-31
 photo: si-compensa-instalar-placas-2026
-related: leer-factura-luz-dimensionar-instalacion,deduccion-irpf-placas-solares-2026,baterias-solares-cuando-compensan
+related: leer-factura-luz-dimensionar-instalacion,deduccion-irpf-placas-solares-2026,baterias-solares-cuando-compensan,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026,ayudas-placas-solares-andalucia-2026-convocatoria-inea
 ---
 
 La pregunta correcta no es si las placas solares compensan en general, sino si compensan en tu casa, con tu consumo y con el precio de tu oferta. Hay hogares donde se amortizan en pocos años y otros donde no llegan a hacerlo. Lo que sigue es un método para averiguarlo, con un ejemplo completo. Los datos de producción y de la deducción fiscal son oficiales. El consumo, el precio de la luz y el coste de la instalación del ejemplo son **inventados para ilustrar**: sustitúyelos por los tuyos.

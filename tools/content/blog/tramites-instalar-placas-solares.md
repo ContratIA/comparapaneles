@@ -4,7 +4,7 @@ description: Trámites para legalizar una instalación de autoconsumo en una viv
 date: 2026-10-30
 updated: 2026-10-31
 photo: tramites-instalar-placas-solares
-related: errores-al-comparar-presupuestos-placas-solares,deduccion-irpf-placas-solares-2026,bonificacion-ibi-icio-placas-solares
+related: errores-al-comparar-presupuestos-placas-solares,deduccion-irpf-placas-solares-2026,bonificacion-ibi-icio-placas-solares,ayudas-placas-solares-andalucia-2026-convocatoria-inea,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026
 ---
 
 Los pasos exactos varían según la comunidad autónoma, el ayuntamiento y la potencia de la instalación. Hay una parte que es igual en toda España, porque la fija el Real Decreto 244/2019, y otra que depende de dónde vivas. Este recorrido te sirve para saber qué pedir, qué revisar y en qué orden llegan las cosas, aunque sea tu instalador quien tramite casi todo.

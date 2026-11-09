@@ -4,7 +4,7 @@ description: El RDL 7/2026 permite deducir el 10 % o el 20 % de lo pagado por in
 date: 2026-10-30
 updated: 2026-10-31
 photo: deduccion-irpf-placas-solares-2026
-related: si-compensa-instalar-placas-2026,errores-al-comparar-presupuestos-placas-solares,tramites-instalar-placas-solares
+related: si-compensa-instalar-placas-2026,errores-al-comparar-presupuestos-placas-solares,tramites-instalar-placas-solares,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026,ayudas-placas-solares-andalucia-2026-convocatoria-inea
 ---
 
 Instalar placas solares en 2026 tiene una ventaja fiscal que no existía el año pasado. El Real Decreto-ley 7/2026, de 20 de marzo, creó una deducción nueva en el IRPF para quien instale autoconsumo con energía renovable y termine la instalación este mismo año. El Congreso lo convalidó y el BOE publicó el acuerdo el 28 de marzo, mediante una resolución del 26. Esto es lo que dice el texto y lo que resume la Agencia Tributaria.

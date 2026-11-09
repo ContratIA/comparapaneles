@@ -4,7 +4,7 @@ description: Qué es una batería virtual en las tarifas de autoconsumo, por qu�
 date: 2026-10-31
 updated: 2026-10-31
 photo: bateria-virtual-que-es-y-cuando-compensa
-related: autoconsumo-con-excedentes-compensacion-simplificada,baterias-solares-cuando-compensan,leer-factura-luz-dimensionar-instalacion
+related: autoconsumo-con-excedentes-compensacion-simplificada,baterias-solares-cuando-compensan,leer-factura-luz-dimensionar-instalacion,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026
 ---
 
 Muchas comercializadoras añaden a sus tarifas para placas solares algo que llaman «batería virtual». El nombre invita a pensar que guardas electricidad para usarla de noche, y no es eso. Entender qué es te ahorra pagar por una ventaja que no tiene, o descartar una que sí te sirve.

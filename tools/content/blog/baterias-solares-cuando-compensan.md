@@ -4,7 +4,7 @@ description: Cuánto puede aportar como máximo una batería solar, por qué dep
 date: 2026-10-30
 updated: 2026-10-31
 photo: baterias-solares-cuando-compensan
-related: autoconsumo-con-excedentes-compensacion-simplificada,si-compensa-instalar-placas-2026,produccion-solar-mes-a-mes-madrid-barcelona
+related: autoconsumo-con-excedentes-compensacion-simplificada,si-compensa-instalar-placas-2026,produccion-solar-mes-a-mes-madrid-barcelona,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026
 ---
 
 Una batería promete lo que más falta le hace a una instalación doméstica: consumir de noche la energía que se produjo de día. Pero añade coste, y su rentabilidad depende de una cuenta que muchos presupuestos no enseñan. Este artículo da la cuenta para que la hagas con tus datos. No incluyo precios de baterías: cambian cada pocos meses y los tienes que pedir en cada oferta.

@@ -4,7 +4,7 @@ description: La Junta abrió el 22 de octubre de 2026 incentivos de 20,7 millone
 date: 2026-11-07
 updated: 2026-11-07
 photo: ayudas-placas-solares-andalucia-2026-convocatoria-inea
-related: deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares,bonificacion-ibi-icio-placas-solares
+related: deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares,bonificacion-ibi-icio-placas-solares,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026
 ---
 
 La Agencia Andaluza de la Energía abrió el 22 de octubre de 2026 una convocatoria de incentivos para el sector residencial y edificios públicos. Una semana después, el 29 de octubre, suspendió la presentación de solicitudes para parte de las actuaciones por falta de crédito. Esta página resume lo que dicen los textos publicados en el BOJA.

@@ -4,7 +4,7 @@ description: Diferencias entre autoconsumo con y sin excedentes, quién puede ac
 date: 2026-10-30
 updated: 2026-10-31
 photo: autoconsumo-con-excedentes-compensacion-simplificada
-related: si-compensa-instalar-placas-2026,baterias-solares-cuando-compensan,tramites-instalar-placas-solares
+related: si-compensa-instalar-placas-2026,baterias-solares-cuando-compensan,tramites-instalar-placas-solares,ayudas-placas-solares-andalucia-2026-convocatoria-inea
 ---
 
 Una instalación de autoconsumo puede estar pensada para no verter nada a la red o para verter lo que sobra. La elección condiciona el equipo, los trámites y, sobre todo, cuánto vale la energía que no consumes en el momento. El Real Decreto 244/2019 regula las modalidades, y su texto consolidado (consultado el 30 de octubre de 2026, con la última actualización en vigor desde el 22 de marzo de 2026) es la fuente de todo lo que sigue.

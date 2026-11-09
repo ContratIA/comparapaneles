@@ -4,7 +4,7 @@ description: El EVE abrió el 5 de noviembre de 2026 las ayudas Eguzki Hotz: 600
 date: 2026-11-07
 updated: 2026-11-07
 photo: ayudas-placas-solares-pais-vasco-eguzki-hotz-2026
-related: deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares,baterias-solares-cuando-compensan
+related: deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares,baterias-solares-cuando-compensan,ayudas-placas-solares-andalucia-2026-convocatoria-inea
 ---
 
 El Ente Vasco de la Energía (EVE) publicó el 4 de noviembre de 2026 las bases y la convocatoria del programa **Eguzki Hotz**, que da ayudas directas para instalar placas solares y baterías. Esta página resume lo que dice el texto oficial. Las ayudas se conceden por orden de llegada y pueden agotarse, así que revisa siempre la web del EVE antes de contratar.

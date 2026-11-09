@@ -4,7 +4,7 @@ description: La ley permite bonificar hasta el 50 % del IBI y el 95 % del ICIO p
 date: 2026-10-30
 updated: 2026-10-31
 photo: bonificacion-ibi-icio-placas-solares
-related: deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares,si-compensa-instalar-placas-2026
+related: deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares,si-compensa-instalar-placas-2026,ayudas-placas-solares-andalucia-2026-convocatoria-inea,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026
 ---
 
 Instalar placas solares puede abaratar dos impuestos municipales: el IBI, que se paga cada año por el inmueble, y el ICIO, que se paga una vez por la obra. Pero ninguno de los dos descuentos es automático. La ley fija un máximo y deja que cada ayuntamiento decida, en su ordenanza fiscal, si bonifica y con qué condiciones. Hay municipios que lo hacen con generosidad, otros con requisitos estrictos y otros que no lo ofrecen.
