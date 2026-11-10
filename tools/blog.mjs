@@ -119,7 +119,7 @@ export const noticiasPage = () => ({
   desc: 'Novedades oficiales sobre autoconsumo y placas solares en España, con fecha, resumen y enlace a la fuente original (BOE, La Moncloa, Agencia Tributaria).',
   h1: 'Noticias sobre autoconsumo solar',
   body: `<p class="lead">Solo publicamos novedades con fuente oficial. Cada una lleva su fecha, un resumen con palabras propias y el enlace al documento original.</p>
-${noticias.map((n) => `<article class="news"><p class="news-d"><time datetime="${n.date}">${dateEs(n.date)}</time></p><h2>${esc(n.title)}</h2><p>${esc(n.text)}</p><p class="src">Fuente: <a href="${n.url}" rel="noopener">${esc(n.fuente)}</a></p></article>`).join('')}
+${noticias.map((n) => `<article class="news" id="n-${n.date}"><p class="news-d"><time datetime="${n.date}">${dateEs(n.date)}</time></p><h2>${esc(n.title)}</h2><p>${esc(n.text)}</p><p class="src">Fuente: <a href="${n.url}" rel="noopener">${esc(n.fuente)}</a></p></article>`).join('')}
 <p class="src">Esta sección se actualiza cuando hay novedades verificables. Si ves una que falte, escríbenos desde la <a href="/contacto/">página de contacto</a> con el enlace oficial.</p>`,
 });
 

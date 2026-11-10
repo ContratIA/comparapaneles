@@ -190,7 +190,7 @@ ${[1, 2, 3, 4].map((i) => card(articles[i])).join('')}
 <section class="news-s" id="noticias"><div class="wrap">
 <div class="sh rev"><span class="stag az">Noticias</span><h2>Novedades oficiales sobre autoconsumo</h2><p class="ssub">Solo con fuente oficial, fecha y enlace al documento original.</p></div>
 <ul class="news-l rev">
-${noticias.map((n) => `<li><time datetime="${n.date}">${dateEs(n.date)}</time><div><a href="/noticias/">${esc(n.title)}</a><span>Fuente: ${esc(n.fuente)}</span></div></li>`).join('')}
+${noticias.map((n) => `<li><time datetime="${n.date}">${dateEs(n.date)}</time><div><a href="/noticias/#n-${n.date}">${esc(n.title)}</a><span>Fuente: ${esc(n.fuente)}</span></div></li>`).join('')}
 </ul>
 </div></section>
 
