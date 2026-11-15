@@ -183,14 +183,14 @@ ${calcSection('<h2>Calcula tu <span>ahorro</span> con tus propios datos</h2>')}
 ${[1, 2, 3, 4].map((i) => card(articles[i])).join('')}
 </div>
 <p class="cap">Imagen ilustrativa.</p>
-<p class="more-l">Ayudas recientes: <a href="/blog/ayudas-placas-solares-pais-vasco-eguzki-hotz-2026/">País Vasco (Eguzki Hotz)</a> · <a href="/blog/ayudas-placas-solares-andalucia-2026-convocatoria-inea/">Andalucía</a> · <a href="/subvenciones-placas-solares/">todas las subvenciones</a></p>
+<p class="more-l">Ayudas recientes: <a href="/blog/ayudas-placas-solares-pais-vasco-eguzki-hotz-2026/">País Vasco (Eguzki Hotz)</a> · <a href="/blog/ayudas-placas-solares-andalucia-2026-convocatoria-inea/">Andalucía</a> · <a href="/blog/ayudas-placas-solares-castilla-la-mancha-comunidades-propietarios-2026/">Castilla-La Mancha</a> · <a href="/blog/deducciones-autonomicas-placas-solares-irpf-valencia-murcia-baleares/">Deducciones autonómicas</a> · <a href="/subvenciones-placas-solares/">todas las subvenciones</a></p>
 <p class="more-l"><a href="/blog/">Ver los ${articles.length} artículos</a></p>
 </div></section>
 
 <section class="news-s" id="noticias"><div class="wrap">
 <div class="sh rev"><span class="stag az">Noticias</span><h2>Novedades oficiales sobre autoconsumo</h2><p class="ssub">Solo con fuente oficial, fecha y enlace al documento original.</p></div>
 <ul class="news-l rev">
-${noticias.map((n) => `<li><time datetime="${n.date}">${dateEs(n.date)}</time><div><a href="/noticias/#n-${n.date}">${esc(n.title)}</a><span>Fuente: ${esc(n.fuente)}</span></div></li>`).join('')}
+${noticias.slice(0, 5).map((n) => `<li><time datetime="${n.date}">${dateEs(n.date)}</time><div><a href="/noticias/#n-${n.date}">${esc(n.title)}</a><span>Fuente: ${esc(n.fuente)}</span></div></li>`).join('')}
 </ul>
 </div></section>
 

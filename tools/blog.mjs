@@ -24,6 +24,8 @@ const ORDER = [
   ['produccion-solar-por-provincia-capitales', 'Datos solares'],
   ['ayudas-placas-solares-pais-vasco-eguzki-hotz-2026', 'Ayudas e impuestos'],
   ['ayudas-placas-solares-andalucia-2026-convocatoria-inea', 'Ayudas e impuestos'],
+  ['ayudas-placas-solares-castilla-la-mancha-comunidades-propietarios-2026', 'Ayudas e impuestos'],
+  ['deducciones-autonomicas-placas-solares-irpf-valencia-murcia-baleares', 'Ayudas e impuestos'],
 ];
 
 // Preguntas frecuentes: sección «## Preguntas frecuentes» con «### pregunta» y la respuesta debajo.
@@ -97,9 +99,24 @@ export const blogIndex = () => ({
 // Noticias: solo fuentes oficiales, con fecha, enlace al original y resumen con palabras propias
 export const noticias = [
   {
+    date: '2026-11-04', fuente: 'BOPV nº 211, Ente Vasco de la Energía (programa Eguzki Hotz)', url: 'https://www.euskadi.eus/bopv2/datos/2026/11/2604653a.shtml',
+    title: 'El País Vasco publica las bases y la convocatoria de Eguzki Hotz',
+    text: 'El BOPV del 4 de noviembre de 2026 publica el programa Eguzki Hotz, con ayudas directas para instalar placas solares y baterías. El plazo de solicitudes se abrió el 5 de noviembre y las ayudas se conceden por orden de llegada mientras quede crédito.',
+  },
+  {
+    date: '2026-10-29', fuente: 'BOJA nº 210 complementario 2, Agencia Andaluza de la Energía', url: 'https://www.juntadeandalucia.es/boja/2026/221002/1',
+    title: 'Andalucía suspende parte de las solicitudes de la convocatoria residencial',
+    text: 'La Dirección Gerencia de la Agencia Andaluza de la Energía suspende el 29 de octubre de 2026 la presentación de solicitudes del Programa 1 para las actuaciones ligadas a dos partidas presupuestarias, porque las solicitudes ya presentadas agotan su crédito. La convocatoria se había abierto el 22 de octubre.',
+  },
+  {
     date: '2026-10-13', fuente: 'La Moncloa, referencia del Consejo de Ministros', url: 'https://www.lamoncloa.gob.es/consejodeministros/referencias/paginas/2026/20261013-referencia-rueda-de-prensa-ministros.aspx',
     title: 'El Gobierno acelera dos reales decretos sobre autoconsumo y comunidades energéticas',
     text: 'El Consejo de Ministros del 13 de octubre de 2026 autorizó tramitar por vía de urgencia dos proyectos de real decreto del Ministerio para la Transición Ecológica: uno que desarrolla las comunidades de energías renovables y las comunidades ciudadanas de energía, y otro que modifica aspectos del autoconsumo eléctrico e impulsa el almacenamiento distribuido. Son proyectos: el texto definitivo no se conoce y las reglas actuales siguen vigentes hasta que se publiquen.',
+  },
+  {
+    date: '2026-09-08', fuente: 'DOCM nº 172, Consejería de Desarrollo Sostenible de Castilla-La Mancha (BDNS 927526)', url: 'https://energia.castillalamancha.es/sites/default/files/2026-09/2026_6455.pdf',
+    title: 'Castilla-La Mancha convoca ayudas para renovables en comunidades de propietarios',
+    text: 'El DOCM del 8 de septiembre de 2026 publica la convocatoria de ayudas para instalaciones solares fotovoltaicas, con o sin almacenamiento, de comunidades energéticas y comunidades de propietarios. El presupuesto máximo es de 10.668.240,50 euros y las solicitudes se resuelven por orden de entrada.',
   },
   {
     date: '2026-03-28', fuente: 'BOE, resolución del Congreso de los Diputados (BOE-A-2026-7125)', url: 'https://www.boe.es/buscar/doc.php?id=BOE-A-2026-7125',

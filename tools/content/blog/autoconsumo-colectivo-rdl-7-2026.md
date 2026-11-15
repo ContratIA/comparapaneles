@@ -4,7 +4,7 @@ description: El RDL 7/2026 amplía a 5 km la distancia del autoconsumo colectivo
 date: 2026-10-30
 updated: 2026-10-31
 photo: autoconsumo-colectivo-rdl-7-2026
-related: autoconsumo-con-excedentes-compensacion-simplificada,deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares
+related: autoconsumo-con-excedentes-compensacion-simplificada,deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares,ayudas-placas-solares-castilla-la-mancha-comunidades-propietarios-2026
 ---
 
 Hasta marzo de 2026, repartir la energía de unas placas entre varios vecinos exigía que la instalación estuviera muy cerca de los consumos. El Real Decreto-ley 7/2026, de 20 de marzo, cambió esas reglas de distancia. Se publicó en el BOE el 21 de marzo y se convalidó pocos días después. Aquí va lo que dice el texto, con la parte técnica explicada para un vecino o un presidente de comunidad.
