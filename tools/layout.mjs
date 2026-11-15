@@ -11,6 +11,7 @@ export const assets = {}; // la rellena build.mjs con los nombres con hash
 
 const NAV = [
   ['/calculadora-ahorro-placas-solares/', 'Calculadora'],
+  ['/comparador-presupuestos-placas-solares/', 'Comparador'],
   ['/subvenciones-placas-solares/', 'Ayudas'],
   ['/deduccion-irpf-placas-solares/', 'IRPF'],
   ['/blog/', 'Blog'],
@@ -46,6 +47,9 @@ export function page({ url, title, desc, h1, body = '', after = '', kind = 'plai
       author: { '@type': 'Organization', name: NAME, url: SITE + '/' },
       publisher: { '@type': 'Organization', name: NAME, url: SITE + '/', logo: { '@type': 'ImageObject', url: SITE + '/logo-512.png', width: 512, height: 512 } },
     });
+  }
+  if (url === '/comparador-presupuestos-placas-solares/') {
+    ld.push({ '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Comparador de presupuestos de placas solares', url: canonical, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', browserRequirements: 'Requiere JavaScript', inLanguage: 'es-ES', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, publisher: { '@type': 'Organization', name: NAME, url: SITE + '/' } });
   }
   if (url === '/calculadora-ahorro-placas-solares/') {
     ld.push({ '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Calculadora de ahorro con placas solares', url: canonical, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', browserRequirements: 'Requiere JavaScript', inLanguage: 'es-ES', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, publisher: { '@type': 'Organization', name: NAME, url: SITE + '/' } });
@@ -120,6 +124,7 @@ ${inner}
 <div><a class="logo" href="/" aria-label="${NAME}, inicio"><img class="logo-icon" src="/icon-96.png" width="38" height="38" alt=""><span class="logo-text">Compara<span>Paneles</span></span></a><p>Sitio informativo e independiente sobre autoconsumo solar en España. No vendemos ni instalamos placas solares y no recomendamos instaladores concretos.</p></div>
 <div class="fc"><p class="fh">Contenido</p><ul>
 <li><a href="/calculadora-ahorro-placas-solares/">Calculadora de ahorro</a></li>
+<li><a href="/comparador-presupuestos-placas-solares/">Comparador de presupuestos</a></li>
 <li><a href="/subvenciones-placas-solares/">Subvenciones y ayudas</a></li>
 <li><a href="/deduccion-irpf-placas-solares/">Deducción en el IRPF</a></li>
 <li><a href="/blog/">Blog</a></li>

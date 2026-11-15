@@ -13,8 +13,8 @@ const out = (rel, data) => {
 };
 
 // 0) Recursos con hash en el nombre (caché inmutable)
-for (const f of readdirSync(join(ROOT, 'assets'))) if (/^(style|app|calc)\.[0-9a-f]{8}\.(css|js)$/.test(f)) unlinkSync(join(ROOT, 'assets', f));
-for (const [key, file] of [['css', 'style.css'], ['app', 'app.js'], ['calc', 'calc.js']]) {
+for (const f of readdirSync(join(ROOT, 'assets'))) if (/^(style|app|calc|compare)\.[0-9a-f]{8}\.(css|js)$/.test(f)) unlinkSync(join(ROOT, 'assets', f));
+for (const [key, file] of [['css', 'style.css'], ['app', 'app.js'], ['calc', 'calc.js'], ['compare', 'compare.js']]) {
   const src = readFileSync(join(ROOT, 'tools/src', file));
   const [name, ext] = file.split('.');
   const hash = createHash('sha1').update(src).digest('hex').slice(0, 8);

@@ -51,7 +51,7 @@ export const calcExplain = `<div class="pbody"><div class="prose">
 <li><strong>Amortización</strong>: años hasta que el ahorro acumulado cubre (coste − subvenciones − deducción). Cada año se produce un 0,5 % menos que el anterior. Es un supuesto habitual: comprueba la garantía de rendimiento del fabricante.</li>
 <li><strong>Balance a 25 años</strong> = ahorro acumulado en 25 años − inversión neta.</li>
 </ol>
-<div class="box"><p>La calculadora resta la deducción del IRPF de golpe al principio. En la práctica llega con la declaración de la renta y solo cuenta la base de un ejercicio. El precio de la electricidad, tus hábitos y el estado del tejado cambian el resultado: úsala para comparar escenarios, no como promesa de ahorro. Antes de contratar, <a href="/blog/errores-al-comparar-presupuestos-placas-solares/">compara varios presupuestos</a>.</p></div>
+<div class="box"><p>La calculadora resta la deducción del IRPF de golpe al principio. En la práctica llega con la declaración de la renta y solo cuenta la base de un ejercicio. El precio de la electricidad, tus hábitos y el estado del tejado cambian el resultado: úsala para comparar escenarios, no como promesa de ahorro. Antes de contratar, <a href="/blog/errores-al-comparar-presupuestos-placas-solares/">compara varios presupuestos</a> con nuestro <a href="/comparador-presupuestos-placas-solares/">comparador de presupuestos</a>.</p></div>
 </div></div>`;
 
 const faq = [
@@ -173,7 +173,7 @@ ${calcSection('<h2>Calcula tu <span>ahorro</span> con tus propios datos</h2>')}
 <tr><td>Visita técnica</td><td>Estudio del tejado antes de dar un precio cerrado.</td></tr>
 <tr><td>Pago e IVA</td><td>Pago por hitos e impuestos indicados de forma clara.</td></tr>
 </tbody></table></div>
-<p class="more"><a href="/blog/errores-al-comparar-presupuestos-placas-solares/">Leer: errores al comparar presupuestos</a></p>
+<p class="more"><a href="/blog/errores-al-comparar-presupuestos-placas-solares/">Leer: errores al comparar presupuestos</a> · <a href="/comparador-presupuestos-placas-solares/">Usar el comparador de presupuestos</a></p>
 </div></div></div></section>
 
 <section class="guides-s" id="blog"><div class="wrap">

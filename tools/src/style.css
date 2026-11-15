@@ -416,3 +416,34 @@ ul.src li{font-size:.9375rem;color:var(--gt)}
 @media(max-width:600px){.news-l li{grid-template-columns:1fr}.cap{text-align:left}}
 
 .ad-slot{max-width:760px;margin:0 auto 32px;padding-inline:var(--gut);min-height:280px;contain:layout}.ad-slot .ad-label{display:block;font-size:.75rem;color:#64748b;margin-bottom:6px}
+
+/* Comparador de presupuestos */
+.cmp-s{padding-block:clamp(40px,5vw,72px);background:var(--gc)}
+.cmp-wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
+.cmp-form{display:grid;gap:20px}
+.cmp-offers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cmp-card,.cmp-shared{background:#fff;border:1.5px solid var(--gm);border-radius:var(--rg);padding:22px}
+.cmp-card h3,.cmp-shared h3{font-size:1.0625rem;margin-bottom:14px}
+.cmp-card .fg{margin-bottom:12px}
+.cmp-card .fg input[type=number],.cmp-card .fg input[type=text],.cmp-shared .fg input,.cmp-shared .fg select{min-height:44px}
+.cmp-card .fg small,.cmp-shared .fg small{font-size:.8125rem;line-height:1.45;color:var(--gt)}
+.cmp-chk{display:flex;align-items:center;gap:10px;font-size:.9375rem;color:var(--ns);margin-top:8px;cursor:pointer}
+.cmp-chk input{width:22px;height:22px;accent-color:var(--sold);flex-shrink:0;cursor:pointer}
+.cmp-shared .cmp-sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cmp-shared input[type=range]::-webkit-slider-runnable-track{background:var(--gm)}
+.cmp-shared input[type=range]::-moz-range-track{background:var(--gm)}
+.cmp-actions{display:flex;flex-wrap:wrap;gap:12px}
+.cmp-btn{min-height:44px;padding:10px 20px;border-radius:12px;border:1.5px solid var(--n);background:#fff;color:var(--n);font-weight:600;cursor:pointer}
+.cmp-btn:hover{background:var(--n);color:#fff}
+.cmp-btn:focus-visible{outline:3px solid var(--sol);outline-offset:3px}
+.cmp-res{margin-top:28px}
+.cmp-res h2{font-size:clamp(1.375rem,2.4vw,1.75rem);margin-bottom:8px}
+.cmp-table table{min-width:560px}
+.cmp-table th[scope=row]{background:transparent;color:var(--n);font-size:1rem;font-weight:600;letter-spacing:0;padding:16px 20px;border-bottom:1px solid var(--gm)}
+.cmp-table tbody tr:last-child th{border-bottom:0}
+.cmp-table td.best{background:var(--solc);font-weight:700;color:var(--n)}
+.cmp-table .warn{color:#b91c1c;font-weight:700}
+.cmp-table .neg{color:#b91c1c;font-weight:700}
+.cmp-table .sol{color:var(--sol-ink);font-weight:700}
+.cmp-note,.cmp-empty{font-size:.9375rem;line-height:1.6;color:var(--body);margin-top:12px}
+@media(max-width:860px){.cmp-offers,.cmp-shared .cmp-sgrid{grid-template-columns:1fr}}

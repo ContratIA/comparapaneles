@@ -11,7 +11,7 @@ Pedir tres presupuestos y elegir el más barato parece sensato. Suele salir mal,
 
 ## 1. Comparar el importe total sin mirar los kWp
 
-El precio total no dice nada si no sabes cuántos kWp incluye. Una oferta de 4.000 euros por 2 kWp y otra de 5.500 por 4 kWp no son comparables. Apunta en una tabla, para cada oferta: potencia total en kWp, número y potencia de los paneles, y marca y modelo del inversor. Divide el precio entre los kWp para tener una referencia de euros por kWp. Es solo una referencia: cambia con el tamaño de la instalación y con las condiciones del tejado, y una instalación pequeña sale más cara por kWp.
+El precio total no dice nada si no sabes cuántos kWp incluye. Una oferta de 4.000 euros por 2 kWp y otra de 5.500 por 4 kWp no son comparables. Apunta en una tabla, para cada oferta: potencia total en kWp, número y potencia de los paneles, y marca y modelo del inversor. Divide el precio entre los kWp para tener una referencia de euros por kWp. Nuestro [comparador de presupuestos](/comparador-presupuestos-placas-solares/) lo hace por ti con hasta tres ofertas. Es solo una referencia: cambia con el tamaño de la instalación y con las condiciones del tejado, y una instalación pequeña sale más cara por kWp.
 
 ## 2. Creerse la producción prometida sin comprobarla
 

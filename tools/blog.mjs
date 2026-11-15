@@ -60,7 +60,7 @@ export function articlePage(a) {
   const related = (a.meta.related || '').split(',').map((s) => bySlug[s.trim()]).filter(Boolean);
   const toc = `<nav class="toc" aria-label="Contenido"><strong>En este artículo</strong><ol>${a.toc.map(([id, t]) => `<li><a href="#${id}">${esc(t)}</a></li>`).join('')}</ol></nav>`;
   const rel = related.length
-    ? `<aside class="related"><h2 id="sigue-leyendo">Sigue leyendo</h2><ul>${related.map((r) => `<li><a href="${r.url}">${esc(r.meta.title)}</a></li>`).join('')}</ul><p><a href="/calculadora-ahorro-placas-solares/">Calculadora de ahorro</a> · <a href="/deduccion-irpf-placas-solares/">Deducción del IRPF</a> · <a href="/blog/">Todos los artículos</a></p></aside>`
+    ? `<aside class="related"><h2 id="sigue-leyendo">Sigue leyendo</h2><ul>${related.map((r) => `<li><a href="${r.url}">${esc(r.meta.title)}</a></li>`).join('')}</ul><p><a href="/calculadora-ahorro-placas-solares/">Calculadora de ahorro</a> · <a href="/comparador-presupuestos-placas-solares/">Comparador de presupuestos</a> · <a href="/deduccion-irpf-placas-solares/">Deducción del IRPF</a> · <a href="/blog/">Todos los artículos</a></p></aside>`
     : '';
   return {
     url: a.url, kind: 'article', crumbs: [['Blog', '/blog/']],

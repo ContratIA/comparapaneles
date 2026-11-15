@@ -206,4 +206,76 @@ pages.push({
 <p>Más información sobre el tratamiento de datos en la <a href="/politica-de-privacidad/">política de privacidad</a>.</p>`,
 });
 
+/* ---------- Comparador de presupuestos ---------- */
+const cmpFaq = [
+  ['¿Cómo comparo presupuestos de placas solares?', 'Apunta para cada oferta el precio total con IVA, los kWp, la producción que promete, las garantías y si incluye batería y trámites. Divide el precio entre los kWp y compara la producción prometida con el dato de PVGIS para tu tejado. Después calcula la amortización con tus propios datos de consumo y de precio de la luz.'],
+  ['¿Qué significa euros por kWp?', 'Es el precio total dividido entre la potencia instalada. Sirve como referencia entre ofertas parecidas, pero cambia con el tamaño de la instalación y con las condiciones del tejado, y no es comparable si una oferta incluye batería y otra no.'],
+  ['¿La herramienta usa precios de instaladores?', 'No. No tenemos precios de empresas ni una fuente oficial que los fije. Solo calcula con las cifras que escribes tú, y todo ocurre en tu navegador: no se envía ningún dato.'],
+  ['¿Por qué compara la producción prometida con PVGIS?', 'Porque una oferta que promete mucha más producción que PVGIS para tu zona, orientación e inclinación debería explicar de dónde sale esa cifra. PVGIS es la herramienta gratuita de la Comisión Europea.'],
+];
+const cmpOffer = (i, L) => `<div class="cmp-card"><h3>Oferta ${L}</h3>
+<div class="fg"><label for="nm${i}">Nombre de la empresa (opcional)</label><input id="nm${i}" type="text" maxlength="40" autocomplete="off"></div>
+<div class="fg"><label for="pr${i}">Precio total con IVA (€)</label><input id="pr${i}" type="number" min="0" step="100" inputmode="decimal"></div>
+<div class="fg"><label for="kw${i}">Potencia (kWp)</label><input id="kw${i}" type="number" min="0" step="0.1" inputmode="decimal"></div>
+<div class="fg"><label for="py${i}">Producción que promete (kWh por kWp y año)</label><input id="py${i}" type="number" min="0" step="50" inputmode="decimal"><small>Déjalo vacío si la oferta no la indica.</small></div>
+<div class="fg"><label for="gi${i}">Garantía de la instalación (años)</label><input id="gi${i}" type="number" min="0" step="1" inputmode="numeric"></div>
+<div class="fg"><label for="gv${i}">Garantía del inversor (años)</label><input id="gv${i}" type="number" min="0" step="1" inputmode="numeric"></div>
+<label class="cmp-chk"><input id="bt${i}" type="checkbox"> Incluye batería</label>
+<label class="cmp-chk"><input id="tr${i}" type="checkbox"> Incluye trámites y legalización</label>
+</div>`;
+const cmpTool = `<section class="cmp-s" id="comparador"><div class="cmp-wrap">
+<form class="cmp-form" id="cmpForm" autocomplete="off">
+<div class="cmp-offers">${cmpOffer('a', 'A')}${cmpOffer('b', 'B')}${cmpOffer('c', 'C')}</div>
+<div class="cmp-shared"><h3>Tus datos y supuestos (iguales para las tres ofertas)</h3>
+<div class="cmp-sgrid">
+<div class="fg"><label for="cons">Consumo eléctrico anual (kWh)</label><input id="cons" type="number" min="0" step="100" value="3500" inputmode="decimal"><small>Lo encuentras en tu factura.</small></div>
+<div class="fg"><label for="price">Precio medio del kWh (€/kWh)</label><input id="price" type="number" min="0" step="0.01" value="0.15" inputmode="decimal"><small>Término de energía dividido entre los kWh consumidos.</small></div>
+<div class="fg"><label for="yld">Producción por kWp según PVGIS (kWh/año)</label><input id="yld" type="number" min="0" step="50" value="1500" inputmode="decimal"><small>Calcúlalo para tu tejado en <a href="${PVGIS}" rel="noopener">PVGIS</a>. El valor inicial es un ejemplo.</small></div>
+<div class="fg"><label for="share">Parte de la producción que consumes en casa: <strong id="shareV">40 %</strong></label><input id="share" type="range" min="10" max="90" step="5" value="40"><small>Es un supuesto: depende de tus horarios y de si hay batería.</small></div>
+<div class="fg"><label for="comp">Valor de los excedentes (€/kWh)</label><input id="comp" type="number" min="0" step="0.01" value="0.06" inputmode="decimal"><small>Pon 0 si no tienes compensación.</small></div>
+<div class="fg"><label for="sub">Subvenciones directas (€)</label><input id="sub" type="number" min="0" step="100" value="0" inputmode="decimal"><small>Se restan del precio de cada oferta.</small></div>
+<div class="fg full"><label for="irpf">Deducción del IRPF que te corresponde</label><select id="irpf"><option value="0">Ninguna</option><option value="10">10 % por instalar autoconsumo en 2026</option><option value="20">20 % por instalar autoconsumo en 2026 (vivienda en edificio residencial)</option><option value="40">40 % por eficiencia energética (con certificados)</option></select><small>Requisitos y plazos en la <a href="/deduccion-irpf-placas-solares/">página de la deducción</a>.</small></div>
+</div></div>
+<div class="cmp-actions"><button type="button" class="cmp-btn" id="cmpEx">Rellenar con un ejemplo</button><button type="button" class="cmp-btn" id="cmpClr">Borrar las ofertas</button></div>
+<p class="cmp-note">El ejemplo usa cifras inventadas solo para ver cómo funciona la herramienta. No son precios de mercado ni de ninguna empresa.</p>
+</form>
+<div class="cmp-res" aria-live="polite"><h2>Resultado de la comparación</h2><div id="cmpOut"><p class="cmp-empty">Rellena al menos el precio y los kWp de una oferta para ver el resultado.</p></div></div>
+</div></section>`;
+const cmpBody = `<div class="pbody"><div class="prose">
+<h2 id="como-usarlo">Cómo usar el comparador</h2>
+<ol>
+<li>Copia de cada presupuesto el precio total con IVA, los kWp y, si aparecen, la producción prometida y las garantías.</li>
+<li>Calcula con <a href="${PVGIS}" rel="noopener">PVGIS</a> cuánto produce 1 kWp en tu tejado y ponlo en la casilla de producción. En nuestro análisis de <a href="/blog/cuanto-produce-1-kwp-espana/">cuánto produce 1 kWp en España</a> tienes valores de 12 ciudades como referencia.</li>
+<li>Escribe tu consumo anual y el precio medio del kWh de tu factura.</li>
+<li>Elige la deducción del IRPF que te corresponda y añade las subvenciones directas, si las tienes.</li>
+<li>Mira qué oferta resulta mejor en euros por kWp, en amortización y en balance a 25 años.</li>
+</ol>
+<h2 id="que-mide">Qué mide la comparación y qué no</h2>
+<p>Los euros por kWp son una referencia, no un veredicto. Una instalación pequeña sale más cara por kWp que una grande, y una oferta con batería no se puede comparar con otra sin ella. Por eso, cuando mezclas ofertas con y sin batería, la herramienta no marca el menor precio por kWp.</p>
+<p>La amortización y el balance salen de las mismas fórmulas que la <a href="/calculadora-ahorro-placas-solares/#como-se-calcula">calculadora de ahorro</a>, con las cifras que escribes tú. El resultado depende de tu consumo, de cuánta producción aprovechas en casa y del precio de la electricidad, y nadie puede prometerte esas cifras de antemano.</p>
+<div class="box"><p>No usamos precios de empresas ni guardamos tus datos: todo se calcula en tu navegador. Esta herramienta no es asesoramiento técnico, fiscal ni financiero. Antes de firmar, contrasta las cifras con el instalador y con las fuentes oficiales.</p></div>
+<h2 id="pedir-por-escrito">Qué pedir por escrito a cada instalador</h2>
+<ul>
+<li>Marca y modelo concretos de paneles e inversor, y potencia total en kWp.</li>
+<li>Los tres plazos de garantía: producto, rendimiento e instalación, y quién responde si la empresa desaparece.</li>
+<li>Si el precio incluye trámites, legalización, batería y obra civil, y qué queda fuera.</li>
+<li>Factura con IVA y forma de pago. La deducción del IRPF exige pago por tarjeta, transferencia, cheque nominativo o ingreso en cuenta, no en efectivo.</li>
+<li>De dónde sale la producción anual que promete, si la indica.</li>
+</ul>
+<p>Los errores más habituales están explicados en <a href="/blog/errores-al-comparar-presupuestos-placas-solares/">errores al comparar presupuestos de placas solares</a>, y los pasos después de firmar, en la guía de <a href="/blog/tramites-instalar-placas-solares/">trámites para instalar placas solares</a>. Para saber si la inversión compensa en tu caso, mira <a href="/blog/si-compensa-instalar-placas-2026/">si compensa instalar placas en 2026</a>, y para ver las ayudas, la página de <a href="/subvenciones-placas-solares/">subvenciones</a>.</p>
+<h2 id="preguntas">Preguntas frecuentes</h2>
+${cmpFaq.map(([q, a]) => `<h3>${q}</h3><p>${a}</p>`).join('\n')}
+<h2>Fuentes</h2><ul class="src">
+<li><a href="${PVGIS}" rel="noopener">Comisión Europea: PVGIS, herramienta gratuita para estimar la producción fotovoltaica</a></li>
+<li><a href="${AEAT_2026}" rel="noopener">Agencia Tributaria: novedades de normativa 2026, Real Decreto-ley 7/2026</a></li></ul>
+</div></div>`;
+pages.push({
+  url: '/comparador-presupuestos-placas-solares/', kind: 'article', wide: true, noMeta: true, scripts: ['compare'], faq: cmpFaq,
+  title: 'Comparador de placas solares: compara 3 presupuestos con tus datos | ComparaPaneles',
+  desc: 'Compara hasta 3 presupuestos de placas solares: euros por kWp, ahorro, amortización y garantías con tus datos. Sin precios inventados.',
+  h1: 'Comparador de presupuestos de placas solares',
+  lede: 'Mete hasta tres ofertas y compara euros por kWp, ahorro, amortización y garantías con tus propios datos. Todo se calcula en tu navegador.',
+  body: cmpTool + cmpBody,
+});
+
 export const notFound = { url: '/404.html', title: 'Página no encontrada | ComparaPaneles', desc: 'La página que buscas no existe.', h1: 'Página no encontrada', body: '<p>La dirección no existe o ha cambiado. Prueba con la <a href="/">página de inicio</a>, la <a href="/calculadora-ahorro-placas-solares/">calculadora</a> o el <a href="/blog/">blog</a>.</p>' };
