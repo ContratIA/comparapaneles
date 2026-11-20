@@ -19,6 +19,7 @@ export const articlePhotos = {
   'ayudas-placas-solares-andalucia-2026-convocatoria-inea': { id: 9875441, w: 1000, author: 'Kindel Media', page: P + 'a-person-in-black-shirt-holding-a-solar-panel-while-standing-on-the-roof-9875441/', alt: 'Operario con guantes cargando un panel solar sobre un tejado de teja', cap: 'Imagen ilustrativa: no corresponde a una instalación de Andalucía.' },
   'ayudas-placas-solares-castilla-la-mancha-comunidades-propietarios-2026': { id: 7339349, author: 'Tom Fisk', page: P + 'aerial-view-of-a-residential-area-7339349/', alt: 'Vista aérea de bloques de viviendas con paneles solares en las cubiertas', cap: 'Imagen ilustrativa: no corresponde a una instalación de Castilla-La Mancha.' },
   'deducciones-autonomicas-placas-solares-irpf-valencia-murcia-baleares': { id: 5900226, author: 'Kaboompics.com', page: P + 'close-up-of-a-person-using-a-calculator-5900226/', alt: 'Mano con un bolígrafo dorado sobre una calculadora azul' },
+  'iva-luz-10-por-ciento-noviembre-diciembre-2026': { id: 29576210, author: 'Евгений Качин', page: P + 'electric-meters-on-brick-wall-in-kaliningrad-29576210/', alt: 'Cinco contadores eléctricos y una caja de protección en una pared de ladrillo pintado', cap: 'Imagen ilustrativa de contadores eléctricos.' },
   'errores-al-comparar-presupuestos-placas-solares': { id: 8730976, author: 'Mikhail Nilov', page: P + 'a-close-up-shot-of-a-person-pointing-on-a-document-using-a-pen-8730976/', alt: 'Mano señalando con un bolígrafo un párrafo de un documento impreso' },
 };
 

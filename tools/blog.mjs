@@ -26,6 +26,7 @@ const ORDER = [
   ['ayudas-placas-solares-andalucia-2026-convocatoria-inea', 'Ayudas e impuestos'],
   ['ayudas-placas-solares-castilla-la-mancha-comunidades-propietarios-2026', 'Ayudas e impuestos'],
   ['deducciones-autonomicas-placas-solares-irpf-valencia-murcia-baleares', 'Ayudas e impuestos'],
+  ['iva-luz-10-por-ciento-noviembre-diciembre-2026', 'Ayudas e impuestos'],
 ];
 
 // Preguntas frecuentes: sección «## Preguntas frecuentes» con «### pregunta» y la respuesta debajo.
@@ -98,6 +99,11 @@ export const blogIndex = () => ({
 
 // Noticias: solo fuentes oficiales, con fecha, enlace al original y resumen con palabras propias
 export const noticias = [
+  {
+    date: '2026-11-13', fuente: 'Agencia Tributaria: medidas del Real Decreto-ley 25/2026 en el IVA', url: 'https://sede.agenciatributaria.gob.es/Sede/iva/novedades-iva/novedades-normativa-2026/medidas-tributarias-real-decreto-ley-2026_.html',
+    title: 'La rebaja del IVA de la luz al 10 % dependía del IPC de la electricidad',
+    text: 'El Real Decreto-ley 25/2026 condiciona la rebaja del IVA de la luz del 21 % al 10 % en noviembre y diciembre de 2026 a que el IPC de la electricidad y del gas natural de septiembre y de octubre supere en 15 puntos el del año anterior. Solo se aplica con una potencia contratada de hasta 10 kW o con bono social. El INE publicó el IPC de octubre el 13 de noviembre. En el blog explicamos cómo comprobar en tu factura qué tipo te han aplicado.',
+  },
   {
     date: '2026-11-04', fuente: 'BOPV nº 211, Ente Vasco de la Energía (programa Eguzki Hotz)', url: 'https://www.euskadi.eus/bopv2/datos/2026/11/2604653a.shtml',
     title: 'El País Vasco publica las bases y la convocatoria de Eguzki Hotz',

@@ -20,7 +20,7 @@ const irpfFaq = [
   ['¿Puedo pagar en efectivo?', 'No. Para deducir hay que pagar con tarjeta, transferencia, cheque nominativo o ingreso en cuenta. El efectivo queda excluido.'],
 ];
 pages.push({
-  url: '/deduccion-irpf-placas-solares/', kind: 'article', faq: irpfFaq,
+  url: '/deduccion-irpf-placas-solares/', kind: 'article', date: '2026-10-30', faq: irpfFaq,
   title: 'Deducción IRPF por placas solares en 2026: 10 % y 20 %, requisitos | ComparaPaneles',
   desc: 'Qué dice la Agencia Tributaria sobre la deducción del IRPF por instalar autoconsumo en 2026 (10 % y 20 %) y sobre las deducciones por eficiencia energética: bases, requisitos y plazos.',
   h1: 'Deducción en el IRPF por placas solares: requisitos y límites',
@@ -66,11 +66,25 @@ ${SRC_IRPF}`,
 
 /* ---------- SUBVENCIONES ---------- */
 pages.push({
-  url: '/subvenciones-placas-solares/', kind: 'article',
-  title: 'Subvenciones para placas solares 2026: qué ayudas hay y cuáles están abiertas | ComparaPaneles',
-  desc: 'Ayudas para placas solares en 2026: deducción del IRPF, bonificaciones de IBI e ICIO y convocatorias autonómicas, con las que están abiertas hoy y sus fuentes.',
-  h1: 'Subvenciones y ayudas para placas solares: qué existe y cómo comprobarlo',
+  url: '/subvenciones-placas-solares/', kind: 'article', date: '2026-10-30',
+  title: 'Ayudas y subvenciones para placas solares 2026: cuáles están abiertas | ComparaPaneles',
+  desc: 'Qué ayudas para placas solares están abiertas en 2026: IRPF, IBI e ICIO y convocatorias de País Vasco, Andalucía y Castilla-La Mancha, con fuentes oficiales.',
+  h1: 'Ayudas y subvenciones para placas solares en 2026: qué hay abierto',
   body: `<p class="lead">No hay una única ayuda nacional que podamos prometerte. Lo que existe son tres capas que conviene distinguir, porque cada una se pide en un sitio distinto y con condiciones propias.</p>
+<h2 id="resumen">Resumen: estado de las ayudas a ${DATE_ES}</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Ayuda</th><th>Para quién</th><th>Estado</th><th>Qué hay que saber</th></tr></thead>
+<tbody>
+<tr><td><a href="/deduccion-irpf-placas-solares/">Deducción del IRPF (estatal)</a></td><td>Propietarios de vivienda o inmueble</td><td>Vigente en 2026</td><td>10 % o 20 % sobre un máximo de 5.000 €. La instalación debe terminarse y pagarse antes del 31 de diciembre de 2026.</td></tr>
+<tr><td><a href="/blog/bonificacion-ibi-icio-placas-solares/">IBI e ICIO (municipal)</a></td><td>Según la ordenanza de cada ayuntamiento</td><td>Depende del municipio</td><td>Hasta el 50 % del IBI y el 95 % del ICIO si el ayuntamiento lo aprueba.</td></tr>
+<tr><td><a href="/blog/ayudas-placas-solares-pais-vasco-eguzki-hotz-2026/">País Vasco: Eguzki Hotz</a></td><td>Viviendas y comunidades</td><td>Abierta desde el 5 de noviembre de 2026</td><td>600 €/kWp individual. Por orden de llegada, como máximo hasta el 29 de septiembre de 2028.</td></tr>
+<tr><td><a href="/blog/ayudas-placas-solares-andalucia-2026-convocatoria-inea/">Andalucía: Agencia Andaluza de la Energía</a></td><td>Particulares, comunidades y empresas</td><td>Abierta con suspensión parcial desde el 29 de octubre de 2026</td><td>Parte de las partidas agotó el crédito. Comprueba tu tipo de actuación en el portal de la Agencia.</td></tr>
+<tr><td><a href="/blog/ayudas-placas-solares-castilla-la-mancha-comunidades-propietarios-2026/">Castilla-La Mancha</a></td><td>Comunidades de propietarios y energéticas</td><td>Abierta hasta el 8 de marzo de 2027</td><td>No sirve para vivienda unifamiliar. Mínimo cinco puntos de suministro.</td></tr>
+<tr><td><a href="/blog/deducciones-autonomicas-placas-solares-irpf-valencia-murcia-baleares/">Deducciones autonómicas</a></td><td>Residentes en Valencia, Murcia y Baleares</td><td>Según el manual de Renta 2025</td><td>Se suman a la estatal en la declaración. Confirma las reglas de 2026 en la próxima campaña.</td></tr>
+<tr><td>Illes Balears: FOTOPAR 2026</td><td>Personas físicas</td><td>Cerrada</td><td>El plazo terminó el 30 de abril de 2026, según la prensa especializada.</td></tr>
+<tr><td>Galicia: Inega, fotovoltaica 2026 (IN421S)</td><td>Empresas y entidades locales, no particulares</td><td>Cerrada</td><td>El plazo de solicitudes terminó el 2 de marzo de 2026.</td></tr>
+</tbody></table></div>
+<div class="box ok"><p><strong>Si quieres la deducción estatal del IRPF de 2026</strong>, la instalación tiene que estar terminada y pagada este año. Si firmas ahora, pide por escrito la fecha de finalización y el Certificado de Instalaciones Eléctricas antes del 31 de diciembre.</p></div>
 <div class="box"><p>Por eso <strong>no publicamos cifras del tipo «hasta X €»</strong> sin una convocatoria concreta detrás. Si una web te las promete sin enlazar la convocatoria oficial, desconfía.</p></div>
 <h2>1. Deducción en el IRPF (estatal)</h2>
 <p>Es la ayuda con información oficial más clara. Se aplica en la declaración de la renta y no se cobra por adelantado. Para instalaciones terminadas y pagadas en 2026, la deducción es del 10 % de lo pagado (20 % si eres propietario de una vivienda en un edificio de uso predominantemente residencial), con una base máxima de 5.000 euros. También existe la deducción por obras de eficiencia energética, que exige certificados. Detalle, plazos y fuentes en <a href="/deduccion-irpf-placas-solares/">Deducción en el IRPF por placas solares</a>. Algunas comunidades añaden su propia deducción: mira las de <a href="/blog/deducciones-autonomicas-placas-solares-irpf-valencia-murcia-baleares/">Valencia, Murcia y Baleares</a>.</p>
@@ -86,6 +100,7 @@ pages.push({
 <li><strong>Castilla-La Mancha:</strong> 10,6 millones para placas solares en comunidades de propietarios y comunidades energéticas (no para vivienda unifamiliar), con solicitudes entre el 9 de septiembre de 2026 y el 8 de marzo de 2027. <a href="/blog/ayudas-placas-solares-castilla-la-mancha-comunidades-propietarios-2026/">Requisitos y fuentes</a>.</li>
 <li><strong>Illes Balears:</strong> el programa FOTOPAR 2026, para personas físicas, se convocó en diciembre de 2025 (BOIB núm. 171) y amplió su crédito en junio de 2026 (BOIB núm. 69). Según la prensa especializada, el plazo de solicitud terminó el 30 de abril de 2026 y no hemos visto una nueva convocatoria. <a href="https://www.caib.es/seucaib/ca/tramites/tramite/6439804/" rel="noopener">Ficha oficial del trámite</a>.</li>
 </ul>
+<p>En Galicia, la convocatoria del Inega de fotovoltaica para 2026 (procedimiento IN421S, DOG núm. 12 del 20 de enero de 2026) era para empresas, autónomos, entidades locales y entidades sin ánimo de lucro, no para particulares, y su plazo terminó el 2 de marzo de 2026. <a href="https://www.inega.gal/sites/default/files/2026-05/AnuncioG0474-120526-0001_es.pdf" rel="noopener">Resolución del Inega de 12 de mayo de 2026</a>.</p>
 <p>Ojo con las ayudas antiguas que siguen circulando por la web. La Comunidad de Madrid, por ejemplo, abrió en noviembre de 2021 una línea para instalar paneles solares con plazo hasta el 31 de diciembre de 2023. Si una página la presenta como vigente, está desactualizada.</p>
 <h2>Cómo comprobar si hay una ayuda abierta hoy</h2>
 <ol>
@@ -213,7 +228,7 @@ const cmpFaq = [
   ['¿La herramienta usa precios de instaladores?', 'No. No tenemos precios de empresas ni una fuente oficial que los fije. Solo calcula con las cifras que escribes tú, y todo ocurre en tu navegador: no se envía ningún dato.'],
   ['¿Por qué compara la producción prometida con PVGIS?', 'Porque una oferta que promete mucha más producción que PVGIS para tu zona, orientación e inclinación debería explicar de dónde sale esa cifra. PVGIS es la herramienta gratuita de la Comisión Europea.'],
 ];
-const cmpOffer = (i, L) => `<div class="cmp-card"><h3>Oferta ${L}</h3>
+const cmpOffer = (i, L) => `<div class="cmp-card"><h2>Oferta ${L}</h2>
 <div class="fg"><label for="nm${i}">Nombre de la empresa (opcional)</label><input id="nm${i}" type="text" maxlength="40" autocomplete="off"></div>
 <div class="fg"><label for="pr${i}">Precio total con IVA (€)</label><input id="pr${i}" type="number" min="0" step="100" inputmode="decimal"></div>
 <div class="fg"><label for="kw${i}">Potencia (kWp)</label><input id="kw${i}" type="number" min="0" step="0.1" inputmode="decimal"></div>
@@ -226,7 +241,7 @@ const cmpOffer = (i, L) => `<div class="cmp-card"><h3>Oferta ${L}</h3>
 const cmpTool = `<section class="cmp-s" id="comparador"><div class="cmp-wrap">
 <form class="cmp-form" id="cmpForm" autocomplete="off">
 <div class="cmp-offers">${cmpOffer('a', 'A')}${cmpOffer('b', 'B')}${cmpOffer('c', 'C')}</div>
-<div class="cmp-shared"><h3>Tus datos y supuestos (iguales para las tres ofertas)</h3>
+<div class="cmp-shared"><h2>Tus datos y supuestos (iguales para las tres ofertas)</h2>
 <div class="cmp-sgrid">
 <div class="fg"><label for="cons">Consumo eléctrico anual (kWh)</label><input id="cons" type="number" min="0" step="100" value="3500" inputmode="decimal"><small>Lo encuentras en tu factura.</small></div>
 <div class="fg"><label for="price">Precio medio del kWh (€/kWh)</label><input id="price" type="number" min="0" step="0.01" value="0.15" inputmode="decimal"><small>Término de energía dividido entre los kWh consumidos.</small></div>
