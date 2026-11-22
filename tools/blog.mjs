@@ -27,6 +27,7 @@ const ORDER = [
   ['ayudas-placas-solares-castilla-la-mancha-comunidades-propietarios-2026', 'Ayudas e impuestos'],
   ['deducciones-autonomicas-placas-solares-irpf-valencia-murcia-baleares', 'Ayudas e impuestos'],
   ['iva-luz-10-por-ciento-noviembre-diciembre-2026', 'Ayudas e impuestos'],
+  ['placas-solares-subvencionadas', 'Ayudas e impuestos'],
 ];
 
 // Preguntas frecuentes: sección «## Preguntas frecuentes» con «### pregunta» y la respuesta debajo.

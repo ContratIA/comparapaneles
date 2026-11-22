@@ -1,11 +1,13 @@
 ---
-title: Bonificación del IBI y del ICIO por instalar placas solares: lo que fija la ley y lo que decide tu ayuntamiento
-description: La ley permite bonificar hasta el 50 % del IBI y el 95 % del ICIO por instalar placas solares, pero cada ayuntamiento decide. Cómo comprobarlo.
+title: Bonificación del IBI por placas solares: cuánto es y cómo pedirla
+description: Bonificación del IBI por placas solares: hasta el 50 % si tu ayuntamiento la aprueba. El caso de Madrid, papeles que piden y cómo saber si la tienes.
 date: 2026-10-30
-updated: 2026-10-31
+updated: 2026-11-22
 photo: bonificacion-ibi-icio-placas-solares
-related: deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares,si-compensa-instalar-placas-2026,ayudas-placas-solares-andalucia-2026-convocatoria-inea,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026,deducciones-autonomicas-placas-solares-irpf-valencia-murcia-baleares
+related: placas-solares-subvencionadas,deduccion-irpf-placas-solares-2026,tramites-instalar-placas-solares,bateria-virtual-que-es-y-cuando-compensa,si-compensa-instalar-placas-2026,ayudas-placas-solares-andalucia-2026-convocatoria-inea,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026,deducciones-autonomicas-placas-solares-irpf-valencia-murcia-baleares
 ---
+
+Respuesta corta: si tu ayuntamiento lo ha aprobado en su ordenanza, instalar placas solares te rebaja el IBI hasta un 50 % durante unos años, y hay que pedirlo. En Madrid capital, por ejemplo, es un 50 % durante cinco años (siete si pones batería). Si tu ayuntamiento no lo recoge, no hay rebaja, aunque la ley la permita.
 
 Instalar placas solares puede abaratar dos impuestos municipales: el IBI, que se paga cada año por el inmueble, y el ICIO, que se paga una vez por la obra. Pero ninguno de los dos descuentos es automático. La ley fija un máximo y deja que cada ayuntamiento decida, en su ordenanza fiscal, si bonifica y con qué condiciones. Hay municipios que lo hacen con generosidad, otros con requisitos estrictos y otros que no lo ofrecen.
 
@@ -37,6 +39,19 @@ Supón un ayuntamiento cuya ordenanza bonifica el IBI al 30 % durante cinco año
 
 La cuenta sirve para entender la escala: son cantidades pequeñas frente al coste de una instalación, aunque se suman a otras ayudas. No son el motivo para instalar, pero sí conviene pedirlas.
 
+## Un caso real: Madrid capital
+
+Esto es lo que publica la Agencia Tributaria Madrid sobre la bonificación del IBI por placas solares (consultado el 22 de noviembre de 2026):
+
+- **Cuánto:** el 50 % del IBI, en viviendas y en inmuebles no residenciales.
+- **Cuánto tiempo:** los cinco años siguientes al de la inscripción de la instalación en el registro, siempre que se pida el mismo año de la inscripción. Si instalas batería, se alarga dos años más. Los cinco años se aplican a instalaciones inscritas desde el 1 de enero de 2023.
+- **Con tope:** la rebaja de cada año no puede pasar del 50 % del coste de ejecución material de la instalación, y la suma de todos los años no puede pasar del 95 % de ese coste.
+- **En edificios:** solo se benefician los vecinos que han participado en la instalación compartida. La puede pedir el presidente de la comunidad en nombre de todos, si está autorizado.
+- **Cuándo no se da:** si las placas eran obligatorias por la normativa específica.
+- **Papeles:** una declaración responsable firmada por un técnico competente, el justificante de su habilitación en el colegio profesional, el proyecto o la memoria técnica de la instalación y, en edificios, el reparto del coste entre los vecinos. También hace falta haber tenido la licencia o el título urbanístico antes de instalar.
+
+Toda la información y el formulario están en la [página de la Agencia Tributaria Madrid](https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Bienes-Inmuebles-IBI-/Mas-informacion/Bonificacion-por-la-instalacion-de-sistemas-de-aprovechamiento-de-la-energia-solar-IBI-Declaracion-responsable-Informacion/?vgnextfmt=default&vgnextoid=d0ce35a0d1081810VgnVCM2000001f4a900aRCRD&vgnextchannel=59e1e5bcc9c78710VgnVCM1000008a4a900aRCRD). Es solo un ejemplo: en el municipio de al lado el porcentaje y los años pueden ser otros.
+
 ## Cómo comprobar qué hace tu ayuntamiento
 
 1. Busca la ordenanza fiscal del IBI y la del ICIO de tu municipio en su web o en el boletín oficial de la provincia.
@@ -46,6 +61,8 @@ La cuenta sirve para entender la escala: son cantidades pequeñas frente al cost
 5. Pide al instalador que te dé la documentación de homologación de la instalación.
 
 Si tu municipio no tiene esa bonificación en su ordenanza, no puedes reclamarla, aunque la ley la permita.
+
+Un atajo para empezar: la Fundación Renovables tiene un [buscador de bonificaciones al autoconsumo](https://fundacionrenovables.org/averigua-municipio-bonifica-ibi-icio-autoconsumo/) en municipios de más de 10.000 habitantes. No es una fuente oficial, así que úsalo para orientarte y confirma siempre en la ordenanza.
 
 ## Resumen de lo que dice la ley
 
@@ -61,9 +78,15 @@ Si tu municipio no tiene esa bonificación en su ordenanza, no puedes reclamarla
 
 Las bonificaciones municipales se acumulan, en principio, con la [deducción del IRPF](/blog/deduccion-irpf-placas-solares-2026/), porque son impuestos distintos y de administraciones distintas. Lo que sí conviene vigilar es la incompatibilidad entre subvenciones directas y esa deducción: una subvención se resta de su base. Para ver el efecto conjunto de lo que te corresponda, usa la [calculadora](/calculadora-ahorro-placas-solares/).
 
+Si te han vendido las placas como «subvencionadas», mira qué ayuda concreta hay detrás en [placas solares subvencionadas](/blog/placas-solares-subvencionadas/). Y si vas a guardar excedentes, compara antes una [batería virtual](/blog/bateria-virtual-que-es-y-cuando-compensa/): en Madrid, la batería física alarga dos años la bonificación del IBI.
+
 También afecta a los [trámites](/blog/tramites-instalar-placas-solares/): el ICIO se paga al pedir la licencia, así que la bonificación hay que tenerla clara antes de empezar la obra y no después.
 
 ## Preguntas frecuentes
+
+### ¿Cuánto bonifica Madrid el IBI por placas solares?
+
+En Madrid capital, el 50 % del IBI durante cinco años desde la inscripción de la instalación, y dos años más si instalas batería. Hay que pedirlo el mismo año de la inscripción y la rebaja tiene un tope ligado al coste de la instalación.
 
 ### ¿Vale solo para placas fotovoltaicas?
 
@@ -83,4 +106,5 @@ Lo decide la ordenanza. La ley solo fija el porcentaje máximo del 50 % en el IB
 
 ## Fuentes
 
+- [Agencia Tributaria Madrid: bonificación del IBI por la instalación de sistemas de aprovechamiento de la energía solar](https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Bienes-Inmuebles-IBI-/Mas-informacion/Bonificacion-por-la-instalacion-de-sistemas-de-aprovechamiento-de-la-energia-solar-IBI-Declaracion-responsable-Informacion/?vgnextfmt=default&vgnextoid=d0ce35a0d1081810VgnVCM2000001f4a900aRCRD&vgnextchannel=59e1e5bcc9c78710VgnVCM1000008a4a900aRCRD), consultada el 22 de noviembre de 2026.
 - [Texto refundido de la Ley Reguladora de las Haciendas Locales, Real Decreto Legislativo 2/2004 (BOE-A-2004-4214)](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214), artículos 74.5 y 103, texto consolidado.
