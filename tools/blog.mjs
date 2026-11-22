@@ -150,9 +150,9 @@ ${noticias.map((n) => `<article class="news" id="n-${n.date}"><p class="news-d">
 export const creditosPage = () => ({
   url: '/creditos-fotos/', kind: 'plain',
   title: 'Créditos de las fotografías | ComparaPaneles',
-  desc: 'Autor y enlace de origen de cada fotografía de ComparaPaneles. Todas son fotos reales de Pexels, usadas con la licencia de Pexels.',
-  h1: 'Créditos de las fotografías',
-  body: `<p class="lead">Todas las fotografías de este sitio son reales y proceden de <a href="https://www.pexels.com/" rel="noopener">Pexels</a>. No hay imágenes generadas con inteligencia artificial ni ilustraciones. Se usan con la <a href="https://www.pexels.com/license/" rel="noopener">licencia de Pexels</a>, que permite el uso libre. Las hemos recortado y redimensionado para la web.</p>
+  desc: 'Autor y enlace de origen de las fotografías de Pexels y Unsplash usadas en ComparaPaneles.',
+  h1: 'Créditos de las imágenes',
+  body: `<p class="lead">Las fotografías se publican con las licencias de <a href="https://www.pexels.com/license/" rel="noopener">Pexels</a> y <a href="https://unsplash.com/license" rel="noopener">Unsplash</a>. Las hemos recortado y redimensionado para la web.</p>
 <p>Son imágenes ilustrativas: no muestran instalaciones ni clientes de ComparaPaneles.</p>
 <h2>Artículos del blog</h2>
 <div class="tablewrap"><table><thead><tr><th>Artículo</th><th>Autor</th><th>Foto original</th></tr></thead><tbody>
@@ -160,6 +160,6 @@ ${articles.map((a) => `<tr><td><a href="${a.url}">${esc(a.meta.title)}</a></td><
 </tbody></table></div>
 <h2>Portada</h2>
 <div class="tablewrap"><table><thead><tr><th>Uso</th><th>Autor</th><th>Foto original</th></tr></thead><tbody>
-${homePhotos.map((p) => `<tr><td>${esc(p.use)}</td><td>${esc(p.author)}</td><td><a href="${p.page}" rel="noopener">Pexels, n.º ${p.id}</a></td></tr>`).join('')}
+${homePhotos.map((p) => `<tr><td>${esc(p.use)}</td><td>${esc(p.author)}</td><td><a href="${p.page}" rel="noopener">${p.source || 'Pexels'}, n.º ${p.id}</a></td></tr>`).join('')}
 </tbody></table></div>`,
 });

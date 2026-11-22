@@ -1,6 +1,15 @@
 import { img, DATE_ES, dateEs, esc } from './layout.mjs';
 import { PVGIS } from './pages.mjs';
 import { articles, card, noticias } from './blog.mjs';
+import { solarHomePhotos, photoUrl, photoSrcset } from './photos.mjs';
+
+const { hero, strip, pool, tile, hillside, waterfront } = solarHomePhotos;
+const solarImage = (photo, sizes, eager = false) => {
+  const width = photo.widths.at(-1);
+  return `<img${eager ? ' class="hero-photo"' : ''} src="${photoUrl(photo, width)}" srcset="${photoSrcset(photo)}" sizes="${sizes}" width="${width}" height="${Math.round(width / photo.ratio)}" alt="${esc(photo.alt)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'}>`;
+};
+export const heroPreload = `<link rel="preload" as="image" imagesrcset="${photoSrcset(hero)}" imagesizes="100vw" fetchpriority="high">\n`;
+const illustration = '<span class="cap-on">Imagen ilustrativa</span>';
 
 const field = (id, label, extra, hint = '') =>
   `<div class="cf"><label for="${id}">${label}</label><input id="${id}" type="number" inputmode="decimal" min="0" ${extra}>${hint ? `<small>${hint}</small>` : ''}</div>`;
@@ -64,7 +73,7 @@ const faq = [
 export const homeFaq = faq;
 
 export const home = () => `<main id="contenido">
-<section class="hero"><img class="hero-photo" src="/assets/img/9875449-1280.webp" srcset="/assets/img/9875449-640.webp 640w, /assets/img/9875449-1280.webp 1280w, /assets/img/9875449-1920.webp 1920w" sizes="100vw" width="1920" height="1440" alt="Operario con guante amarillo sujetando un panel solar fotovoltaico" fetchpriority="high"><div class="hero-ov"></div>
+<section class="hero">${solarImage(hero, '100vw', true)}<div class="hero-ov"></div>${illustration}
 <div class="wrap hero-c"><div class="hero-in">
 <span class="badge">Autoconsumo solar en España</span>
 <h1>Calcula cuánto ahorrarías <span>con placas solares</span></h1>
@@ -81,7 +90,7 @@ export const home = () => `<main id="contenido">
 <p class="form-n">Ejemplo con 1.500 kWh por kWp, 40 % de autoconsumo y excedentes a 0,06 €/kWh. Los datos no salen de tu navegador.</p>
 </div></div></div></section>
 
-<div class="strip">${img(9875449, 'Operario con guante amarillo sujetando un panel solar fotovoltaico', { sizes: '100vw' })}<div class="strip-ov"></div><span class="cap-on">Imagen ilustrativa</span>
+<div class="strip">${solarImage(strip, '100vw')}<div class="strip-ov"></div>${illustration}
 <div class="strip-in"><div class="wrap"><div><div class="strip-k">Dato oficial</div><p class="strip-t">Instalar autoconsumo en 2026 permite deducir en el IRPF el 10 % o el 20 % de lo pagado.</p></div><div class="strip-b"><b>10 % o 20 %</b><span>base máxima 5.000 €</span></div></div></div></div>
 
 <div class="tbar"><div class="wrap"><ul>
@@ -100,9 +109,18 @@ export const home = () => `<main id="contenido">
 
 ${calcSection('<h2>Calcula tu <span>ahorro</span> con tus propios datos</h2>')}
 
+<section class="solar-gallery wrap" aria-labelledby="solar-gallery-title">
+<h2 id="solar-gallery-title">Casas con placas solares</h2>
+<div class="solar-gallery-grid">
+${[pool, tile, hillside, waterfront].map((photo) => `<figure>
+${solarImage(photo, '(max-width: 680px) 46vw, (max-width: 1100px) 23vw, 240px')}
+<figcaption>${esc(photo.caption)} <span>Imagen ilustrativa</span></figcaption>
+</figure>`).join('\n')}
+</div></section>
+
 <section class="sub-s" id="ayudas"><div class="wrap">
 <div class="shg rev">
-<div class="shi">${img(2800832, 'Vista aérea de filas de paneles solares sobre césped', { sizes: '(max-width:960px) 100vw, 520px' })}<span class="cap-on">Imagen ilustrativa</span></div>
+<div class="shi">${solarImage(pool, '(max-width: 960px) 90vw, 520px')}${illustration}</div>
 <div>
 <span class="stag am">Ayudas</span>
 <h2>Qué ayudas existen y cuáles puedes comprobar hoy</h2>

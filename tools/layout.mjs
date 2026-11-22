@@ -24,8 +24,8 @@ export const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;
 const plain = (s) => s.replace(/<[^>]+>/g, '');
 
 // Fotos: las mismas de siempre, servidas desde /assets/img/ en WebP
-const IMG = { 9875449: [2000, 1500], 2800832: [2000, 1123], 9875441: [2000, 1500], 356036: [2000, 1315], 259588: [2000, 1332] };
-export const IMG_WIDTHS = { 9875449: [640, 1280, 1920], 2800832: [640, 1000], 9875441: [640, 1000], 356036: [640, 1000], 259588: [640, 1000] };
+const IMG = { 9875441: [2000, 1500], 356036: [2000, 1315], 259588: [2000, 1332] };
+export const IMG_WIDTHS = { 9875441: [640, 1000], 356036: [640, 1000], 259588: [640, 1000] };
 export function img(id, alt, { sizes = '100vw', cls = '', eager = false } = {}) {
   const ws = IMG_WIDTHS[id], [w, h] = IMG[id], big = ws[ws.length - 1];
   const srcset = ws.map((x) => `/assets/img/${id}-${x}.webp ${x}w`).join(', ');
@@ -132,7 +132,7 @@ ${inner}
 <div class="fc"><p class="fh">Sobre el sitio</p><ul>
 <li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
 <li><a href="/contacto/">Contacto</a></li>
-<li><a href="/creditos-fotos/">Créditos de fotos</a></li></ul></div>
+<li><a href="/creditos-fotos/">Créditos de las imágenes</a></li></ul></div>
 <div class="fc"><p class="fh">Legal</p><ul>
 <li><a href="/aviso-legal/">Aviso legal</a></li>
 <li><a href="/politica-de-privacidad/">Política de privacidad</a></li>

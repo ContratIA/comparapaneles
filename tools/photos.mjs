@@ -24,10 +24,20 @@ export const articlePhotos = {
   'placas-solares-subvencionadas': { id: 8730976, author: 'Mikhail Nilov', page: P + 'a-close-up-shot-of-a-person-pointing-on-a-document-using-a-pen-8730976/', alt: 'Mano señalando con un bolígrafo un párrafo de un documento impreso' },
 };
 
-// Fotos de la portada (las originales de la web)
+export const solarHomePhotos = {
+  hero: { id: 12284244, author: 'Robert So', page: P + 'palm-trees-around-house-12284244/', use: 'Portada: cabecera', alt: 'Chalet con paneles solares en el tejado y un jardín de palmeras', widths: [640, 1280, 1920], ratio: 1.5 },
+  strip: { id: 'gqpuuF3a2tY', source: 'Unsplash', author: 'Watt A Lot', page: 'https://unsplash.com/photos/a-house-with-solar-panels-gqpuuF3a2tY', use: 'Portada: franja Dato oficial', alt: 'Casa con placas solares sobre un tejado de teja y jardín bajo un cielo azul', widths: [640, 1280, 1920], ratio: 2.5 },
+  pool: { id: 36777963, author: 'Curtis Adams', page: P + 'modern-suburban-house-with-solar-panels-36777963/', use: 'Portada: ayudas y galería', alt: 'Chalet blanco con placas solares, palmeras y piscina', caption: 'Chalet con jardín y piscina.', widths: [320, 640, 1000], ratio: 1.5 },
+  tile: { id: 'Ja8t8nJN2I4', source: 'Unsplash', author: 'Watt A Lot', page: 'https://unsplash.com/photos/Ja8t8nJN2I4', use: 'Portada: galería', alt: 'Casa de fachada clara con placas solares sobre un tejado de teja oscura', caption: 'Placas sobre teja oscura.', widths: [320, 640], ratio: 1.5 },
+  hillside: { id: 12243093, author: 'Robert So', page: P + 'a-house-with-solar-panel-on-the-roof-12243093/', use: 'Portada: galería', alt: 'Vivienda con placas sobre teja de barro y buganvillas, con una ladera al fondo', caption: 'Teja de barro y buganvillas.', widths: [320, 640], ratio: 1.5 },
+  waterfront: { id: 13121990, author: 'Robert So', page: P + 'waterfront-houses-along-the-shore-13121990/', use: 'Portada: galería', alt: 'Casa con placas solares y palmeras a orillas del agua', caption: 'Vivienda junto al agua.', widths: [320, 640], ratio: 1.5 },
+};
+
+export const photoUrl = (photo, width) => `/assets/img/${photo.id}-${width}.webp`;
+export const photoSrcset = (photo) => photo.widths.map((width) => `${photoUrl(photo, width)} ${width}w`).join(', ');
+
 export const homePhotos = [
-  { id: 9875449, author: 'Kindel Media', page: P + 'a-person-carrying-a-solar-panel-9875449/', use: 'Portada: cabecera y franja de foto', alt: 'Operario con guante amarillo sujetando un panel solar fotovoltaico' },
-  { id: 2800832, author: 'K', page: P + 'top-view-photo-of-solar-panels-2800832/', use: 'Portada: sección de ayudas', alt: 'Vista aérea de filas de paneles solares sobre césped' },
+  ...Object.values(solarHomePhotos),
   { id: 9875441, author: 'Kindel Media', page: P + 'a-person-in-black-shirt-holding-a-solar-panel-while-standing-on-the-roof-9875441/', use: 'Portada: sección de presupuestos', alt: 'Operario con guantes cargando un panel solar sobre un tejado de teja' },
   { id: 356036, author: 'Pixabay', page: P + 'blue-solar-panel-board-356036/', use: 'Portada: sección del blog', alt: 'Paneles solares bajo un cielo azul con nubes' },
   { id: 259588, author: 'Pixabay', page: P + 'beige-bungalow-house-259588/', use: 'Portada: sección «cómo usar esta web»', alt: 'Vivienda unifamiliar de ladrillo con jardín y camino de entrada' },

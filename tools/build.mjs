@@ -26,11 +26,10 @@ for (const [key, file] of [['css', 'style.css'], ['app', 'app.js'], ['calc', 'ca
 for (const f of readdirSync(join(ROOT, 'tools/src/icons'))) out(f, readFileSync(join(ROOT, 'tools/src/icons', f)));
 
 const { pages, notFound } = await import('./pages.mjs');
-const { home, homeFaq, calcSection, calcExplain } = await import('./home.mjs');
+const { home, homeFaq, calcSection, calcExplain, heroPreload } = await import('./home.mjs');
 const { articles, articlePage, blogIndex, noticiasPage, creditosPage } = await import('./blog.mjs');
 
 // 1) Portada y calculadora
-const heroPreload = '<link rel="preload" as="image" href="/assets/img/9875449-1280.webp" imagesrcset="/assets/img/9875449-640.webp 640w, /assets/img/9875449-1280.webp 1280w, /assets/img/9875449-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">\n';
 const all = [
   {
     url: '/', kind: 'home', h1: 'Calcula cuánto ahorrarías con placas solares', faq: homeFaq, home: home(), scripts: ['calc'], preloadImg: heroPreload,
