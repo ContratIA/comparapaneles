@@ -21,8 +21,8 @@ const irpfFaq = [
 ];
 pages.push({
   url: '/deduccion-irpf-placas-solares/', kind: 'article', date: '2026-10-30', faq: irpfFaq,
-  title: 'Deducción IRPF por placas solares en 2026: 10 % y 20 %, requisitos | ComparaPaneles',
-  desc: 'Qué dice la Agencia Tributaria sobre la deducción del IRPF por instalar autoconsumo en 2026 (10 % y 20 %) y sobre las deducciones por eficiencia energética: bases, requisitos y plazos.',
+  title: 'Deducción IRPF por placas solares 2026: cuánto devuelve Hacienda | ComparaPaneles',
+  desc: 'Deducción del IRPF por placas solares en 2026: 10 % o 20 % sobre un máximo de 5.000 €. Requisitos, plazo hasta el 31 de diciembre y fuentes de la Agencia Tributaria.',
   h1: 'Deducción en el IRPF por placas solares: requisitos y límites',
   lede: 'Resumen de las dos deducciones que pueden aplicarse a una instalación de autoconsumo, con fuentes oficiales.',
   body: `<p class="lead">Desde marzo de 2026 existe una deducción en el IRPF pensada específicamente para quien instala autoconsumo renovable. Convive con la deducción por obras de eficiencia energética, más antigua y con otros requisitos. Aquí tienes las dos en una página. El análisis completo, con ejemplos, está en <a href="/blog/deduccion-irpf-placas-solares-2026/">Deducción en el IRPF por instalar placas solares en 2026</a>.</p>
@@ -65,8 +65,14 @@ ${SRC_IRPF}`,
 });
 
 /* ---------- SUBVENCIONES ---------- */
+const subFaq = [
+  ['¿Hay subvenciones para placas solares en 2026?', 'No hemos encontrado ninguna ayuda estatal directa abierta para viviendas. Sí existen la deducción del IRPF del 10 % o el 20 %, las bonificaciones del IBI y el ICIO de muchos ayuntamientos y convocatorias autonómicas: País Vasco (Eguzki Hotz), Andalucía (con suspensión parcial) y Castilla-La Mancha para comunidades de propietarios.'],
+  ['¿Cuándo se cobran las ayudas para placas solares?', 'La deducción del IRPF no se cobra por adelantado: se aplica en la declaración de la renta del ejercicio en que termina la instalación. Si la terminas en 2026, en la renta que se presenta en 2027. Las ayudas directas se pagan cuando la administración resuelve y compruebas la obra; cada convocatoria fija sus plazos.'],
+  ['¿Hay ayudas para placas solares en comunidades de vecinos?', 'Sí. La deducción del IRPF sube al 20 % para viviendas en edificios residenciales, Castilla-La Mancha tiene una convocatoria solo para comunidades de propietarios y energéticas, y la de Andalucía incluye a las comunidades entre los beneficiarios.'],
+  ['¿El Gobierno regala placas solares?', 'No hemos encontrado ningún programa oficial que instale placas gratis en viviendas. Si alguien te lo ofrece, pide el nombre de la convocatoria y el boletín oficial donde se publicó antes de dar datos o firmar.'],
+];
 pages.push({
-  url: '/subvenciones-placas-solares/', kind: 'article', date: '2026-10-30',
+  url: '/subvenciones-placas-solares/', kind: 'article', date: '2026-10-30', faq: subFaq,
   title: 'Ayudas y subvenciones para placas solares 2026: cuáles están abiertas | ComparaPaneles',
   desc: 'Qué ayudas para placas solares están abiertas en 2026: IRPF, IBI e ICIO y convocatorias de País Vasco, Andalucía y Castilla-La Mancha, con fuentes oficiales.',
   h1: 'Ayudas y subvenciones para placas solares en 2026: qué hay abierto',
@@ -119,6 +125,8 @@ pages.push({
 <li>Presupuestos que no desglosan la ayuda ni indican quién la solicita.</li>
 </ul>
 <p>Más criterios en <a href="/blog/errores-al-comparar-presupuestos-placas-solares/">Errores al comparar presupuestos de placas solares</a>.</p>
+<h2 id="preguntas">Preguntas frecuentes</h2>
+${subFaq.map(([q, a]) => `<h3>${q}</h3><p>${a}</p>`).join('\n')}
 <p class="src">Información orientativa revisada el ${DATE_ES}. Las convocatorias cambian con frecuencia: verifica siempre en la fuente oficial.</p>
 ${SRC_IRPF}`,
 });

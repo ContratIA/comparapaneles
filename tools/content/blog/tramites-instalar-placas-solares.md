@@ -1,8 +1,8 @@
 ---
-title: Trámites para instalar placas solares en una vivienda: permisos, certificados y contrato con la distribuidora
-description: Trámites para legalizar una instalación de autoconsumo en una vivienda: permisos, certificado, contrato con la distribuidora y plazos del RD 244/2019.
+title: Permisos para instalar placas solares en casa: licencia, trámites y certificados
+description: Qué permisos necesitas para instalar placas solares en casa: licencia o declaración responsable, certificado eléctrico, registro y plazos del RD 244/2019.
 date: 2026-10-30
-updated: 2026-10-31
+updated: 2026-11-22
 photo: tramites-instalar-placas-solares
 related: errores-al-comparar-presupuestos-placas-solares,deduccion-irpf-placas-solares-2026,bonificacion-ibi-icio-placas-solares,ayudas-placas-solares-andalucia-2026-convocatoria-inea,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026,ayudas-placas-solares-castilla-la-mancha-comunidades-propietarios-2026
 ---
@@ -73,6 +73,10 @@ La activación del autoconsumo con excedentes es otro asunto: puede pasar despu�
 Si quieres revisar un presupuesto con esta lista en la mano, sigue con [errores al comparar presupuestos](/blog/errores-al-comparar-presupuestos-placas-solares/).
 
 ## Preguntas frecuentes
+
+### ¿Necesito licencia de obra para instalar placas solares en casa?
+
+Depende del ayuntamiento. Muchos piden licencia de obra, otros una comunicación previa o una declaración responsable, y casi todos cobran el ICIO. Pregunta en tu ayuntamiento qué exige su ordenanza y quién lo presenta, tú o el instalador.
 
 ### ¿Cuánto tarda la distribuidora en activar el autoconsumo con excedentes?
 
