@@ -1,8 +1,8 @@
 ---
-title: Batería virtual: qué es, cómo funciona y cuándo compensa
-description: Qué es una batería virtual en las tarifas de autoconsumo, por qué la CNMC pide no llamarla así y qué condiciones comparar: coste, caducidad y uso del saldo.
+title: Batería virtual: qué es, cuánto cuesta y comparativa de comercializadoras 2026
+description: Qué es una batería virtual, cuánto cuesta en Repsol, Endesa, Naturgy, Holaluz y Octopus según sus webs, y qué comparar: caducidad del saldo y excedentes.
 date: 2026-10-31
-updated: 2026-10-31
+updated: 2026-11-22
 photo: bateria-virtual-que-es-y-cuando-compensa
 related: autoconsumo-con-excedentes-compensacion-simplificada,baterias-solares-cuando-compensan,leer-factura-luz-dimensionar-instalacion,ayudas-placas-solares-pais-vasco-eguzki-hotz-2026
 ---
@@ -43,6 +43,25 @@ Las condiciones cambian de una compañía a otra. Estos son los puntos que seña
 - **Varias viviendas.** Bastantes comercializadoras permiten aplicar el saldo a otros inmuebles del mismo titular. Ceder el saldo a otro titular es menos común.
 - **Cómo se activa.** Lo habitual es que se aplique solo, pero en algunas hay que activarlo o pedirlo mes a mes.
 - **En qué tarifas.** Hay empresas que la ofrecen solo en tarifas concretas y otras en todas.
+
+## Comparativa: lo que publican las comercializadoras
+
+Datos copiados de las webs de cada compañía el 22 de noviembre de 2026. Las condiciones cambian a menudo y pueden variar según la tarifa: confírmalas en el contrato antes de firmar.
+
+| Compañía | Coste de la batería virtual | Excedentes | Caducidad del saldo |
+|---|---|---|---|
+| Repsol (Tarifa Batería Virtual) | 1,99 €/mes | 0,06 €/kWh | Sin límite de tiempo |
+| Endesa (Solar Plus & Batería Virtual) | 2 €/mes | No lo hemos comprobado | No lo hemos comprobado |
+| Naturgy (Batería Virtual Solar) | 0 € con su tarifa de luz | 0,06 €/kWh sin impuestos, revisable cada mes | 5 años desde la última factura que sumó saldo |
+| Holaluz | Sin coste extra, según su web | No lo hemos comprobado | No caduca mientras mantengas contratos con ellos |
+| Octopus (Solar Wallet) | Gratis, según su web | +0,07 €/kWh si instalas con Octopus | Sin fecha de caducidad |
+
+Detalles que conviene saber:
+
+- **Repsol** muestra también en su web un paquete de 6,99 €/mes que incluye el servicio «Asistente 24h Plus». Según Repsol, el saldo se puede usar en las facturas de una segunda residencia.
+- **Naturgy** pide un contrato de luz con ellos en autoconsumo con compensación simplificada. Si te das de baja o cambias de comercializadora, el saldo se pone a cero.
+- **Holaluz** permite vincular a la batería virtual todos los suministros del mismo titular, tengan placas o no.
+- **Iberdrola** explica en su blog que su Solar Cloud permite usar el saldo en otras viviendas del mismo titular. En la página que leímos no aparece la cuota.
 
 ## Batería virtual y batería física
 
@@ -85,3 +104,9 @@ Muchas comercializadoras lo permiten entre inmuebles del mismo titular. Comparti
 - [CNMC, Informe sobre las conclusiones de la Mesa de Diálogo de Autoconsumo, INF/DEE/106/24, 11 de julio de 2024](https://www.cnmc.es/sites/default/files/5418567.pdf), página 66.
 - [OCU, Tarifas con batería virtual: ¿qué son y por qué interesan? (18 de noviembre de 2025)](https://www.ocu.org/vivienda-y-energia/paneles-fotovoltaicos/noticias/bateria-virtual-ventajas), consultado el 31 de octubre de 2026.
 - [Real Decreto 244/2019, de 5 de abril, texto consolidado (BOE-A-2019-5089)](https://www.boe.es/buscar/act.php?id=BOE-A-2019-5089), artículo 14.
+- [Repsol: tarifas solares, Tarifa Solar frente a Tarifa Batería Virtual](https://www.repsol.es/particulares/hogar/energia-solar/tarifas/), consultado el 22 de noviembre de 2026.
+- [Endesa: Tarifa Endesa Solar Plus & Batería Virtual](https://www.endesa.com/es/luz-y-gas/catalogo-solar/endesa-solar-plus-bateria-virtual), consultado el 22 de noviembre de 2026.
+- [Naturgy: Batería Virtual Solar para el hogar](https://www.naturgy.es/hogar/solar/bateria_virtual), consultado el 22 de noviembre de 2026.
+- [Holaluz: guía de la batería virtual](https://www.holaluz.com/placas-solares/bateria-virtual), consultado el 22 de noviembre de 2026.
+- [Octopus Energy: Solar Wallet](https://octopusenergy.es/solar-wallet), consultado el 22 de noviembre de 2026.
+- [Iberdrola: tarifa con autoconsumo solar y Solar Cloud (16 de noviembre de 2026)](https://www.iberdrola.es/blog/luz/mejor-tarifa-autoconsumo-solar), consultado el 22 de noviembre de 2026.

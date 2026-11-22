@@ -2,7 +2,7 @@
 title: Autoconsumo con excedentes o sin excedentes: cómo funciona la compensación simplificada
 description: Diferencias entre autoconsumo con y sin excedentes, quién puede acogerse a la compensación simplificada (hasta 100 kW) y cómo se valoran los excedentes.
 date: 2026-10-30
-updated: 2026-10-31
+updated: 2026-11-22
 photo: autoconsumo-con-excedentes-compensacion-simplificada
 related: si-compensa-instalar-placas-2026,baterias-solares-cuando-compensan,tramites-instalar-placas-solares,ayudas-placas-solares-andalucia-2026-convocatoria-inea
 ---
@@ -38,7 +38,7 @@ El artículo 14 describe el mecanismo: un saldo en términos económicos de la e
 | Comercializadora libre | Al precio horario acordado entre las partes | Al precio horario acordado entre las partes |
 | Comercializadora de referencia (precio voluntario para el pequeño consumidor, PVPC) | Al coste horario de energía del PVPC en cada hora | Al precio medio horario del mercado diario e intradiario, menos el coste de los desvíos |
 
-Con una comercializadora libre, el precio de los excedentes es el que pactes: puede ser fijo o indexado, y varía mucho entre ofertas. Con PVPC es el que resulta de los mercados en cada hora.
+Con una comercializadora libre, el precio de los excedentes es el que pactes: puede ser fijo o indexado, y varía mucho entre ofertas. Como referencia, el 22 de noviembre de 2026 Repsol y Naturgy publicaban 0,06 €/kWh sin impuestos en sus tarifas solares; tienes más compañías en la [comparativa de baterías virtuales](/blog/bateria-virtual-que-es-y-cuando-compensa/). Con PVPC es el que resulta de los mercados en cada hora.
 
 La regla que más sorprende es esta: **en ningún caso el valor económico de la energía excedentaria puede ser superior al valor económico de la energía consumida de la red en el periodo de facturación**. Dicho en llano: los excedentes sirven para bajar la parte de energía de tu factura hasta cero, no para que te paguen la diferencia. Si un mes vierte más de lo que consumes, el sobrante de ese mes no se convierte en dinero. Algunas ofertas comerciales añaden condiciones propias, como trasladar un saldo sobrante a meses siguientes. Eso no lo fija el real decreto: se lee en el contrato de cada comercializadora.
 
