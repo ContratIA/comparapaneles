@@ -1,4 +1,5 @@
 ---
+seo_title: Batería virtual 2026: precio y comparativa
 title: Batería virtual: qué es, cuánto cuesta y comparativa de comercializadoras 2026
 description: Qué es una batería virtual, cuánto cuesta en Repsol, Endesa, Naturgy, Holaluz y Octopus según sus webs, y qué comparar: caducidad del saldo y excedentes.
 date: 2026-10-31

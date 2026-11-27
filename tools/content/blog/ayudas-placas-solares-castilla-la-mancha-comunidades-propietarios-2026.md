@@ -1,4 +1,5 @@
 ---
+seo_title: Ayudas placas solares Castilla-La Mancha 2026
 title: Ayudas para placas solares en Castilla-La Mancha 2026: comunidades de propietarios
 description: Castilla-La Mancha ayuda con 10,6 millones a placas solares en comunidades de propietarios y energéticas: plazo hasta marzo de 2027, requisitos y fuentes.
 date: 2026-11-15

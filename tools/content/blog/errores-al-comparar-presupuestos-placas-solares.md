@@ -1,4 +1,5 @@
 ---
+seo_title: Errores al comparar presupuestos solares
 title: Errores al comparar presupuestos de placas solares y cómo evitarlos
 description: Los errores más habituales al comparar presupuestos de placas solares, qué pedir por escrito y qué comprobar con datos oficiales antes de firmar.
 date: 2026-10-30

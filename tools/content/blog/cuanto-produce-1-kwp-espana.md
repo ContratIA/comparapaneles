@@ -1,4 +1,5 @@
 ---
+seo_title: ¿Cuánto produce 1 kWp en España? kWh al año
 title: Cuántos kWh produce 1 kWp de placas solares en España: datos de PVGIS para 12 ciudades
 description: Producción anual de 1 kWp en 12 ciudades españolas según PVGIS: de 1.699 kWh en Málaga a 1.170 en Bilbao, y cómo cambia con la orientación.
 date: 2026-10-30

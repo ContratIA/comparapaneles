@@ -1,4 +1,5 @@
 ---
+seo_title: Ayudas placas solares País Vasco: Eguzki Hotz
 title: Ayudas para placas solares en el País Vasco 2026: programa Eguzki Hotz
 description: El EVE abrió el 5 de noviembre de 2026 las ayudas Eguzki Hotz: 600 €/kWp hasta 10 kWp y 455 €/kWh de batería. Requisitos, plazos y cuentas de ejemplo.
 date: 2026-11-07

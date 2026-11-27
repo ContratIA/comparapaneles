@@ -21,7 +21,7 @@ const irpfFaq = [
 ];
 pages.push({
   url: '/deduccion-irpf-placas-solares/', kind: 'article', date: '2026-10-30', faq: irpfFaq,
-  title: 'Deducción IRPF por placas solares 2026: cuánto devuelve Hacienda | ComparaPaneles',
+  title: 'Deducción IRPF placas solares 2026: cuánto devuelve Hacienda',
   desc: 'Deducción del IRPF por placas solares en 2026: 10 % o 20 % sobre un máximo de 5.000 €. Requisitos, plazo hasta el 31 de diciembre y fuentes de la Agencia Tributaria.',
   h1: 'Deducción en el IRPF por placas solares: requisitos y límites',
   lede: 'Resumen de las dos deducciones que pueden aplicarse a una instalación de autoconsumo, con fuentes oficiales.',
@@ -75,8 +75,8 @@ const subFaq = [
 ];
 pages.push({
   url: '/subvenciones-placas-solares/', kind: 'article', date: '2026-10-30', updated: '2026-11-22', faq: subFaq,
-  title: 'Subvenciones para placas solares 2026: qué sigue abierto | ComparaPaneles',
-  desc: 'Subvenciones y ayudas para placas solares abiertas hoy: quién puede pedirlas, cómo se solicitan y qué papeles piden. Revisado el 22/11/2026 con fuentes oficiales.',
+  title: 'Subvenciones placas solares 2026: qué sigue abierto',
+  desc: 'Ayudas para placas solares abiertas hoy: quién puede pedirlas, cómo se solicitan y qué papeles piden. Con fuentes oficiales, revisado en noviembre de 2026.',
   h1: 'Ayudas y subvenciones para placas solares en 2026: qué hay abierto',
   body: `<p class="lead">A 22 de noviembre de 2026, si vives en una vivienda y quieres poner placas, lo seguro es la deducción del IRPF (10 % o 20 %, con la instalación terminada y pagada antes del 31 de diciembre) y la rebaja del IBI si tu ayuntamiento la tiene. Ayudas directas abiertas solo hemos encontrado en el País Vasco, y en parte en Andalucía. En Castilla-La Mancha hay una solo para comunidades de propietarios. Baleares cerró la suya en octubre.</p>
 <p>No hay una única ayuda nacional que podamos prometerte. Lo que existe son tres capas que conviene distinguir, porque cada una se pide en un sitio distinto y con condiciones propias.</p>
@@ -85,7 +85,7 @@ pages.push({
 <thead><tr><th>Ayuda</th><th>Para quién</th><th>Estado</th><th>Qué hay que saber</th></tr></thead>
 <tbody>
 <tr><td><a href="/deduccion-irpf-placas-solares/">Deducción del IRPF (estatal)</a></td><td>Propietarios de vivienda o inmueble</td><td>Vigente en 2026</td><td>10 % o 20 % sobre un máximo de 5.000 €. La instalación debe terminarse y pagarse antes del 31 de diciembre de 2026.</td></tr>
-<tr><td><a href="/blog/bonificacion-ibi-icio-placas-solares/">IBI e ICIO (municipal)</a></td><td>Según la ordenanza de cada ayuntamiento</td><td>Depende del municipio</td><td>Hasta el 50 % del IBI y el 95 % del ICIO si el ayuntamiento lo aprueba.</td></tr>
+<tr><td><a href="/blog/bonificacion-ibi-icio-placas-solares/">IBI e ICIO (municipal)</a></td><td>Según la ordenanza de cada ayuntamiento</td><td>Depende del municipio</td><td>Hasta el 50 % del IBI y el 95 % del ICIO si el ayuntamiento lo aprueba. Ver <a href="/blog/bonificacion-ibi-placas-solares-madrid-sevilla-zaragoza/">Madrid, Sevilla y Zaragoza</a>.</td></tr>
 <tr><td><a href="/blog/ayudas-placas-solares-pais-vasco-eguzki-hotz-2026/">País Vasco: Eguzki Hotz</a></td><td>Viviendas y comunidades</td><td>Abierta desde el 5 de noviembre de 2026</td><td>600 €/kWp individual. Por orden de llegada, como máximo hasta el 29 de septiembre de 2028.</td></tr>
 <tr><td><a href="/blog/ayudas-placas-solares-andalucia-2026-convocatoria-inea/">Andalucía: Agencia Andaluza de la Energía</a></td><td>Particulares, comunidades y empresas</td><td>Abierta con suspensión parcial desde el 29 de octubre de 2026</td><td>Parte de las partidas agotó el crédito. Comprueba tu tipo de actuación en el portal de la Agencia.</td></tr>
 <tr><td><a href="/blog/ayudas-placas-solares-castilla-la-mancha-comunidades-propietarios-2026/">Castilla-La Mancha</a></td><td>Comunidades de propietarios y energéticas</td><td>Abierta hasta el 8 de marzo de 2027</td><td>No sirve para vivienda unifamiliar. Mínimo cinco puntos de suministro.</td></tr>
@@ -311,7 +311,7 @@ ${cmpFaq.map(([q, a]) => `<h3>${q}</h3><p>${a}</p>`).join('\n')}
 </div></div>`;
 pages.push({
   url: '/comparador-presupuestos-placas-solares/', kind: 'article', wide: true, noMeta: true, scripts: ['compare'], faq: cmpFaq,
-  title: 'Comparador de placas solares: compara 3 presupuestos con tus datos | ComparaPaneles',
+  title: 'Comparador de placas solares: 3 presupuestos | ComparaPaneles',
   desc: 'Compara hasta 3 presupuestos de placas solares: euros por kWp, ahorro, amortización y garantías con tus datos. Sin precios inventados.',
   h1: 'Comparador de presupuestos de placas solares',
   lede: 'Mete hasta tres ofertas y compara euros por kWp, ahorro, amortización y garantías con tus propios datos. Todo se calcula en tu navegador.',

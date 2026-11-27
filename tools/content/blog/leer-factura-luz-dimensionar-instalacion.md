@@ -1,4 +1,5 @@
 ---
+seo_title: Leer la factura de la luz para calcular placas
 title: Cómo leer la factura de la luz para dimensionar una instalación de placas solares
 description: Qué datos de tu factura de la luz necesitas para dimensionar una instalación solar y cómo convertirlos en kWp y paneles, con un ejemplo de cálculo.
 date: 2026-10-30

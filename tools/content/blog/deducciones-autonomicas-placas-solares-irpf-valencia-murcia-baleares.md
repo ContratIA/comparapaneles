@@ -1,4 +1,5 @@
 ---
+seo_title: Deducciones autonómicas del IRPF por placas
 title: Deducciones autonómicas del IRPF por placas solares: Valencia, Murcia y Baleares
 description: Valencia deduce el 40 %, Murcia hasta el 50 % y Baleares el 50 % de lo que inviertes en placas solares. Límites y requisitos según la Agencia Tributaria.
 date: 2026-11-15

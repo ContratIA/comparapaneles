@@ -1,4 +1,5 @@
 ---
+seo_title: ¿Compensa instalar placas solares en 2026?
 title: ¿Compensa instalar placas solares en 2026? Un cálculo paso a paso con tus propios datos
 description: Cómo saber si las placas solares te compensan: fórmula de ahorro, qué variables mueven la amortización y cuánto aporta la deducción del IRPF de 2026.
 date: 2026-10-30

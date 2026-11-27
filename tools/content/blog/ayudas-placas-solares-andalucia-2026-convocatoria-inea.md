@@ -1,4 +1,5 @@
 ---
+seo_title: Ayudas placas solares Andalucía 2026: estado
 title: Ayudas para placas solares en Andalucía 2026: convocatoria y suspensión parcial
 description: La Junta abrió el 22 de octubre de 2026 incentivos de 20,7 millones y suspendió el 29 parte de las solicitudes. Qué dicen el BOJA y la Agencia.
 date: 2026-11-07

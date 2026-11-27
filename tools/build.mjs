@@ -34,11 +34,11 @@ const all = [
   {
     url: '/', kind: 'home', h1: 'Calcula cuánto ahorrarías con placas solares', faq: homeFaq, home: home(), scripts: ['calc'], preloadImg: heroPreload,
     title: 'Placas solares en España: calculadora, ayudas y guías | ComparaPaneles',
-    desc: 'Calcula cuánto ahorrarías con placas solares, revisa la deducción del IRPF según la Agencia Tributaria y aprende a comparar presupuestos. Con las cuentas a la vista.',
+    desc: 'Calcula cuánto ahorras con placas solares, compara presupuestos y consulta las ayudas y la deducción del IRPF de 2026, con fuentes oficiales.',
   },
   {
     url: '/calculadora-ahorro-placas-solares/', kind: 'article', wide: true, scripts: ['calc'],
-    title: 'Calculadora de ahorro con placas solares: fórmulas visibles | ComparaPaneles',
+    title: 'Calculadora de placas solares: ahorro y amortización | ComparaPaneles',
     desc: 'Calcula producción, ahorro anual y amortización de una instalación solar con tus datos. Todos los supuestos son editables y las fórmulas están explicadas.',
     h1: 'Calculadora de ahorro con placas solares', noMeta: true,
     lede: 'Introduce tus datos. Los valores iniciales son ejemplos: cámbialos por los de tu factura y tu presupuesto.',

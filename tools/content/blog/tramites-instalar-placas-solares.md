@@ -1,4 +1,5 @@
 ---
+seo_title: Permisos para instalar placas solares en casa
 title: Permisos para instalar placas solares en casa: licencia, trámites y certificados
 description: Qué permisos necesitas para instalar placas solares en casa: licencia o declaración responsable, certificado eléctrico, registro y plazos del RD 244/2019.
 date: 2026-10-30

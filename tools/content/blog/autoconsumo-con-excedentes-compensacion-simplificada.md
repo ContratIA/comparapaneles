@@ -1,4 +1,5 @@
 ---
+seo_title: Autoconsumo con excedentes: compensación
 title: Autoconsumo con excedentes o sin excedentes: cómo funciona la compensación simplificada
 description: Diferencias entre autoconsumo con y sin excedentes, quién puede acogerse a la compensación simplificada (hasta 100 kW) y cómo se valoran los excedentes.
 date: 2026-10-30

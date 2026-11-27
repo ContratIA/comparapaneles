@@ -28,6 +28,7 @@ const ORDER = [
   ['deducciones-autonomicas-placas-solares-irpf-valencia-murcia-baleares', 'Ayudas e impuestos'],
   ['iva-luz-10-por-ciento-noviembre-diciembre-2026', 'Ayudas e impuestos'],
   ['placas-solares-subvencionadas', 'Ayudas e impuestos'],
+  ['bonificacion-ibi-placas-solares-madrid-sevilla-zaragoza', 'Ayudas e impuestos'],
 ];
 
 // Preguntas frecuentes: sección «## Preguntas frecuentes» con «### pregunta» y la respuesta debajo.
@@ -66,7 +67,7 @@ export function articlePage(a) {
     : '';
   return {
     url: a.url, kind: 'article', crumbs: [['Blog', '/blog/']],
-    title: `${a.meta.title} | ComparaPaneles`, desc: a.meta.description, h1: esc(a.meta.title),
+    title: a.meta.seo_title ? `${a.meta.seo_title} | ComparaPaneles` : `${a.meta.title} | ComparaPaneles`, desc: a.meta.description, h1: esc(a.meta.title),
     date: a.meta.date, updated: a.meta.updated, words: a.words,
     image: `/assets/img/blog/${a.slug}-${a.photo.w || 1200}.webp`, faq: a.faq,
     body: figure(a) + toc + a.html + rel,
@@ -91,7 +92,7 @@ function blogBody() {
 export const blogIndex = () => ({
   url: '/blog/', kind: 'article', wide: true,
   title: 'Blog sobre placas solares y autoconsumo en España | ComparaPaneles',
-  desc: 'Artículos con datos oficiales sobre autoconsumo solar: si compensa instalar placas, deducción del IRPF, bonificaciones de IBI e ICIO, baterías, trámites y producción por ciudades.',
+  desc: 'Guías con datos oficiales sobre placas solares: ayudas, IRPF, IBI, baterías, permisos y producción por ciudad. Actualizadas en 2026.',
   h1: 'Blog: placas solares y autoconsumo',
   lede: 'Artículos con fuentes oficiales enlazadas al final de cada uno. Lo que no se puede comprobar, no se escribe.',
   noMeta: true,

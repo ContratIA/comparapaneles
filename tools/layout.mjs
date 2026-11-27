@@ -1,6 +1,6 @@
 export const SITE = 'https://www.comparapaneles.com';
-export const DATE = '2026-11-20';
-export const DATE_ES = '20 de noviembre de 2026';
+export const DATE = '2026-11-27';
+export const DATE_ES = '27 de noviembre de 2026';
 export const NAME = 'ComparaPaneles';
 // AdSense: ID de editor de la cuenta de Eloy (público). El script de verificación y ads.txt se publican ya;
 // los huecos de anuncio solo se pintan con ADSENSE_SLOTS=1, para no mostrar cajas vacías antes de que Google apruebe el sitio.

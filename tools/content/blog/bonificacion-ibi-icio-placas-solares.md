@@ -1,4 +1,5 @@
 ---
+seo_title: Bonificación del IBI por placas solares
 title: Bonificación del IBI por placas solares: cuánto es y cómo pedirla
 description: Bonificación del IBI por placas solares: hasta el 50 % si tu ayuntamiento la aprueba. El caso de Madrid, papeles que piden y cómo saber si la tienes.
 date: 2026-10-30
@@ -50,7 +51,7 @@ Esto es lo que publica la Agencia Tributaria Madrid sobre la bonificación del I
 - **Cuándo no se da:** si las placas eran obligatorias por la normativa específica.
 - **Papeles:** una declaración responsable firmada por un técnico competente, el justificante de su habilitación en el colegio profesional, el proyecto o la memoria técnica de la instalación y, en edificios, el reparto del coste entre los vecinos. También hace falta haber tenido la licencia o el título urbanístico antes de instalar.
 
-Toda la información y el formulario están en la [página de la Agencia Tributaria Madrid](https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Bienes-Inmuebles-IBI-/Mas-informacion/Bonificacion-por-la-instalacion-de-sistemas-de-aprovechamiento-de-la-energia-solar-IBI-Declaracion-responsable-Informacion/?vgnextfmt=default&vgnextoid=d0ce35a0d1081810VgnVCM2000001f4a900aRCRD&vgnextchannel=59e1e5bcc9c78710VgnVCM1000008a4a900aRCRD). Es solo un ejemplo: en el municipio de al lado el porcentaje y los años pueden ser otros.
+Toda la información y el formulario están en la [página de la Agencia Tributaria Madrid](https://agenciatributaria.madrid.es/portales/contribuyente/es/Impuestos-tasas-y-precios-publicos/Bienes-Inmuebles-IBI-/Mas-informacion/Bonificacion-por-la-instalacion-de-sistemas-de-aprovechamiento-de-la-energia-solar-IBI-Declaracion-responsable-Informacion/?vgnextfmt=default&vgnextoid=d0ce35a0d1081810VgnVCM2000001f4a900aRCRD&vgnextchannel=59e1e5bcc9c78710VgnVCM1000008a4a900aRCRD). Es solo un ejemplo: en el municipio de al lado el porcentaje y los años pueden ser otros. Comparamos Madrid con Sevilla y Zaragoza en [el IBI por placas solares en Madrid, Sevilla y Zaragoza](/blog/bonificacion-ibi-placas-solares-madrid-sevilla-zaragoza/).
 
 ## Cómo comprobar qué hace tu ayuntamiento
 

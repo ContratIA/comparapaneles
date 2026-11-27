@@ -1,4 +1,5 @@
 ---
+seo_title: Autoconsumo colectivo y RDL 7/2026: 5 km
 title: Autoconsumo colectivo en 2026: qué cambió con el Real Decreto-ley 7/2026 y la distancia de 5 km
 description: El RDL 7/2026 amplía a 5 km la distancia del autoconsumo colectivo con plantas de hasta 5 MW. Qué dice el texto y qué implica para una comunidad.
 date: 2026-10-30

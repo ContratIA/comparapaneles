@@ -1,4 +1,5 @@
 ---
+seo_title: Placas solares subvencionadas en 2026
 title: Placas solares subvencionadas: qué ayuda hay detrás de cada oferta
 description: ¿Te ofrecen placas solares subvencionadas? Qué ayudas existen de verdad en 2026, cuánto suponen y cómo comprobar la oferta antes de firmar.
 date: 2026-11-22

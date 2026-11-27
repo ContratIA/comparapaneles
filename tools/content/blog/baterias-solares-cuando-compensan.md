@@ -1,4 +1,5 @@
 ---
+seo_title: Baterías para placas solares: ¿compensan?
 title: Baterías para placas solares: cuándo compensan y cuándo no
 description: Cuánto puede aportar como máximo una batería solar, por qué depende del valor de tus excedentes y qué dicen la normativa y la deducción de 2026.
 date: 2026-10-30

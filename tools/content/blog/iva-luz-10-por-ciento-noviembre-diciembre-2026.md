@@ -1,6 +1,7 @@
 ---
+seo_title: IVA de la luz al 10 %: por qué sigue al 21 %
 title: IVA de la luz al 10 % en noviembre y diciembre de 2026: por qué sigue al 21 %
-description: El Real Decreto-ley 25/2026 permitía bajar el IVA de la luz al 10 % en noviembre y diciembre. Qué condición exigía, cómo comprobarlo en tu factura y qué ahorras con placas.
+description: El RDL 25/2026 permitía bajar el IVA de la luz al 10 % en noviembre y diciembre. Qué condición exigía, cómo verlo en tu factura y qué ahorras con placas.
 date: 2026-11-20
 updated: 2026-11-20
 photo: iva-luz-10-por-ciento-noviembre-diciembre-2026

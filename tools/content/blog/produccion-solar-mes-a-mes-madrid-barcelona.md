@@ -1,4 +1,5 @@
 ---
+seo_title: Producción solar mes a mes: Madrid y Barcelona
 title: Producción solar mes a mes en Madrid y Barcelona: cuándo rinden más tus placas
 description: Producción mensual de 1 kWp en Madrid y Barcelona según PVGIS: julio es el mejor mes, noviembre el peor. Qué implica para tu consumo.
 date: 2026-10-30

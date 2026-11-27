@@ -1,4 +1,5 @@
 ---
+seo_title: Producción solar por provincia: 50 capitales
 title: Producción solar por provincia: kWh de 1 kWp en las 50 capitales
 description: Cuántos kWh produce al año 1 kWp en las 50 capitales de provincia según PVGIS: de 1.170 en Bilbao a 1.749 en Santa Cruz de Tenerife.
 date: 2026-10-31

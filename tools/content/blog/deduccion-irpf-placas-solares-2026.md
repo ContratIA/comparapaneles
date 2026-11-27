@@ -1,4 +1,5 @@
 ---
+seo_title: Deducción IRPF placas solares 2026: 10 % o 20 %
 title: Deducción en el IRPF por instalar placas solares en 2026: 10 % o 20 %, requisitos y plazos
 description: El RDL 7/2026 permite deducir el 10 % o el 20 % de lo pagado por instalar autoconsumo en 2026, con base máxima de 5.000 €. Requisitos y plazos.
 date: 2026-10-30
